@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestDialog</class>
+ <widget class="BlockDialog" name="TestDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>1153</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="page">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>39</y>
+     <width>711</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockGroup" name="blockGroup_edge">
+      <property name="LabelText" stdset="0">
+       <string>边</string>
+      </property>
+      <widget class="QWidget" name="groupContents">
+       <layout class="QVBoxLayout" name="groupVBoxLayout">
+        <item>
+         <widget class="BlockCurveCollector" name="curveCollector_edgeSelect">
+          <property name="LabelText" stdset="0">
+           <string>选择边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockEnumeration" name="enum_crossSection">
+          <property name="LabelText" stdset="0">
+           <string>横截面</string>
+          </property>
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Bitmaps" stdset="0">
+           <stringlist>
+            <string>help</string>
+            <string>help</string>
+            <string>help</string>
+           </stringlist>
+          </property>
+          <property name="EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="Value" stdset="0">
+           <stringlist>
+            <string>对称</string>
+            <string>非对称</string>
+            <string>偏置和角度</string>
+           </stringlist>
+          </property>
+          <property name="Data" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>2</string>
+            <string>3</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockLinearExpression" name="blockLinear_distance">
+          <property name="LabelText" stdset="0">
+           <string>距离</string>
+          </property>
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Formula" stdset="0">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockLinearExpression" name="blockLinear_distance1">
+          <property name="LabelText" stdset="0">
+           <string>距离1</string>
+          </property>
+          <property name="Formula" stdset="0">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockLinearExpression" name="blockLinear_distance2">
+          <property name="LabelText" stdset="0">
+           <string>距离2</string>
+          </property>
+          <property name="Formula" stdset="0">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockAngularExpression" name="blockAngular_angle">
+          <property name="LabelText" stdset="0">
+           <string>角度</string>
+          </property>
+          <property name="Formula" stdset="0">
+           <number>45</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockReverseDirection" name="reverseDir_direction">
+          <property name="LabelText" stdset="0">
+           <string>反向</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSetList" name="setList_edgeList">
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="blockGroup_lengthLimit">
+      <property name="LabelText" stdset="0">
+       <string>长度限制</string>
+      </property>
+      <property name="Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <widget class="QWidget" name="groupContents_1">
+       <layout class="QVBoxLayout" name="groupVBoxLayout_1">
+        <item>
+         <widget class="BlockEnumeration" name="enum_limitObject">
+          <property name="LabelText" stdset="0">
+           <string>限制对象</string>
+          </property>
+          <property name="EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="Value" stdset="0">
+           <stringlist>
+            <string>点</string>
+            <string>平面</string>
+            <string>面</string>
+            <string>边</string>
+           </stringlist>
+          </property>
+          <property name="Data" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>2</string>
+            <string>3</string>
+            <string>4</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSpecifyPoint" name="specifyPoint_point">
+          <property name="LabelText" stdset="0">
+           <string>指定点</string>
+          </property>
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSpecifyPlane" name="specifyPlane_plane"/>
+        </item>
+        <item>
+         <widget class="BlockFaceCollector" name="faceCollector_faceSelect"/>
+        </item>
+        <item>
+         <widget class="BlockCurveCollector" name="curveCollector_edgeSelect1">
+          <property name="LabelText" stdset="0">
+           <string>选择边</string>
+          </property>
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockReverseDirection" name="reverseDir_limitDirection">
+          <property name="LabelText" stdset="0">
+           <string>反向</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockToggle" name="blockToggle_trimByLimit">
+          <property name="LabelText" stdset="0">
+           <string>按限制对象修剪</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSpecifyPoint" name="specifyPoint_trimPoint">
+          <property name="LabelText" stdset="0">
+           <string>指定修剪位置点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSetList" name="setList_limitList">
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="blockGroup_settings">
+      <property name="LabelText" stdset="0">
+       <string>设置</string>
+      </property>
+      <property name="Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <widget class="QWidget" name="groupContents_2">
+       <layout class="QVBoxLayout" name="groupVBoxLayout_2">
+        <item>
+         <widget class="BlockDouble" name="blockDouble_tolerance">
+          <property name="LabelText" stdset="0">
+           <string>公差</string>
+          </property>
+          <property name="Dimensionality" stdset="0">
+           <string>Length</string>
+          </property>
+          <property name="ShowUnitLabel" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <double>0.01</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockEnumeration" name="enum_offsetMethod">
+          <property name="LabelText" stdset="0">
+           <string>偏置法</string>
+          </property>
+          <property name="Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="Value" stdset="0">
+           <stringlist>
+            <string>顶点</string>
+            <string>偏置面</string>
+           </stringlist>
+          </property>
+          <property name="Data" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>2</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockToggle" name="blockToggle_preview">
+      <property name="LabelText" stdset="0">
+       <string>预览</string>
+      </property>
+      <property name="Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockButton" name="blockButton_showResult">
+      <property name="LabelText" stdset="0">
+       <string>显示结果</string>
+      </property>
+      <property name="Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="Top" stdset="0">
+       <string>blockGroup_settings</string>
+      </property>
+      <property name="Bitmap" stdset="0">
+       <string>Sketch</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockGroup</class>
+   <extends>BlockBase</extends>
+   <header>Widgets/ContainerBlock/BlockGroup.h</header>
+   <addpagemethod>AddContent</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>BlockExpression</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockLinearExpression</class>
+   <extends>BlockExpression</extends>
+   <header>Widgets/Block/BlockLinearExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockAngularExpression</class>
+   <extends>BlockExpression</extends>
+   <header>Widgets/Block/BlockAngularExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockEnumeration</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockEnumeration.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockCurveCollector</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockCurveCollector.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSpecifyPoint</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSpecifyPoint.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSpecifyPlane</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSpecifyPlane.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockFaceCollector</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockFaceCollector.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockReverseDirection</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockReverseDirection.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSetList</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSetList.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDouble</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockDouble.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockButton</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

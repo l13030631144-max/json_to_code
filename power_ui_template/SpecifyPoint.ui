@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="BlockSpecifyPoint" name="point0">
+<property name="PW_BlockID" stdset="0">
+    <string>point0</string>
+</property>
+<property name="PW_Enable" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_Group" stdset="0">
+    <bool>false</bool>
+</property>
+<property name="PW_Label" stdset="0">
+    <string> </string>
+</property>
+<property name="PW_Show" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_Bottom" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Left" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Right" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Top" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_AutomaticProgression" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_BalloonTooltipImage" stdset="0">
+    <string> </string>
+</property>
+<property name="PW_BalloonTooltipLayout" stdset="0">
+    <string>Horizontal,Vertical</string>
+</property>
+<property name="PW_BalloonTooltipText" stdset="0">
+    <string> </string>
+</property>
+<property name="PW_CreateInterpartLink" stdset="0">
+    <bool>false</bool>
+</property>
+<property name="PW_EnableFaceSelection" stdset="0">
+    <bool>false</bool>
+</property>
+<property name="PW_InterpartSelection" stdset="0">
+    <string>Simple,Non-associative Interpart Copy Only,Associative and Non-associative Interpart Copy,Associative Interpart Copy</string>
+</property>
+<property name="PW_LabelString" stdset="0">
+    <string>Specify Point</string>
+</property>
+<property name="PW_SnapPointTypesEnabled" stdset="0">
+    <stringlist>
+      <string>(0x80)Arc Center</string>
+      <string>(0x10000)Bounded Grid Point</string>
+      <string>(0x20)Control Point</string>
+      <string>(0x40000)Defining Point</string>
+      <string>(0x8)End Point</string>
+      <string>(0x200)Existing Point</string>
+      <string>(0x20000)Facet Vertex Point</string>
+      <string>(0x2)Inferred</string>
+      <string>(0x40)Intersection</string>
+      <string>(0x10)Mid Point</string>
+      <string>(0x100)Point Constructor</string>
+      <string>(0x400)Point on Curve</string>
+      <string>(0x800)Point on Surface</string>
+      <string>(0x8000)Poles</string>
+      <string>(0x100)Quadrant Point</string>
+      <string>(0x4)Screen Position</string>
+      <string>(0x4000)Tangent Point</string>
+      <string>(0x2000)Two-curve Intersection</string>
+      <string>(0x1)User Defined</string>
+    </stringlist>
+  </property>
+<property name="PW_SnapPointTypesOnByDefault" stdset="0">
+    <stringlist>
+      <string>(0x80)Arc Center</string>
+      <string>(0x10000)Bounded Grid Point</string>
+      <string>(0x20)Control Point</string>
+      <string>(0x8)End Point</string>
+      <string>(0x200)Existing Point</string>
+      <string>(0x20000)Facet Vertex Point</string>
+      <string>(0x40)Intersection</string>
+      <string>(0x10)Mid Point</string>
+      <string>(0x100)Point Constructor</string>
+      <string>(0x400)Point on Curve</string>
+      <string>(0x800)Point on Surface</string>
+      <string>(0x100)Quadrant Point</string>
+    </stringlist>
+  </property>
+<property name="PW_StepStatus" stdset="0">
+    <string>Required,Optional,Staisfied</string>
+</property>
+<property name="PW_ToolTipID" stdset="0">
+    <string> </string>
+</property>
+  <widget class="QWidget" name="page">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockToggle" name="toggle0">
+      <property name="PW_BlockID" stdset="0">
+       <string>toggle0</string>
+      </property>
+     </widget>
+    </item> 
+    <item>
+     <widget class="BlockInteger" name="integer0">
+      <property name="PW_BlockID" stdset="0">
+        <string>integer0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <number>123</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockDouble" name="double0">
+      <property name="PW_BlockID" stdset="0">
+        <string>double0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <double>123.000</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockEnumeration" name="enum0">
+        <property name="PW_BlockID" stdset="0">
+          <string>enum0</string>
+        </property>
+        <property name="PW_Show" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PW_Value" stdset="0">
+         <stringlist>
+            <string>123</string>
+            <string>456</string>
+            <string>798</string>
+         </stringlist>
+        </property>
+        <property name="PW_PresentationStyle" stdset="0">
+          <enum>PWOpen::BlockStyler::OptionMenu</enum>
+        </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockInteger</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockInteger.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

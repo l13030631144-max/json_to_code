@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="BlockLineColorFontWidth" name="lineColorFontWidth0">
+<!-- 线条颜色/样式/线宽 -->
+  <property name="PW_BlockID" stdset="0">
+    <string>lineColorFontWidth0</string>
+  </property>
+  <property name="PW_Enable" stdset="0">
+    <bool>true</bool>
+  </property>
+  <property name="PW_Group" stdset="0">
+    <bool>false</bool>
+  </property>
+  <property name="PW_Label" stdset="0">
+    <string></string>
+  </property>
+  <property name="PW_Show" stdset="0">
+    <bool>true</bool>
+  </property>
+
+  <property name="PW_Bottom" stdset="0">
+    <string>Default</string>
+  </property>
+  <property name="PW_Left" stdset="0">
+    <string>Default</string>
+  </property>
+  <property name="PW_Right" stdset="0">
+    <string>Default</string>
+  </property>
+  <property name="PW_Top" stdset="0">
+    <string>Default</string>
+  </property>
+
+  <property name="PW_ColorValue" stdset="0">
+    <string>1</string>
+  </property>
+  <property name="PW_HideSubBlocks" stdset="0">
+    <string>None,Color,样式,Width</string>
+  </property>
+  <property name="PW_Layout" stdset="0">
+    <string>Vertical,Horizontal</string>
+  </property>
+  <property name="PW_标签" stdset="0">
+    <string></string>
+  </property>
+  <property name="PW_宽度标题" stdset="0">
+    <string>Width</string>
+  </property>
+  <property name="PW_显示标签" stdset="0">
+    <bool>false</bool>
+  </property>
+
+  <property name="PW_ShowDefault" stdset="0">
+    <bool>true</bool>
+  </property>
+  <property name="PW_ShowDefaultAsOriginal" stdset="0">
+    <bool>false</bool>
+  </property>
+  <property name="PW_ShowNoChange" stdset="0">
+    <bool>true</bool>
+  </property>
+  <property name="PW_UseWideLines" stdset="0">
+    <bool>true</bool>
+  </property>
+
+  <property name="PW_AvailableOptions" stdset="0">
+    <stringlist>
+      <string>(0x40)Centerline</string>
+      <string>(0x10)Dashed</string>
+      <string>(0x80)Dotted</string>
+      <string>(0x200)Dotted Dashed</string>
+      <string>(0x4)Invisible</string>
+      <string>(0x100)Long Dashed</string>
+      <string>(0x1)No Change</string>
+      <string>(0x2)Original</string>
+      <string>(0x20)Phantom</string>
+      <string>(0x8)Solid</string>
+    </stringlist>
+  </property>
+  <property name="PW_Value" stdset="0">
+    <string>No Change,Original,Invisible,Solid,Dashed,Phantom,Centerline,Dotted,Long Dashed,Dotted Dashed</string>
+  </property>
+  <property name="PW_字体标题" stdset="0">
+    <string>样式</string>
+  </property>
+
+  <widget class="QWidget" name="page">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockToggle" name="toggle0">
+      <property name="PW_BlockID" stdset="0">
+       <string>toggle0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockInteger" name="integer0">
+      <property name="PW_BlockID" stdset="0">
+        <string>integer0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <number>123</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockDouble" name="double0">
+      <property name="PW_BlockID" stdset="0">
+        <string>double0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <double>123.000</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockEnumeration" name="enum0">
+        <property name="PW_BlockID" stdset="0">
+          <string>enum0</string>
+        </property>
+        <property name="PW_Show" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PW_Value" stdset="0">
+         <stringlist>
+            <string>123</string>
+            <string>456</string>
+            <string>798</string>
+         </stringlist>
+        </property>
+        <property name="PW_PresentationStyle" stdset="0">
+          <enum>PWOpen::BlockStyler::OptionMenu</enum>
+        </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockSuperPoint</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSuperPoint.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockInteger</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockInteger.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDouble</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockDouble.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockEnumeration</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockEnumeration.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>>

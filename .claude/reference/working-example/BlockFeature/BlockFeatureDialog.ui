@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlockFeatureDialog</class>
+ <widget class="BlockDialog" name="BlockFeatureDialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QWidget" name="page">
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>2800</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockGroup" name="group_6">
+      <property name="LabelVisibility" stdset="0">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="groupContents_6">
+       <layout class="QVBoxLayout" name="contentLayout_6">
+        <item>
+         <widget class="BlockEnumeration" name="type">
+          <property name="LabelVisibility" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <stringlist>
+            <string>原点和边长</string>
+            <string>两点和高度</string>
+            <string>两个对角点</string>
+           </stringlist>
+          </property>
+          <property name="Data" stdset="0">
+           <stringlist>
+            <string>TypesOriginAndEdgeLengths</string>
+            <string>TypesTwoPointsAndHeight</string>
+            <string>TypesDiagonalPoints</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="group">
+      <property name="LabelText" stdset="0">
+       <string>原点</string>
+      </property>
+      <widget class="QWidget" name="groupContents">
+       <layout class="QVBoxLayout" name="contentLayout">
+        <item>
+         <widget class="BlockSpecifyPoint" name="originPoint">
+          <property name="LabelText" stdset="0">
+           <string>指定点</string>
+          </property>
+          <property name="StepStatus" stdset="0">
+           <enum>BlockAbstractGeometry::Optional</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="group_5">
+      <property name="LabelText" stdset="0">
+       <string>从原点触发的点 XC，YC</string>
+      </property>
+      <widget class="QWidget" name="groupContents_5">
+       <layout class="QVBoxLayout" name="contentLayout_5">
+        <item>
+         <widget class="BlockSpecifyPoint" name="cornerPoint">
+          <property name="StepStatus" stdset="0">
+           <enum>BlockAbstractGeometry::Optional</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="group_2">
+      <property name="LabelText" stdset="0">
+       <string>维度</string>
+      </property>
+      <widget class="QWidget" name="groupContents_2">
+       <layout class="QVBoxLayout" name="contentLayout_2">
+        <item>
+         <widget class="BlockLinearExpression" name="length">
+          <property name="LabelText" stdset="0">
+           <string>长度（XC）</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockLinearExpression" name="width">
+          <property name="LabelText" stdset="0">
+           <string>宽度（YC）</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockLinearExpression" name="height">
+          <property name="LabelText" stdset="0">
+           <string>高度（ZC）</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="group_3">
+      <property name="LabelText" stdset="0">
+       <string>布尔</string>
+      </property>
+      <widget class="QWidget" name="groupContents_3">
+       <layout class="QVBoxLayout" name="contentLayout_3">
+        <item>
+         <widget class="BlockEnumeration" name="boolOptType">
+          <property name="LabelText" stdset="0">
+           <string>布尔</string>
+          </property>
+          <property name="Value" stdset="0">
+           <stringlist>
+            <string>无</string>
+            <string>合并</string>
+            <string>减去</string>
+            <string>相交</string>
+           </stringlist>
+          </property>
+          <property name="Data" stdset="0">
+           <stringlist>
+            <string>BooleanTypeCreate</string>
+            <string>BooleanTypeUnite</string>
+            <string>BooleanTypeSubtract</string>
+            <string>BooleanTypeIntersect</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockBodyCollector" name="boolBodyCollector"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="group_4">
+      <property name="LabelText" stdset="0">
+       <string>设置</string>
+      </property>
+      <widget class="QWidget" name="groupContents_4">
+       <layout class="QVBoxLayout" name="contentLayout_4">
+        <item>
+         <widget class="BlockToggle" name="associativityOriginPoint">
+          <property name="LabelText" stdset="0">
+           <string>关联原点</string>
+          </property>
+          <property name="Value" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>80</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockGroup</class>
+   <extends>BlockBase</extends>
+   <header>Widgets/ContainerBlock/BlockGroup.h</header>
+   <addpagemethod>AddContent</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockEnumeration</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockEnumeration.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSpecifyPoint</class>
+   <extends>BlockSelectObject</extends>
+   <header>Widgets/Block/BlockSpecifyPoint.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSelectObject</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSelectObject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockExpression</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockLinearExpression</class>
+   <extends>BlockExpression</extends>
+   <header>Widgets/Block/BlockLinearExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockBodyCollector</class>
+   <extends>BlockSelectObject</extends>
+   <header>Widgets/Block/BlockBodyCollector.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

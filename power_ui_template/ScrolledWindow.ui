@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="BlockScrollWindow" name="group">
+<property name="PW_BlockID" stdset="0">
+    <string>scrolledWindow</string>
+</property>
+<property name="PW_Enable" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_Expanded" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_Group" stdset="0">
+    <bool>false</bool>
+</property>
+<property name="PW_Label" stdset="0">
+    <string>No Title</string>
+</property>
+<property name="PW_Show" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_Bottom" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Left" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Right" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Top" stdset="0">
+    <string>Default</string>
+</property>
+<property name="PW_Height" stdset="0">
+       <number>3</number>
+</property>
+<property name="PW_ResizeHeightWithDialog" stdset="0">
+    <bool>true</bool>
+</property>
+<property name="PW_Width" stdset="0">
+       <number>0</number>
+</property>
+  <widget classt="QWidget" name="page">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockToggle" name="toggle0">
+      <property name="PW_BlockID" stdset="0">
+       <string>toggle0</string>
+      </property>
+     </widget>
+    </item> 
+    <item>
+     <widget class="BlockInteger" name="integer0">
+      <property name="PW_BlockID" stdset="0">
+        <string>integer0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <number>123</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockDouble" name="double0">
+      <property name="PW_BlockID" stdset="0">
+        <string>double0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <double>123.000</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockEnumeration" name="enum0">
+        <property name="PW_BlockID" stdset="0">
+          <string>enum0</string>
+        </property>
+        <property name="PW_Show" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PW_Value" stdset="0">
+         <stringlist>
+            <string>123</string>
+            <string>456</string>
+            <string>798</string>
+         </stringlist>
+        </property>
+        <property name="PW_PresentationStyle" stdset="0">
+          <enum>PWOpen::BlockStyler::OptionMenu</enum>
+        </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockInteger</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockInteger.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

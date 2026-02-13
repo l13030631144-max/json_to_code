@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="BlockLineFont" name="lineFont0">
+<!-- 线型 -->
+  <property name="PW_BlockID" stdset="0">
+    <string>lineFont0</string>
+  </property>
+  <property name="PW_Enable" stdset="0">
+    <bool>true</bool>
+  </property>
+  <property name="PW_Group" stdset="0">
+    <bool>false</bool>
+  </property>
+  <property name="PW_Label" stdset="0">
+    <string>线型</string>
+  </property>
+  <property name="PW_Show" stdset="0">
+    <bool>true</bool>
+  </property>
+
+  <property name="PW_Bottom" stdset="0">
+    <string>Default</string>
+  </property>
+  <property name="PW_Left" stdset="0">
+    <string>Default</string>
+  </property>
+  <property name="PW_Right" stdset="0">
+    <string>Default</string>
+  </property>
+  <property name="PW_Top" stdset="0">
+    <string>Default</string>
+  </property>
+
+  <property name="PW_AvailableOptions" stdset="0">
+    <stringlist>
+      <string>(0x1000)三点划线</string>
+      <string>(0x4)不可见</string>
+      <string>(0x40)中心线</string>
+      <string>(0x800)单点划线</string>
+      <string>(0x2)原始</string>
+      <string>(0x400)双点划线</string>
+      <string>(0x2000)双短划线</string>
+      <string>(0x8)实线</string>
+      <string>(0x1)无更改</string>
+      <string>(0x200)点划线</string>
+      <string>(0x80)点线</string>
+      <string>(0x10)虚线</string>
+      <string>(0x100)长划线</string>
+    </stringlist>
+  </property>
+  <property name="PW_ShowOptionLabels" stdset="0">
+    <bool>true</bool>
+  </property>
+  <property name="PW_Value" stdset="0">
+    <string>无更改,原始,不可见,实线,虚线,中心线,点线,长划线,点划线,双点划线,单点划线,三点划线,双短划线</string>
+  </property>
+
+  <widget class="QWidget" name="page">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockToggle" name="toggle0">
+      <property name="PW_BlockID" stdset="0">
+       <string>toggle0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockInteger" name="integer0">
+      <property name="PW_BlockID" stdset="0">
+        <string>integer0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <number>123</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockDouble" name="double0">
+      <property name="PW_BlockID" stdset="0">
+        <string>double0</string>
+      </property>
+      <property name="PW_Value" stdset="0">
+       <double>123.000</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockEnumeration" name="enum0">
+        <property name="PW_BlockID" stdset="0">
+          <string>enum0</string>
+        </property>
+        <property name="PW_Show" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PW_Value" stdset="0">
+         <stringlist>
+            <string>123</string>
+            <string>456</string>
+            <string>798</string>
+         </stringlist>
+        </property>
+        <property name="PW_PresentationStyle" stdset="0">
+          <enum>PWOpen::BlockStyler::OptionMenu</enum>
+        </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockSuperPoint</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSuperPoint.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockInteger</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockInteger.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDouble</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockDouble.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockEnumeration</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockEnumeration.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
