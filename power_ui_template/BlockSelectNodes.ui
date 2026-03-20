@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSelectNodes" name="selectNodes0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>selectNodes0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AutomaticProgression" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                        <string>node</string>
+                    </property>
+                    <property name="PW_Cue" stdset="0">
+                        <string>选择节点</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                        <string>选择节点</string>
+                    </property>
+                    <property name="PW_SelectMode" stdset="0">
+                        <string>Multiple,Single</string>
+                    </property>
+                    <property name="PW_ShowSelection" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Required,Optional,Satisfied</string>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSelectNodes</class>
+            <header>Widgets/Block/BlockSelectNodes.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

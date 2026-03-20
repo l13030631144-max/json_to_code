@@ -2,7 +2,6 @@
 name: generate-dialog
 description: Read a JSON file from the UI designer and generate CAD dialog code (.ui, .cpp, .h files)
 ---
-
 # CAD Dialog Code Generator
 
 You are a CAD dialog code generator. Your task is to read a JSON file exported by the UI designer and generate three output files: `.ui` (Qt XML), `.cpp` (C++ implementation), `.h` (C++ header).
@@ -16,6 +15,7 @@ If `$ARGUMENTS` is empty, ask the user for the JSON file path.
 ## JSON Input Format
 
 The JSON follows the spec in `json_interface_spec.md`. Key structure:
+
 - Root has `tree` array (with one `BlockDialog` root), `previewMode`, `timestamp`
 - Each component has: `id`, `type`, `props`, `hiddenProps`, `altProperties`, `children`
 - `props.className` on BlockDialog determines output file names
@@ -25,6 +25,7 @@ The JSON follows the spec in `json_interface_spec.md`. Key structure:
 ## Output
 
 Generate three files in the **same directory** as the input JSON:
+
 1. `{className}.ui` - Qt XML UI definition
 2. `{className}.cpp` - C++ implementation
 3. `{className}.h` - C++ header
@@ -35,83 +36,182 @@ Where `{className}` comes from `tree[0].props.className`.
 
 ## CRITICAL RULES
 
+### PW_BlockID MUST ALWAYS Be Written (HIGHEST PRIORITY)
+
+**NEVER skip `PW_BlockID` even if it appears in `hiddenProps`.** This is the #1 most common generation error. Every single control (except BlockDialog itself) MUST have its `PW_BlockID` property written to the .ui file. The `hiddenProps` filter does NOT apply to `PW_BlockID`.
+
+```xml
+<!-- CORRECT: PW_BlockID is always written -->
+<widget class="BlockDouble" name="blockDouble_coeffA">
+  <property name="PW_BlockID" stdset="0">
+    <string>double0</string>
+  </property>
+  ...
+</widget>
+
+<!-- WRONG: PW_BlockID omitted because it was in hiddenProps -->
+<widget class="BlockDouble" name="blockDouble_coeffA">
+  <property name="PW_Label" stdset="0">
+    <string>a</string>
+  </property>
+</widget>
+```
+
 ### Control Naming Convention
 
 The `name` attribute of each widget in the .ui file must be **semantically named** based on the control's function. Use the control's `PW_Label` and `PW_BlockID` to derive a meaningful name.
 
 **Naming format**: `{typePrefix}_{semanticName}`
 
-| JSON type | typePrefix | Example name |
-|---|---|---|
-| BlockGroup | blockGroup | `blockGroup_mainSettings` |
-| BlockEnumeration | enum | `enum_holeType` |
-| BlockToggle | blockToggle | `blockToggle_enableAdvanced` |
-| BlockButton | blockButton | `blockButton_execute` |
-| BlockCurveCollector | curveCollector | `curveCollector_edgeSelect` |
-| BlockSpecifyPoint | specifyPoint | `specifyPoint_origin` |
-| BlockLinearExpression | blockLinear | `blockLinear_length` |
-| BlockAngularExpression | blockAngular | `blockAngular_angle` |
-| BlockJiList | setList | `setList_objectList` |
-| BlockReverseDirection | reverseDir | `reverseDir_direction` |
-| BlockSpecifyPlane | specifyPlane | `specifyPlane_basePlane` |
-| BlockDouble | blockDouble | `blockDouble_radius` |
-| BlockInteger | blockInteger | `blockInteger_count` |
-| BlockLabel | blockLabel | `blockLabel_info` |
-| BlockString | blockString | `blockString_name` |
-| BlockSeparator | separator | `separator_main` |
-| BlockFaceCollector | faceCollector | `faceCollector_faceSelect` |
-| BlockBodyCollector | bodyCollector | `bodyCollector_bodySelect` |
-| BlockSpecifyVector | specifyVector | `specifyVector_direction` |
-| BlockSpecifyAxis | specifyAxis | `specifyAxis_axis` |
-| BlockRadiusExpression | blockRadius | `blockRadius_radius` |
-| BlockTabWidget | tabControl | `tabControl_main` |
+**CRITICAL RULES**:
+1. **NO CHINESE CHARACTERS**: Variable names MUST NOT contain Chinese characters. Use English translations or descriptive English names.
+2. **NO DUPLICATE NAMES**: All variable names MUST be unique within the class. If multiple controls have the same semantic name, append a numeric suffix (e.g., `_1`, `_2`) or use more specific descriptive names.
+
+**Naming Strategy for Chinese Labels**:
+- Translate Chinese labels to English (e.g., "原点" → "origin", "设置" → "settings")
+- Use descriptive English names based on functionality
+- For ambiguous terms, use context-specific names (e.g., "设置1" → "settings_origin", "设置2" → "settings_offset")
+- Always prefer meaningful English names over direct translations
+
+| JSON type                | typePrefix           | Example name                         |
+| ------------------------ | -------------------- | ------------------------------------ |
+| BlockGroup               | blockGroup           | `blockGroup_mainSettings`          |
+| BlockEnumeration         | enum                 | `enum_holeType`                    |
+| BlockToggle              | blockToggle          | `blockToggle_enableAdvanced`       |
+| BlockButton              | blockButton          | `blockButton_execute`              |
+| BlockDouble              | blockDouble          | `blockDouble_radius`               |
+| BlockInteger             | blockInteger         | `blockInteger_count`               |
+| BlockLabel               | blockLabel           | `blockLabel_info`                  |
+| BlockString              | blockString          | `blockString_name`                 |
+| BlockMultilineString     | multilineString      | `multilineString_description`      |
+| BlockSeparator           | separator            | `separator_main`                   |
+| BlockListBox             | listBox              | `listBox_items`                    |
+| BlockExpression          | blockExpression      | `blockExpression_value`            |
+| BlockLinearExpression    | blockLinear          | `blockLinear_length`               |
+| BlockAngularExpression   | blockAngular         | `blockAngular_angle`               |
+| BlockRadiusExpression    | blockRadius          | `blockRadius_radius`               |
+| BlockOnPathDim           | onPathDim            | `onPathDim_distance`               |
+| BlockIntegerTable        | integerTable         | `integerTable_data`                |
+| BlockDoubleTable         | doubleTable          | `doubleTable_data`                 |
+| BlockTable               | blockTable           | `blockTable_data`                  |
+| BlockTabWidget           | tabControl           | `tabControl_main`                  |
+| BlockWizard              | wizard               | `wizard_main`                      |
+| BlockScrollWindow        | scrollWindow         | `scrollWindow_main`                |
+| BlockExplorer            | explorer             | `explorer_main`                    |
+| BlockCurveCollector      | curveCollector       | `curveCollector_edgeSelect`        |
+| BlockFaceCollector       | faceCollector        | `faceCollector_faceSelect`         |
+| BlockBodyCollector       | bodyCollector        | `bodyCollector_bodySelect`         |
+| BlockSelectObject        | selectObject         | `selectObject_selection`           |
+| BlockSelectFeature       | selectFeature        | `selectFeature_feature`            |
+| BlockSelectPart          | selectPart           | `selectPart_part`                  |
+| BlockSelectNodes         | selectNodes          | `selectNodes_nodes`                |
+| BlockSelectElements      | selectElements       | `selectElements_elements`          |
+| BlockFacetSelect         | facetSelect          | `facetSelect_facet`                |
+| BlockSpecifyPoint        | specifyPoint         | `specifyPoint_origin`              |
+| BlockSuperPoint          | superPoint           | `superPoint_point`                 |
+| BlockSpecifyVector       | specifyVector        | `specifyVector_direction`          |
+| BlockSpecifyAxis         | specifyAxis          | `specifyAxis_axis`                 |
+| BlockSpecifyPlane        | specifyPlane         | `specifyPlane_basePlane`           |
+| BlockSpecifyCsys         | specifyCsys          | `specifyCsys_csys`                 |
+| BlockReverseDirection    | reverseDir           | `reverseDir_direction`             |
+| BlockSetList             | setList              | `setList_objectList`               |
+| BlockOrientXpress        | orientXpress         | `orientXpress_orient`              |
+| BlockManipulator         | manipulator          | `manipulator_manip`                |
+| BlockCursorLocation      | cursorLocation       | `cursorLocation_cursor`            |
+| BlockMicroposition       | microposition        | `microposition_position`           |
+| BlockSectionBuilder      | sectionBuilder       | `sectionBuilder_section`           |
+| BlockSuperSection        | superSection         | `superSection_section`             |
+| BlockObjectColorPicker   | colorPicker          | `colorPicker_objectColor`          |
+| BlockRGBColorPicker      | rgbColorPicker       | `rgbColorPicker_color`             |
+| BlockLayer               | blockLayer           | `blockLayer_layer`                 |
+| BlockLineFont            | lineFont             | `lineFont_style`                   |
+| BlockLineWidth           | lineWidth            | `lineWidth_width`                  |
+| BlockLineColorFontWidth  | lineColorFontWidth   | `lineColorFontWidth_line`          |
+| BlockTextColorFontWidth  | textColorFontWidth   | `textColorFontWidth_text`          |
+| BlockDrawingArea         | drawingArea          | `drawingArea_preview`              |
+| BlockFileSelection       | fileSelection        | `fileSelection_file`               |
+| BlockFolderSelection     | folderSelection      | `folderSelection_folder`           |
+| BlockSelectExpression    | selectExpression     | `selectExpression_expr`            |
+| BlockTree                | blockTree            | `blockTree_tree`                   |
 
 **STRICTLY FORBIDDEN**: Never use numeric-only suffixes like `blockToggle_1`, `enum_2`. Always use meaningful English names derived from `PW_Label` or `PW_BlockID`.
 
 ### OPEN Layer vs BLOCK Layer Class Mapping (for .h and .cpp)
 
-| C++ Type (OPEN Layer) | JSON/UI Type (BLOCK Layer) |
-|---|---|
-| `PWOpen::BlockStyler::AngularDimension` | BlockAngularExpression |
-| `PWOpen::BlockStyler::BodyCollector` | BlockBodyCollector |
-| `PWOpen::BlockStyler::Button` | BlockButton |
-| `PWOpen::BlockStyler::CurveCollector` | BlockCurveCollector |
-| `PWOpen::BlockStyler::DoubleBlock` | BlockDouble |
-| `PWOpen::BlockStyler::Enumeration` | BlockEnumeration |
-| `PWOpen::BlockStyler::FaceCollector` | BlockFaceCollector |
-| `PWOpen::BlockStyler::Group` | BlockGroup |
-| `PWOpen::BlockStyler::IntegerBlock` | BlockInteger |
-| `PWOpen::BlockStyler::Label` | BlockLabel |
-| `PWOpen::BlockStyler::LinearDimension` | BlockLinearExpression |
-| `PWOpen::BlockStyler::ReverseDirection` | BlockReverseDirection |
-| `PWOpen::BlockStyler::RGBColorPicker` | BlockRGBColorPicker |
-| `PWOpen::BlockStyler::SelectObject` | BlockSelectObject |
-| `PWOpen::BlockStyler::Separator` | BlockSeparator |
-| `PWOpen::BlockStyler::SetList` | BlockSetList (BlockJiList in JSON) |
-| `PWOpen::BlockStyler::SpecifyAxis` | BlockSpecifyAxis |
-| `PWOpen::BlockStyler::SpecifyPlane` | BlockSpecifyPlane |
-| `PWOpen::BlockStyler::SpecifyPoint` | BlockSpecifyPoint |
-| `PWOpen::BlockStyler::SpecifyVector` | BlockSpecifyVector |
-| `PWOpen::BlockStyler::StringBlock` | BlockString |
-| `PWOpen::BlockStyler::TabControl` | BlockTabWidget |
-| `PWOpen::BlockStyler::Toggle` | BlockToggle |
-| `PWOpen::BlockStyler::RadiusDimension` | BlockRadiusExpression |
-| `PWOpen::BlockStyler::SuperPoint` | BlockSuperPoint |
-| `PWOpen::BlockStyler::SuperSection` | BlockSuperSection |
-| `PWOpen::BlockStyler::ObjectColorPicker` | BlockObjectColorPicker |
+| C++ Type (OPEN Layer)                          | JSON/UI Type (BLOCK Layer) |
+| ---------------------------------------------- | -------------------------- |
+| `PWOpen::BlockStyler::AngularDimension`      | BlockAngularExpression     |
+| `PWOpen::BlockStyler::BodyCollector`         | BlockBodyCollector         |
+| `PWOpen::BlockStyler::Button`                | BlockButton                |
+| `PWOpen::BlockStyler::ChooseExpression`      | BlockSelectExpression      |
+| `PWOpen::BlockStyler::CurveCollector`        | BlockCurveCollector        |
+| `PWOpen::BlockStyler::DoubleBlock`           | BlockDouble                |
+| `PWOpen::BlockStyler::DoubleTable`           | BlockDoubleTable           |
+| `PWOpen::BlockStyler::DrawingArea`           | BlockDrawingArea           |
+| `PWOpen::BlockStyler::Enumeration`           | BlockEnumeration           |
+| `PWOpen::BlockStyler::Explorer`              | BlockExplorer              |
+| `PWOpen::BlockStyler::ExpressionBlock`       | BlockExpression            |
+| `PWOpen::BlockStyler::FaceCollector`         | BlockFaceCollector         |
+| `PWOpen::BlockStyler::FileSelection`         | BlockFileSelection         |
+| `PWOpen::BlockStyler::FolderSelection`       | BlockFolderSelection       |
+| `PWOpen::BlockStyler::Group`                 | BlockGroup                 |
+| `PWOpen::BlockStyler::IntegerBlock`          | BlockInteger               |
+| `PWOpen::BlockStyler::IntegerTable`          | BlockIntegerTable          |
+| `PWOpen::BlockStyler::Label`                 | BlockLabel                 |
+| `PWOpen::BlockStyler::LayerBlock`            | BlockLayer                 |
+| `PWOpen::BlockStyler::LinearDimension`       | BlockLinearExpression      |
+| `PWOpen::BlockStyler::LineColorFontWidth`    | BlockLineColorFontWidth    |
+| `PWOpen::BlockStyler::LineFont`              | BlockLineFont              |
+| `PWOpen::BlockStyler::LineWidth`             | BlockLineWidth             |
+| `PWOpen::BlockStyler::ListBox`               | BlockListBox               |
+| `PWOpen::BlockStyler::Microposition`         | BlockMicroposition         |
+| `PWOpen::BlockStyler::MultilineString`       | BlockMultilineString       |
+| `PWOpen::BlockStyler::ObjectColorPicker`     | BlockObjectColorPicker     |
+| `PWOpen::BlockStyler::OnPathDimension`       | BlockOnPathDim             |
+| `PWOpen::BlockStyler::OrientXpress`          | BlockOrientXpress          |
+| `PWOpen::BlockStyler::RadiusDimension`       | BlockRadiusExpression      |
+| `PWOpen::BlockStyler::ReverseDirection`      | BlockReverseDirection      |
+| `PWOpen::BlockStyler::RGBColorPicker`        | BlockRGBColorPicker        |
+| `PWOpen::BlockStyler::ScrolledWindow`        | BlockScrollWindow          |
+| `PWOpen::BlockStyler::SectionBuilder`        | BlockSectionBuilder        |
+| `PWOpen::BlockStyler::SelectElement`         | BlockSelectElements        |
+| `PWOpen::BlockStyler::SelectFacetRegion`     | BlockFacetSelect           |
+| `PWOpen::BlockStyler::SelectFeature`         | BlockSelectFeature         |
+| `PWOpen::BlockStyler::SelectNode`            | BlockSelectNodes           |
+| `PWOpen::BlockStyler::SelectObject`          | BlockSelectObject          |
+| `PWOpen::BlockStyler::SelectPartFromList`    | BlockSelectPart            |
+| `PWOpen::BlockStyler::Separator`             | BlockSeparator             |
+| `PWOpen::BlockStyler::SetList`               | BlockSetList               |
+| `PWOpen::BlockStyler::SpecifyAxis`           | BlockSpecifyAxis           |
+| `PWOpen::BlockStyler::SpecifyCSYS`           | BlockSpecifyCsys           |
+| `PWOpen::BlockStyler::SpecifyLocation`       | BlockCursorLocation        |
+| `PWOpen::BlockStyler::SpecifyOrientation`    | BlockManipulator           |
+| `PWOpen::BlockStyler::SpecifyPlane`          | BlockSpecifyPlane          |
+| `PWOpen::BlockStyler::SpecifyPoint`          | BlockSpecifyPoint          |
+| `PWOpen::BlockStyler::SpecifyVector`         | BlockSpecifyVector         |
+| `PWOpen::BlockStyler::StringBlock`           | BlockString                |
+| `PWOpen::BlockStyler::SuperPoint`            | BlockSuperPoint            |
+| `PWOpen::BlockStyler::SuperSection`          | BlockSuperSection          |
+| `PWOpen::BlockStyler::TabControl`            | BlockTabWidget             |
+| `PWOpen::BlockStyler::Table`                 | BlockTable                 |
+| `PWOpen::BlockStyler::TextColorFontWidth`    | BlockTextColorFontWidth    |
+| `PWOpen::BlockStyler::Toggle`                | BlockToggle                |
+| `PWOpen::BlockStyler::Tree`                  | BlockTree                  |
+| `PWOpen::BlockStyler::Wizard`                | BlockWizard                |
 
 **CRITICAL**: In .h/.cpp files:
+
 - `BlockLinearExpression` maps to `LinearDimension`, NOT `LinearExpression`
 - `BlockAngularExpression` maps to `AngularDimension`, NOT `AngularExpression`
 - `BlockDouble` maps to `DoubleBlock`, NOT `Double`
 - `BlockInteger` maps to `IntegerBlock`, NOT `Integer`
-- `BlockJiList` (JSON type) maps to `SetList` (C++ OPEN type) and `BlockSetList` (.ui widget class)
 
 ### customwidgets Declaration Mapping
 
 Each control type used in the .ui file must be declared in `<customwidgets>`. Use these exact declarations:
 
 **Container Blocks** (extends other than QWidget):
+
 ```xml
 <customwidget>
   <class>BlockDialog</class>
@@ -129,6 +229,7 @@ Each control type used in the .ui file must be declared in `<customwidgets>`. Us
 ```
 
 **Expression Blocks** (extends BlockExpression):
+
 ```xml
 <customwidget>
   <class>BlockLinearExpression</class>
@@ -148,6 +249,7 @@ Each control type used in the .ui file must be declared in `<customwidgets>`. Us
 ```
 
 **Standard Blocks** (extends QWidget):
+
 ```xml
 <customwidget>
   <class>BlockEnumeration</class>
@@ -248,6 +350,7 @@ Only include declarations for widget types actually used in the generated .ui fi
 ## .ui File Generation Rules
 
 ### Overall Structure
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
@@ -323,15 +426,16 @@ For nested BlockGroups (group inside group), use incrementing names: `groupConte
 
 When writing `<property>` tags, use the correct XML type wrapper based on the JSON value type:
 
-| JSON Value Type | XML Wrapper | Example |
-|---|---|---|
-| String | `<string>` | `<string>Default</string>` |
-| Boolean | `<bool>` | `<bool>true</bool>` |
-| Integer | `<number>` | `<number>65535</number>` |
-| Double/Float | `<double>` | `<double>5.0</double>` |
-| String Array | `<stringlist>` | see below |
+| JSON Value Type | XML Wrapper      | Example                      |
+| --------------- | ---------------- | ---------------------------- |
+| String          | `<string>`     | `<string>Default</string>` |
+| Boolean         | `<bool>`       | `<bool>true</bool>`        |
+| Integer         | `<number>`     | `<number>65535</number>`   |
+| Double/Float    | `<double>`     | `<double>5.0</double>`     |
+| String Array    | `<stringlist>` | see below                    |
 
 String array example:
+
 ```xml
 <property name="PW_Value" stdset="0">
   <stringlist>
@@ -341,14 +445,17 @@ String array example:
 </property>
 ```
 
+Enum note: In JSON samples, `PW_Value` and `PW_Data` are often comma-separated strings (for example `PW_Value: "aa,221,as"` and `PW_Data: "a,b,c"`), not JSON arrays. Split by comma first, then write as `<stringlist>` in `.ui`.
+
 **All PW_ properties must have `stdset="0"` attribute.**
 
 ### Property Filtering (hiddenProps)
 
 If a property name appears in the component's `hiddenProps` array, **skip it** - do not write it to the .ui file. The backend will use default values for these.
 
-However, certain properties should ALWAYS be written regardless of hiddenProps:
-- `PW_BlockID` (always needed for FindBlock)
+**EXCEPTION — These properties MUST ALWAYS be written, even if they appear in hiddenProps:**
+
+- **`PW_BlockID`** — **MANDATORY for every control** (except BlockDialog). Without it, `FindBlock()` in C++ will fail at runtime. This is the most critical property. **NEVER skip PW_BlockID.**
 - `PW_Value` (if non-default, always needed)
 - `PW_Label` (if non-default)
 - `PW_Data` (if non-empty, for enumerations)
@@ -362,6 +469,7 @@ For string properties that are empty (`""`) in JSON, write them as a single spac
 ## .h File Generation Rules
 
 ### Template
+
 ```cpp
 #pragma once
 
@@ -395,6 +503,7 @@ private:
 ### Member Declaration Rules
 
 For each control (NOT BlockDialog itself), declare a member variable:
+
 ```cpp
 PWOpen::BlockStyler::{OPEN_TYPE}* {widgetName};
 ```
@@ -402,6 +511,7 @@ PWOpen::BlockStyler::{OPEN_TYPE}* {widgetName};
 Where `{OPEN_TYPE}` is the OPEN layer type from the mapping table, and `{widgetName}` is the semantic name used in the .ui file.
 
 Example:
+
 ```cpp
 PWOpen::BlockStyler::Group* blockGroup_mainSettings;
 PWOpen::BlockStyler::Enumeration* enum_visibilityControl;
@@ -415,7 +525,7 @@ PWOpen::BlockStyler::LinearDimension* blockLinear_length;
 
 ### Template
 
-**IMPORTANT**: `<PWOpen/IncludeHeader.h>` does NOT include the SetList header. If the dialog uses `BlockJiList`/`SetList`, you MUST manually add `#include <PWOpen/BlockStyler_SetList.hxx>` after `IncludeHeader.h`.
+**IMPORTANT**: `<PWOpen/IncludeHeader.h>` does NOT include the SetList header. If the dialog uses `BlockSetList` (JSON type `BlockJiList`), you MUST manually add `#include <PWOpen/BlockStyler_SetList.hxx>` after `IncludeHeader.h`.
 
 ```cpp
 #include "{CLASS_NAME}.h"
@@ -552,11 +662,25 @@ extern "C" DllExport void  ufusr(char *param, int *retcod, int param_len)
 }
 ```
 
-### initialize_cb() Code Generation
+### initialize_cb() Code Generation — FindBlock Naming Rule
+
+**CRITICAL — Three-Way Naming Convention**:
+- `.ui` widget `name` attribute → semantic name (e.g., `specifyPoint_origin`)
+- `.h` member variable name → same semantic name (e.g., `specifyPoint_origin`)
+- `.cpp` `FindBlock()` parameter → **`PW_BlockID` value from JSON** (e.g., `"point0"`), NOT the widget name
+
+This means the FindBlock string does NOT match the variable name. The variable is semantic, but FindBlock uses the raw `PW_BlockID`.
 
 For each control, generate a `FindBlock` + `dynamic_cast` line:
+
 ```cpp
-{widgetName} = dynamic_cast<PWOpen::BlockStyler::{OPEN_TYPE}*>(theDialog->TopBlock()->FindBlock("{widgetName}"));
+{widgetName} = dynamic_cast<PWOpen::BlockStyler::{OPEN_TYPE}*>(theDialog->TopBlock()->FindBlock("{PW_BlockID}"));
+```
+
+Example (JSON has `PW_BlockID: "point0"`, widget named `specifyPoint_origin`):
+
+```cpp
+specifyPoint_origin = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point0"));
 ```
 
 ### update_cb() Code Generation - altProperties Logic
@@ -564,34 +688,51 @@ For each control, generate a `FindBlock` + `dynamic_cast` line:
 The `altProperties` field on each component defines dynamic behavior. Parse these rules and generate `if/else` logic.
 
 #### Rule: Enum Trigger - `"PW_Show": "enumBlockID(val1, val2)"`
-Means: show this control when the enum with PW_BlockID=enumBlockID has a selected value matching val1 or val2.
 
-**CRITICAL - CurrentData returns Data values, NOT display text**:
-`GetString("CurrentData")` returns the value from the enum's `PW_Data` array (e.g., `"1"`, `"2"`), NOT the display text from `PW_Value` (e.g., `"对称"`, `"非对称"`). The altProperties expressions use display text names for readability, so you **must look up the corresponding PW_Data value** for each display name and compare against that.
+Means: show this control when the enum with `PW_BlockID=enumBlockID` has `CurrentData` matching `val1` or `val2`.
 
-Example: If an enum has `PW_Value: ["对称", "非对称", "偏置和角度"]` and `PW_Data: [1, 2, 3]`, and altProperties says `"PW_Show": "enum(对称, 偏置和角度)"`, the generated code must compare against Data values `"1"` and `"3"`:
+**CRITICAL - CurrentData and altProperties both use `PW_Data` values**:
+`GetString("CurrentData")` returns the currently selected entry from enum `PW_Data`.
+Based on the sample JSON in `workspace/17*/block_ui_project (46).json`, enum triggers in `PW_Show` also use `PW_Data` tokens directly.
+
+Example:
+
+- `PW_Value: "aa,221,as"`
+- `PW_Data: "a,b,c"`
+- `PW_Show: "enum0(a, c)"`
+
+Generated comparison:
 
 ```cpp
 if (block == {enumWidgetName})
 {
     PWOpen::PWString enumValue = {enumWidgetName}->GetProperties()->GetString("CurrentData");
 
-    // altProperties PW_Show: "enum(对称, 偏置和角度)" → Data: 1=对称, 2=非对称, 3=偏置和角度
+    // altProperties PW_Show: "enum0(a, c)"
     {targetWidgetName}->GetProperties()->SetLogical("Show",
-        enumValue == "1" || enumValue == "3");
+        enumValue == "a" || enumValue == "c");
 }
 ```
 
 Mapping steps:
-1. Parse the display names from altProperties: `enum(对称, 偏置和角度)` → `["对称", "偏置和角度"]`
-2. Find the triggering enum's `PW_Value` and `PW_Data` arrays
-3. For each display name, find its index in `PW_Value`, then get the corresponding `PW_Data` value at that index
-4. Use the `PW_Data` values (converted to strings) in the C++ comparison
+
+1. Parse values inside enum trigger: `enum0(a, c)` -> `["a", "c"]`
+2. Read enum `PW_Data` (split by comma if JSON stores a comma-separated string)
+3. Treat parsed trigger values as `PW_Data` tokens and validate they exist in `PW_Data`
+4. Compare `CurrentData` directly against those tokens
+
+Enum implementation规范 (MUST follow):
+
+1. In `update_cb`, update enum-driven visibility inside `if (block == {enumWidgetName})` (or a grouped trigger block containing that enum). Do not apply enum visibility unconditionally before trigger checks.
+2. Group all targets controlled by the same enum into the same enum trigger block and set all related `Show` states together.
+3. In `dialogShown_cb`, call `update_cb({enumWidgetName})` for each trigger enum so initial visibility is correct when dialog opens.
 
 #### Rule: Toggle Trigger - `"PW_Show": "toggleBlockID == true"`
+
 Means: show this control when the toggle with PW_BlockID=toggleBlockID is true.
 
 Generated code pattern:
+
 ```cpp
 if (block == {toggleWidgetName})
 {
@@ -602,19 +743,119 @@ if (block == {toggleWidgetName})
 ```
 
 #### Rule: Combined Conditions with && and ||
+
 Parse the logical operators and generate appropriate combined conditions.
 
-Example: `"PW_Show": "toggle1 == true && enum0(1)"` (where enum0 has PW_Value=["A","B"], PW_Data=[1,2], so display name "1" doesn't apply here — the `(1)` in altProperties refers to a display name; look it up in PW_Value to find the Data value)
+Example: `"PW_Show": "toggle1 == true && enum0(a)"` (where enum0 has `PW_Data: "a,b,c"`)
+
 ```cpp
 if (block == {toggle1WidgetName} || block == {enum0WidgetName})
 {
     bool toggle1Val = {toggle1WidgetName}->GetProperties()->GetLogical("Value");
     PWOpen::PWString enum0Val = {enum0WidgetName}->GetProperties()->GetString("CurrentData");
 
-    // Remember: compare enum0Val against PW_Data values, not display text
+    // Compare against PW_Data values
     {targetWidgetName}->GetProperties()->SetLogical("Show",
-        toggle1Val && (enum0Val == "{corresponding_data_value}"));
+        toggle1Val && (enum0Val == "a"));
 }
+```
+
+#### Rule: PW_Enable - Enable/Disable Control
+
+`altProperties` can also use `PW_Enable` (same syntax as `PW_Show`). Generated code uses `"Enable"` instead of `"Show"`:
+
+```cpp
+if (block == {enumWidgetName})
+{
+    PWOpen::PWString enumValue = {enumWidgetName}->GetProperties()->GetString("CurrentData");
+    {targetWidgetName}->GetProperties()->SetLogical("Enable",
+        enumValue == "456");
+}
+```
+
+#### Rule: PW_ReadOnlyValue - Read-Only State Control
+
+For `"PW_ReadOnlyValue"` in altProperties, use `SetLogical("ReadOnlyValue", ...)`:
+
+```cpp
+if (block == {toggleWidgetName})
+{
+    bool toggleValue = {toggleWidgetName}->GetProperties()->GetLogical("Value");
+    {targetWidgetName}->GetProperties()->SetLogical("ReadOnlyValue", toggleValue);
+}
+```
+
+#### Rule: Dialog-Level Conditions — `IsMore()` and `IsSatisfied()`
+
+The dialog object provides two important state checks:
+
+- `theDialog->IsMore()` — returns true when the dialog's "More" section is expanded
+- `theDialog->IsSatisfied()` — returns true when all required inputs are satisfied
+
+These can be combined with enum/toggle conditions:
+
+```cpp
+if (block == {enumWidgetName})
+{
+    PWOpen::PWString enumValue = {enumWidgetName}->GetProperties()->GetString("CurrentData");
+    // Combined with IsMore() — show only when enum matches AND More is expanded
+    {targetWidgetName}->GetProperties()->SetLogical("Show",
+        enumValue == "123" && theDialog->IsMore());
+}
+```
+
+#### Rule: More Button Block Handling
+
+When altProperties involve `IsMore()`, the `update_cb` must also handle the "More" button block. The "More" block is found via `theDialog->TopBlock()->FindBlock("More")`:
+
+```cpp
+else if (block == theDialog->TopBlock()->FindBlock("More"))
+{
+    // Re-apply the same IsMore()-dependent logic
+    {targetWidgetName}->GetProperties()->SetLogical("Show",
+        {enumWidgetName}->GetProperties()->GetString("CurrentData") == "123" && theDialog->IsMore());
+}
+```
+
+#### Rule: SelectObject StepStatus Check
+
+For SelectObject/collector controls, use `StepStatusAsString()` to check selection state. Possible values: `"Optional"`, `"Required"`, `"Satisfied"`:
+
+```cpp
+else if (block == {selectObjectWidgetName})
+{
+    auto step_status = {selectObjectWidgetName}->StepStatusAsString();
+    if (step_status != "Optional")
+    {
+        {targetWidgetName}->GetProperties()->SetLogical("Show", step_status == "Satisfied");
+    }
+}
+```
+
+#### Rule: String RequiredInput Check
+
+For string controls with `RequiredInput`, check whether the string has a value:
+
+```cpp
+else if (block == {stringWidgetName})
+{
+    if ({stringWidgetName}->GetProperties()->GetLogical("RequiredInput"))
+    {
+        auto value = {stringWidgetName}->GetProperties()->GetString("Value");
+        {targetWidgetName}->GetProperties()->SetLogical("Enable", !value.IsEmpty());
+    }
+}
+```
+
+#### Rule: Unconditional Post-Trigger Statements
+
+After all `if/else if` trigger blocks, you may add unconditional statements that always execute regardless of which block triggered the update. These are placed **after** the last `else if` block but still inside the `try` block:
+
+```cpp
+    // ... all if/else if trigger blocks above ...
+
+    // Unconditional: always update based on dialog state
+    {widgetName}->GetProperties()->SetLogical("Enable", theDialog->IsSatisfied());
 ```
 
 #### Important: Group all targets controlled by the same trigger
@@ -622,6 +863,7 @@ if (block == {toggle1WidgetName} || block == {enum0WidgetName})
 If multiple controls are affected by the same trigger (e.g., multiple controls have altProperties referencing the same enum), group them under one `if (block == trigger)` block.
 
 After the trigger blocks, add empty `else if` blocks for all other controls:
+
 ```cpp
 else if (block == {otherWidgetName})
 {
@@ -633,12 +875,14 @@ else if (block == {otherWidgetName})
 If there are altProperties rules involving enums/toggles, **MUST** add initialization code to set the correct initial visibility state. This code must be **uncommented and active** (NOT commented out), otherwise controls that should be hidden on dialog open will all be visible.
 
 For each enum that triggers altProperties, call `update_cb` to apply the initial visibility:
+
 ```cpp
 // Enum initialization - trigger update_cb to set initial UI state
 update_cb({enumWidgetName});
 ```
 
 For each toggle that triggers altProperties:
+
 ```cpp
 // Toggle initialization - trigger update_cb to set initial UI state
 update_cb({toggleWidgetName});

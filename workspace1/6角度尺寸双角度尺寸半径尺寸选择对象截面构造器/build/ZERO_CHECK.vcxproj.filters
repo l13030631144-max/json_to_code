@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\6角度尺寸双角度尺寸半径尺寸选择对象截面构造器超级截面\build\CMakeFiles\c40aed342b1b10daf6a35e1929f4efce\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{08A23F01-3F18-3229-BE06-A7383CE9EDA9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

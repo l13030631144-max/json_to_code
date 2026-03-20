@@ -1,0 +1,219 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1772269216810_46117",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 239,
+        "_y": 113
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockGroup_1772269222026_77049",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockGroup_1772269222026_77049",
+          "type": "BlockGroup",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockListBox_1772269227786_43700",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSeparator_1772269232081_53539",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockColorPicker_1772269236015_43687",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockListBox_1772269227786_43700",
+              "type": "BlockListBox",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "list_box0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowDeselectForSingleSelect": false,
+                "PW_Height": 3,
+                "PW_ListItems": [],
+                "PW_MaximumHeight": 0,
+                "PW_MaximumStringLength": 0,
+                "PW_MinimumHeight": 0,
+                "PW_ResizeHeightWithDialog": true,
+                "PW_ShowAddButton": false,
+                "PW_ShowDeleteButton": false,
+                "PW_ShowMoveUpDownButtons": false,
+                "PW_SingleSelect": false
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowDeselectForSingleSelect",
+                "PW_Height",
+                "PW_ListItems",
+                "PW_MaximumHeight",
+                "PW_MaximumStringLength",
+                "PW_MinimumHeight",
+                "PW_ResizeHeightWithDialog",
+                "PW_ShowAddButton",
+                "PW_ShowDeleteButton",
+                "PW_ShowMoveUpDownButtons",
+                "PW_SingleSelect"
+              ]
+            },
+            {
+              "id": "BlockSeparator_1772269232081_53539",
+              "type": "BlockSeparator",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "separator0",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top"
+              ]
+            },
+            {
+              "id": "BlockColorPicker_1772269236015_43687",
+              "type": "BlockColorPicker",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "colorPicker0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "No Title",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_NumberSelectable": 1,
+                "PW_Value": [
+                  1
+                ]
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_NumberSelectable",
+                "PW_Value"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1772269242572
+}

@@ -1,0 +1,10 @@
+^D:\PYTHON_PROJECT\QT_PJ\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\WORKSPACE\9超级点-指定方位\9.1指定矢量\BUILD\CMAKEFILES\74135716CED4846C22948FFB8CB53A0A\GENERATE.STAMP.RULE
+setlocal
+E:\App\VS\vs2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/9超级点-指定方位/9.1指定矢量 -BD:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/9超级点-指定方位/9.1指定矢量/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/9超级点-指定方位/9.1指定矢量/build/TestDialog.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

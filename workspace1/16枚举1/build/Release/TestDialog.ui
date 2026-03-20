@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>301</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockGroup" name="blockGroup_main">
+            <widget class="QWidget" name="groupContents">
+              <layout class="QVBoxLayout" name="groupVBoxLayout">
+                <item>
+                  <widget class="BlockEnumeration" name="enum_main">
+                    <property name="LabelText" stdset="0">
+                      <string>枚举</string>
+                    </property>
+                    <property name="Value" stdset="0">
+                      <stringlist>
+                        <string>aa</string>
+                        <string>221</string>
+                        <string>as</string>
+                      </stringlist>
+                    </property>
+                    <property name="Data" stdset="0">
+                      <stringlist>
+                        <string>你好</string>
+                        <string>北京</string>
+                        <string>南京</string>
+                      </stringlist>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_main">
+                    <property name="LabelText" stdset="0">
+                      <string>开关</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_main">
+                    <property name="LabelText" stdset="0">
+                      <string>标签</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockButton" name="blockButton_main">
+                    <property name="LabelText" stdset="0">
+                      <string>按钮</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>BlockBase</extends>
+      <header>Widgets/ContainerBlock/BlockGroup.h</header>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockEnumeration</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockEnumeration.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockToggle</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockToggle.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLabel</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLabel.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockButton</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockButton.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

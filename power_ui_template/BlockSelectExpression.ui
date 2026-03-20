@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSelectExpression" name="selectExpression0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>selectExpression0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>Choose Expression</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_ExpressionSortType" stdset="0">
+                        <string>AlphaNumeric,TimeStamp,ReverseTimeStamp</string>
+                    </property>
+                    <property name="PW_ExpressionTypeIndex" stdset="0">
+                        <string>Number,String,Boolean,Integer,Point,Vector</string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSelectExpression</class>
+            <header>Widgets/Block/BlockSelectExpression.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

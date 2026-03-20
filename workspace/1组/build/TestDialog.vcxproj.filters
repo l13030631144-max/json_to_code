@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\1组\TestDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\1组\TestDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\1组\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A7F3DC90-399B-38B1-8A84-C721875F6BA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9E46C88E-1395-3D3C-BFDB-BCA87F6CBB6B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

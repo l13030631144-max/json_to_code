@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\1标签与开关\build\CMakeFiles\fc53426632a44c91fb3c5407d135a43d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BB7DC87C-41CC-3966-A5B7-06DC1BFDE4B1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

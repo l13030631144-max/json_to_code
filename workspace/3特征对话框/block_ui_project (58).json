@@ -1,0 +1,87 @@
+{
+  "tree": [
+    {
+      "id": "BlockFeatureDialog_1773120350622_81331",
+      "type": "BlockFeatureDialog",
+      "altProperties": {},
+      "props": {
+        "className": "FeatureDialog",
+        "PW_BlockID": "FeatureDialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "特征对话框",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_DialogPreviews": "Preview_Result",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 194,
+        "_y": 156
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Dialog_Sizing",
+        "PW_DialogPreviews",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockGroup_1773120360043_56991",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockGroup_1773120360043_56991",
+          "type": "BlockGroup",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "特征",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": []
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1773120394533
+}

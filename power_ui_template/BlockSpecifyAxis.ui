@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSpecifyAxis" name="axis0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>axis0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>Axis</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipPointImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipPointText" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipVectorImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipVectorText" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Required,Optional,Staisfied</string>
+                    </property>
+                    <property name="PW_VectorLabel" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_PointLabel" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_VectorTooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_PointTooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSpecifyAxis</class>
+            <header>Widgets/Block/BlockSpecifyAxis.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

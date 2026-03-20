@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockLineFont" name="lineFont0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>lineFont0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>线型</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AvailableOptions" stdset="0">
+                        <number>16383</number>
+                    </property>
+                    <property name="PW_ShowOptionLabels" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                        <string>无更改,原始,不可见,实线,虚线,中心线,点线,长划线,点划线,双点划线,单点划线,三点划线,双短划线</string>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockLineFont</class>
+            <header>Widgets/Block/BlockLineFont.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

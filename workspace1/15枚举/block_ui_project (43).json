@@ -1,0 +1,392 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1772508333910_2548",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 236,
+        "_y": 86
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockGroup_1772508336300_69521",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockGroup_1772508336300_69521",
+          "type": "BlockGroup",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772508339680_88062",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockRGBColorPicker_1772508343790_57116",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLinearExpression_1772508392405_20713",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1772508408448_42212",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772508339680_88062",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "No Title",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Vertical",
+                "PW_NumberOfColumns": 65535,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "OptionMenu",
+                "PW_Value": "aa,bb,dd",
+                "PW_Data": "1,2,3",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_Bitmaps",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_Layout",
+                "PW_NumberOfColumns",
+                "PW_PackedColumns",
+                "PW_PresentationStyle",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockRGBColorPicker_1772508343790_57116",
+              "type": "BlockRGBColorPicker",
+              "altProperties": {
+                "PW_Show": "enum0(1)"
+              },
+              "props": {
+                "PW_BlockID": "rGBColorPicker0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "No Title",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Value": "R 255 G 255 B 255"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Value"
+              ]
+            },
+            {
+              "id": "BlockLinearExpression_1772508392405_20713",
+              "type": "BlockLinearExpression",
+              "altProperties": {
+                "PW_Show": "enum0(2)"
+              },
+              "props": {
+                "PW_BlockID": "linear_dim0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_AutoReverseDuringDrag": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableReverseDirection": false,
+                "PW_Formula": 0,
+                "PW_HandleOrientation": "0.000000 0.000000 0.000000",
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AutoReverseDuringDrag",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_EnableReverseDirection",
+                "PW_Formula",
+                "PW_HandleOrientation",
+                "PW_HandleOrigin",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1772508408448_42212",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum0(3)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "cursorlocation",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "Select Object",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_LabelString",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1772508497852
+}

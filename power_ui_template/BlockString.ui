@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockString" name="string0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>string0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>No Title </string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_AllowInternationalTextInput" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_IsPassword" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Localize" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_RetainValue" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipImages" stdset="0">
+                        <stringlist>
+                        <string> </string>
+                        </stringlist>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipTexts" stdset="0">
+                        <stringlist>
+                        <string> </string>
+                        </stringlist>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_Hint" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_ListItems" stdset="0">
+                        <stringlist>
+                        <string> </string>
+                        </stringlist>
+                    </property>
+                    <property name="PW_MaxTextLength" stdset="0">
+                        <number>0</number>
+                    </property>
+                    <property name="PW_PresentationStyle" stdset="0">
+                        <string>KeyIn,Wide,List,Autocomplete,带组合自动补全</string>
+                    </property>
+                    <property name="PW_ReadOnlyString" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_RequiredInput" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Tooltip" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_UncommittedValue" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Width" stdset="0">
+                        <string>Narrow,Standard</string>
+                    </property>
+                    <property name="PW_TooltipId" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockString</class>
+            <header>Widgets/Block/BlockString.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <property name="PW_Label" stdset="0">
+      <string>无标题</string>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockReverseDirection" name="reverseDir_direction">
+            <property name="PW_BlockID" stdset="0">
+              <string>direction0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockSetList" name="setList_objectList">
+            <property name="PW_BlockID" stdset="0">
+              <string>list0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockMicroposition" name="microposition_position">
+            <property name="PW_BlockID" stdset="0">
+              <string>micropositioning0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockSelectExpression" name="selectExpression_expr">
+            <property name="PW_BlockID" stdset="0">
+              <string>selectExpression0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockTree" name="blockTree_tree">
+            <property name="PW_BlockID" stdset="0">
+              <string>tree_control0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockReverseDirection</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockReverseDirection.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockSetList</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSetList.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockMicroposition</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockMicroposition.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockSelectExpression</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSelectExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockTree</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockTree.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

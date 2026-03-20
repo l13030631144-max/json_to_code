@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSpecifyPoint" name="point0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>point0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AutomaticProgression" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_CreateInterpartLink" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_EnableFaceSelection" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_InterpartSelection" stdset="0">
+                        <string>Simple,Non-associative Interpart Copy Only,Associative and Non-associative Interpart Copy,Associative Interpart Copy</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                        <string>Specify Point</string>
+                    </property>
+                    <property name="PW_SnapPointTypesEnabled" stdset="0">
+                        <number>499708</number>
+                    </property>
+                    <property name="PW_SnapPointTypesOnByDefault" stdset="0">
+                        <number>664</number>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Required,Optional,Staisfied</string>
+                    </property>
+                    <property name="PW_ToolTipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSpecifyPoint</class>
+            <header>Widgets/Block/BlockSpecifyPoint.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

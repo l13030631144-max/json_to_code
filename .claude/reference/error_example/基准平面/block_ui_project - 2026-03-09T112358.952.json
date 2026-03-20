@@ -1,0 +1,5466 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1772520745622_6420",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "FeatureDatumPlaneDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "基准平面",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 472,
+        "_h": 1155,
+        "_x": 127,
+        "_y": 58
+      },
+      "hiddenProps": [
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockEnumeration_1772520745623_3676",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745624_9303",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745626_9037",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745628_2426",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745669_9632",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745630_9011"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745671_7150",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745630_9011"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745635_2789",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745630_9011"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1773022284940_43455",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745630_9011"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745630_9011",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745632_2289",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745637_8299",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1773023695175_78891",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745649_7556"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745693_4854",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745649_7556"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745649_7556",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745651_9185",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745653_6083",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1773024060001_14458",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745659_8988"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745659_8988",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745665_5071",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745673_7086",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745676_4247",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745687_9559",
+            "operation": "insert-zone",
+            "position": "before",
+            "targetNodeId": "BlockGroup_1772520745683_5370"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745683_5370",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1773024469454_3_52581",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745689_4577",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1773024988484_7_46698",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockGroup_1772520745691_5443",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockEnumeration_1772520745623_3676",
+          "type": "BlockEnumeration",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "enum0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_LabelVisibility": false,
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_RetainValue": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_AllowShortcuts": true,
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipImages": [],
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_BalloonTooltipTexts": [],
+            "PW_Bitmaps": [
+              "infer_datum_plane",
+              "plane_parallel_dist",
+              "planes_radial",
+              "plane_center",
+              "plane_by_curves_and_points",
+              "plane_2lines",
+              "plane_2faces",
+              "plane_object",
+              "datum_plane_pt_vector",
+              "datum_plane_pt_on_crv",
+              "plane_yczc",
+              "plane_xczc",
+              "plane_xcyc",
+              "view_plane",
+              "coefficients"
+            ],
+            "PW_BorderVisibility": true,
+            "PW_EnumSensitivity": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "PW_EnumVisibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "PW_HighQualityBitmap": true,
+            "PW_IconsOnly": false,
+            "PW_InitialShortcuts": [],
+            "PW_Layout": "Vertical",
+            "PW_NumberOfColumns": 65535,
+            "PW_PackedColumns": false,
+            "PW_PresentationStyle": "OptionMenu",
+            "PW_Value": "自动判断,按某一距离,成一角度,二等分,曲线和点,两直线,相切,通过对象,点和方向,曲线上,YC-ZC 平面,XC-ZC 平面,XC-YC 平面,视图平面,按系数",
+            "PW_Data": "MethodTypeInferred,MethodTypeDistance,MethodTypeAngle,MethodTypeCenter,MethodTypeCurvePoint,MethodTypeTwoLines,MethodTypeTangent,MethodTypeCoincident,MethodTypePointDir,MethodTypeFrenet,MethodTypeFixedX,MethodTypeFixedY,MethodTypeFixedZ,MethodTypeFixedView,MethodTypeCoefficients",
+            "PW_ToolTipID": ""
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Group",
+            "PW_Show",
+            "PW_Localize",
+            "PW_RetainValue",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_AllowShortcuts",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipImages",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_BalloonTooltipTexts",
+            "PW_BorderVisibility",
+            "PW_HighQualityBitmap",
+            "PW_IconsOnly",
+            "PW_InitialShortcuts",
+            "PW_Layout",
+            "PW_NumberOfColumns",
+            "PW_PackedColumns",
+            "PW_PresentationStyle",
+            "PW_ToolTipID"
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745624_9303",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeInferred)"
+          },
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "要定义平面的对象",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773020190213_38211",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745625_2791"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773020190213_38211",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject16",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": true,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745626_9037",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeDistance,MethodTypeAngle)"
+          },
+          "props": {
+            "PW_BlockID": "group1",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "平面参考",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773020766113_14637",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745627_4445"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773020766113_14637",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择平面对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745628_2426",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeAngle)"
+          },
+          "props": {
+            "PW_BlockID": "group2",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "通过轴",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773020818036_44289",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745629_8195"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773020818036_44289",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择线性对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745669_9632",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeCenter)"
+          },
+          "props": {
+            "PW_BlockID": "group14",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "第一平面",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773021200171_77141",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745670_5353"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773021200171_77141",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择平面对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745671_7150",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeCenter)"
+          },
+          "props": {
+            "PW_BlockID": "group15",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "第二平面",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773021215738_64051",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745672_3315"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773021215738_64051",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject14",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择平面对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745635_2789",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeCurvePoint)"
+          },
+          "props": {
+            "PW_BlockID": "group5",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "曲线和点子类型",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745636_9626",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745636_9626",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "子类型",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Vertical",
+                "PW_NumberOfColumns": 65535,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "OptionMenu",
+                "PW_Value": "曲线和点,一点,两点,三点,点和曲线/轴,点和平面/面",
+                "PW_Data": "MethodTypePointInfer,MethodTypePoint,MethodTypeTwoPoints,MethodTypeThreePoints,MethodTypeCurvePoint,MethodTypeParallelPoint",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_Layout",
+                "PW_NumberOfColumns",
+                "PW_PackedColumns",
+                "PW_PresentationStyle",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1773022284940_43455",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeCurvePoint)"
+          },
+          "props": {
+            "PW_BlockID": "group7",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "参考几何体",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773022311835_69308",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSpecifyPoint_1773022369980_91695",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1773022311835_69308"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSpecifyPoint_1773022372330_4572",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSpecifyPoint_1773022369980_91695"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSpecifyPoint_1773022375057_77904",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSpecifyPoint_1773022372330_4572"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773022428114_21336",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSpecifyPoint_1773022375057_77904"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773022476449_67162",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1773022428114_21336"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773022311835_69308",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum1(MethodTypePointInfer)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject4",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": true,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSpecifyPoint_1773022369980_91695",
+              "type": "BlockSpecifyPoint",
+              "altProperties": {
+                "PW_Show": "enum1(MethodTypePoint,MethodTypeTwoPoints,MethodTypeThreePoints) || enum1(MethodTypeCurvePoint) || enum1(MethodTypeParallelPoint)"
+              },
+              "props": {
+                "PW_BlockID": "point0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_EnableFaceSelection": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "指定点",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x40000)Defining Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x8000)Poles",
+                  "(0x100)Quadrant Point",
+                  "(0x4)Screen Position"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_EnableFaceSelection",
+                "PW_InterpartSelection",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSpecifyPoint_1773022372330_4572",
+              "type": "BlockSpecifyPoint",
+              "altProperties": {
+                "PW_Show": "enum1(MethodTypeTwoPoints,MethodTypeThreePoints)"
+              },
+              "props": {
+                "PW_BlockID": "point1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_EnableFaceSelection": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "指定点",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x40000)Defining Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x8000)Poles",
+                  "(0x100)Quadrant Point",
+                  "(0x4)Screen Position"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_EnableFaceSelection",
+                "PW_InterpartSelection",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSpecifyPoint_1773022375057_77904",
+              "type": "BlockSpecifyPoint",
+              "altProperties": {
+                "PW_Show": "enum1(MethodTypeThreePoints)"
+              },
+              "props": {
+                "PW_BlockID": "point2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_EnableFaceSelection": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "指定点",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x40000)Defining Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x8000)Poles",
+                  "(0x100)Quadrant Point",
+                  "(0x4)Screen Position"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_EnableFaceSelection",
+                "PW_InterpartSelection",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773022428114_21336",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum1(MethodTypeCurvePoint)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject5",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择曲线对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773022476449_67162",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum1(MethodTypeParallelPoint)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject6",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择平面对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745630_9011",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeTwoLines)"
+          },
+          "props": {
+            "PW_BlockID": "group3",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "第一条直线",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773022001944_23185",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745631_6450"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773022001944_23185",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject15",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择线性对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745632_2289",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeTwoLines)"
+          },
+          "props": {
+            "PW_BlockID": "group4",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "第二条直线",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773022014114_75601",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745634_8729"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773022014114_75601",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject3",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择线性对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745637_8299",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeTangent)"
+          },
+          "props": {
+            "PW_BlockID": "group6",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "相切子类型",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745638_2327",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745638_2327",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "子类型",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Vertical",
+                "PW_NumberOfColumns": 65535,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "OptionMenu",
+                "PW_Value": "相切,一个面,通过点,通过线条,两个面,与平面成一角度",
+                "PW_Data": "MethodTypeTangentInfer,MethodTypeTangent,MethodTypeTangentPoint,MethodTypeTangentLinear,MethodTypeTangentTwoFaces,MethodTypeTangentAnglePlane",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_Layout",
+                "PW_NumberOfColumns",
+                "PW_PackedColumns",
+                "PW_PresentationStyle",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1773023695175_78891",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeTangent)"
+          },
+          "props": {
+            "PW_BlockID": "group23",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "参考几何体",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023714744_40252",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023736921_66905",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1773023714744_40252"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023914450_68986",
+                "operation": "insert-zone",
+                "position": "before",
+                "targetNodeId": "BlockSpecifyPoint_1773023747216_89187"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSpecifyPoint_1773023747216_89187",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1773023736921_66905"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023798830_81987",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSpecifyPoint_1773023747216_89187"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023800497_46856",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1773023798830_81987"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023951696_53710",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1773023800497_46856"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773023714744_40252",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangentInfer)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject7",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": true,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773023736921_66905",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangent,MethodTypeTangentPoint) || enum2(MethodTypeTangentTwoFaces) || enum2(MethodTypeTangentAnglePlane)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject8",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择面",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773023914450_68986",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangentTwoFaces)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject17",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择面",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSpecifyPoint_1773023747216_89187",
+              "type": "BlockSpecifyPoint",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangentPoint)"
+              },
+              "props": {
+                "PW_BlockID": "point5",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_EnableFaceSelection": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "指定点",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x40000)Defining Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x8000)Poles",
+                  "(0x100)Quadrant Point",
+                  "(0x4)Screen Position"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_EnableFaceSelection",
+                "PW_InterpartSelection",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773023798830_81987",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangentLinear)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject9",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择相切面",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773023800497_46856",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangentLinear)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject10",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择线性对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773023951696_53710",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum2(MethodTypeTangentAnglePlane)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject18",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择平面对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745693_4854",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeAngle) || enum0(MethodTypeTangent)"
+          },
+          "props": {
+            "PW_BlockID": "group22",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "角度",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745694_2017",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockAngularExpression_1772520745695_4438",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745694_2017",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum7",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "角度选项",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Vertical",
+                "PW_NumberOfColumns": 65535,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "OptionMenu",
+                "PW_Value": "值,垂直,平行",
+                "PW_Data": "Value,Vertical,Parallel",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_Layout",
+                "PW_NumberOfColumns",
+                "PW_PackedColumns",
+                "PW_PresentationStyle",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockAngularExpression_1772520745695_4438",
+              "type": "BlockAngularExpression",
+              "altProperties": {
+                "PW_Show": "enum7(Value)"
+              },
+              "props": {
+                "PW_BlockID": "angular_dim0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "角度",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Formula": 90,
+                "PW_HandleFixedSizeFlag": false,
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_HandleRadius": 0,
+                "PW_HandleRadiusOffset": 0,
+                "PW_HandleXAxis": "0.000000 0.000000 0.000000",
+                "PW_HandleZAxis": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 360,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": 0,
+                "PW_MinInclusive": true,
+                "PW_MinRadius": 0,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_HandleFixedSizeFlag",
+                "PW_HandleOrigin",
+                "PW_HandleRadius",
+                "PW_HandleRadiusOffset",
+                "PW_HandleXAxis",
+                "PW_HandleZAxis",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaxInclusive",
+                "PW_MinInclusive",
+                "PW_MinRadius",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745649_7556",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeCoincident)"
+          },
+          "props": {
+            "PW_BlockID": "group8",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "通过对象",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSelectObject_1773023981585_2440",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSelectObject_1772520745650_4176"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSelectObject_1773023981585_2440",
+              "type": "BlockSelectObject",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "selectobject19",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745651_9185",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypePointDir)"
+          },
+          "props": {
+            "PW_BlockID": "group9",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "通过点",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSpecifyPoint_1772520745652_3368",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSpecifyPoint_1772520745652_3368",
+              "type": "BlockSpecifyPoint",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "point3",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "指定点",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_EnableFaceSelection": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "指定点",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x40000)Defining Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x8000)Poles",
+                  "(0x100)Quadrant Point",
+                  "(0x4)Screen Position"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_EnableFaceSelection",
+                "PW_InterpartSelection",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745653_6083",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypePointDir)"
+          },
+          "props": {
+            "PW_BlockID": "group10",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "法向",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSpecifyVector_1772520745654_7640",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSpecifyVector_1772520745654_7640",
+              "type": "BlockSpecifyVector",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "vector0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "选择矢量",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_DoubleSide": false,
+                "PW_EnableFacetSelection": false,
+                "PW_EnableReverseDirection": true,
+                "PW_InterpartSelection": "Simple",
+                "PW_Is2DMode": false,
+                "PW_LabelString": "指定矢量",
+                "PW_SmartUpdateOption": "After Modeling",
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_DoubleSide",
+                "PW_EnableFacetSelection",
+                "PW_EnableReverseDirection",
+                "PW_InterpartSelection",
+                "PW_Is2DMode",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1773024060001_14458",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeFrenet)"
+          },
+          "props": {
+            "PW_BlockID": "group11",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "曲线",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockSectionBuilder_1773024072272_58544",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockReverseDirection_1773024089561_13288",
+                "operation": "insert-zone",
+                "position": "after",
+                "targetNodeId": "BlockSectionBuilder_1773024072272_58544"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockSectionBuilder_1773024072272_58544",
+              "type": "BlockSectionBuilder",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "section0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AllowSelfIntersecting": false,
+                "PW_AutomaticProgression": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "sectionbuilder",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "Select curve",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择曲线",
+                "PW_ShowFlowDirectionAndOrigin": false,
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "Curve",
+                "PW_AllowInferredCurveSelection": true,
+                "PW_AllowStopAtIntersectionFollowing": true,
+                "PW_AngularTolerance": 0.05,
+                "PW_ChainWithinFeature": false,
+                "PW_CurveRules": [
+                  "(0x2)Connected Curves",
+                  "(0x1000)Curves in Group",
+                  "(0x8)Face Edges",
+                  "(0x40)Feature Curves",
+                  "(0x80)Infer Curves",
+                  "(0x800)Region Boundary Curves",
+                  "(0x20)Sheet Edges",
+                  "(0x1)Single Curve",
+                  "(0x4)Tangent Curves"
+                ],
+                "PW_DefaultCurveRules": "(0x2)Connected Curves",
+                "PW_EntityType": [
+                  "(0x5)Allow Edges and Curves"
+                ],
+                "PW_FollowFillet": false,
+                "PW_InferredCurveSelection": false,
+                "PW_StopAtIntersection": false
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AllowSelfIntersecting",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_ShowFlowDirectionAndOrigin",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_AllowInferredCurveSelection",
+                "PW_AllowStopAtIntersectionFollowing",
+                "PW_AngularTolerance",
+                "PW_ChainWithinFeature",
+                "PW_CurveRules",
+                "PW_DefaultCurveRules",
+                "PW_EntityType",
+                "PW_FollowFillet",
+                "PW_InferredCurveSelection",
+                "PW_StopAtIntersection"
+              ]
+            },
+            {
+              "id": "BlockReverseDirection_1773024089561_13288",
+              "type": "BlockReverseDirection",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "direction0",
+                "PW_Enable": false,
+                "PW_Group": false,
+                "PW_Label": "反向",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_Direction": "0.000000 0.000000 1.000000",
+                "PW_Flip": false,
+                "PW_Origin": "0.000000 0.000000 0.000000"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_Direction",
+                "PW_Flip",
+                "PW_Origin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745659_8988",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeFrenet)"
+          },
+          "props": {
+            "PW_BlockID": "group12",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "曲线上的位置",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745661_5016",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLinearExpression_1772520745662_1480",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockExpression_1772520745663_7583",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSpecifyPoint_1772520745664_2168",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745661_5016",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum3",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "位置",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [
+                  "arclength",
+                  "arclength_percent",
+                  "arclength_thru_point"
+                ],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Vertical",
+                "PW_NumberOfColumns": 65535,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "OptionMenu",
+                "PW_Value": "弧长,弧长百分比,通过点",
+                "PW_Data": "SetExpression,SetPercent,SetPoint",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_Layout",
+                "PW_NumberOfColumns",
+                "PW_PackedColumns",
+                "PW_PresentationStyle",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockLinearExpression_1772520745662_1480",
+              "type": "BlockLinearExpression",
+              "altProperties": {
+                "PW_Show": "enum3(SetExpression)"
+              },
+              "props": {
+                "PW_BlockID": "linear_dim0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "弧长",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_AutoReverseDuringDrag": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableReverseDirection": false,
+                "PW_Formula": 0,
+                "PW_HandleOrientation": "0.000000 0.000000 0.000000",
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AutoReverseDuringDrag",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_EnableReverseDirection",
+                "PW_Formula",
+                "PW_HandleOrientation",
+                "PW_HandleOrigin",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockExpression_1772520745663_7583",
+              "type": "BlockExpression",
+              "altProperties": {
+                "PW_Show": "enum3(SetPercent)"
+              },
+              "props": {
+                "PW_BlockID": "expression0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "弧长百分比",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Dimensionality": "",
+                "PW_Formula": "0",
+                "PW_HasUnitsMenu": false,
+                "PW_LineIncrement": "1e+19",
+                "PW_LimitCheckTolerance": -1,
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Formula",
+                "PW_HasUnitsMenu",
+                "PW_LineIncrement",
+                "PW_LimitCheckTolerance",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale"
+              ]
+            },
+            {
+              "id": "BlockSpecifyPoint_1772520745664_2168",
+              "type": "BlockSpecifyPoint",
+              "altProperties": {
+                "PW_Show": "enum3(SetPoint)"
+              },
+              "props": {
+                "PW_BlockID": "point4",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "指定点",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_EnableFaceSelection": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "指定点",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x40000)Defining Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x8000)Poles",
+                  "(0x100)Quadrant Point",
+                  "(0x4)Screen Position"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_EnableFaceSelection",
+                "PW_InterpartSelection",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745665_5071",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeFrenet)"
+          },
+          "props": {
+            "PW_BlockID": "group13",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "曲线上的方位",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745666_3547",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSelectObject_1773024220416_91726",
+                "operation": "insert-zone",
+                "position": "before",
+                "targetNodeId": "BlockSpecifyVector_1772520745668_9681"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockSpecifyVector_1772520745668_9681",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745666_3547",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum4",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "方向",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Vertical",
+                "PW_NumberOfColumns": 65535,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "OptionMenu",
+                "PW_Value": "垂直于路径,路径的切向,双向垂直与路径,相对于对象,垂直于矢量,平行于矢量,通过轴",
+                "PW_Data": "FrenetSubtypeNormal,FrenetSubtypeTangent,FrenetSubtypeBinormal,FrenetSubtypeProject,FrenetSubtypeNormalToVector,FrenetSubtypeParallelToVector,FrenetSubtypeThruAxis",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_Layout",
+                "PW_NumberOfColumns",
+                "PW_PackedColumns",
+                "PW_PresentationStyle",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSelectObject_1773024220416_91726",
+              "type": "BlockSelectObject",
+              "altProperties": {
+                "PW_Show": "enum4(FrenetSubtypeProject)"
+              },
+              "props": {
+                "PW_BlockID": "selectobject11",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Show": true,
+                "PW_PointOverlay": false,
+                "PW_SmartUpdateOption": "Within Modeling",
+                "PW_SnapPointTypesEnabled": [
+                  "(0x80)Arc Center",
+                  "(0x10000)Bounded Grid Point",
+                  "(0x20)Control Point",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x20000)Facet Vertex Point",
+                  "(0x40)Intersection",
+                  "(0x10)Mid Point",
+                  "(0x1000)Point Constructor",
+                  "(0x400)Point on Curve",
+                  "(0x800)Point on Surface",
+                  "(0x100)Quadrant Point"
+                ],
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowConvergentObject": false,
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "selection_cursor",
+                "PW_BlendVirtualCurveOverlay": false,
+                "PW_CreateInterpartLink": false,
+                "PW_Cue": "",
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "选择对象",
+                "PW_MaximumScope": "Within Work Part Only",
+                "PW_SelectMode": "Single",
+                "PW_StepStatus": "Required",
+                "PW_ToolTip": "",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_PointOverlay",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesEnabled",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowConvergentObject",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_BlendVirtualCurveOverlay",
+                "PW_CreateInterpartLink",
+                "PW_Cue",
+                "PW_InterpartSelection",
+                "PW_MaximumScope",
+                "PW_SelectMode",
+                "PW_StepStatus",
+                "PW_ToolTip",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockSpecifyVector_1772520745668_9681",
+              "type": "BlockSpecifyVector",
+              "altProperties": {
+                "PW_Show": "enum4(FrenetSubtypeNormalToVector,FrenetSubtypeParallelToVector,FrenetSubtypeThruAxis)"
+              },
+              "props": {
+                "PW_BlockID": "vector1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "指定矢量",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_DoubleSide": false,
+                "PW_EnableFacetSelection": false,
+                "PW_EnableReverseDirection": true,
+                "PW_InterpartSelection": "Simple",
+                "PW_Is2DMode": false,
+                "PW_LabelString": "指定矢量",
+                "PW_SmartUpdateOption": "After Modeling",
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_StepStatus": "Required"
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_DoubleSide",
+                "PW_EnableFacetSelection",
+                "PW_EnableReverseDirection",
+                "PW_InterpartSelection",
+                "PW_Is2DMode",
+                "PW_SmartUpdateOption",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_StepStatus"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745673_7086",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeFixedX,MethodTypeFixedY,MethodTypeFixedZ)"
+          },
+          "props": {
+            "PW_BlockID": "group16",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "偏置和参考",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745674_6881",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLinearExpression_1772520745675_5640",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745674_6881",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum5",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_LabelVisibility": false,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Horizontal",
+                "PW_NumberOfColumns": 0,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "RadioBox",
+                "PW_Value": "工作坐标系,绝对",
+                "PW_Data": "WorkingCoordinateSystem,Absolute",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_PackedColumns",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockLinearExpression_1772520745675_5640",
+              "type": "BlockLinearExpression",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "linear_dim1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "距离",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_AutoReverseDuringDrag": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableReverseDirection": true,
+                "PW_Formula": 0,
+                "PW_HandleOrientation": "0.000000 0.000000 0.000000",
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AutoReverseDuringDrag",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Formula",
+                "PW_HandleOrientation",
+                "PW_HandleOrigin",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745676_4247",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeCoefficients)"
+          },
+          "props": {
+            "PW_BlockID": "group17",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "系数(aY+bX+cZ=d)",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockEnumeration_1772520745677_7175",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockDouble_1772520745678_8810",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockDouble_1772520745679_9332",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockDouble_1772520745681_3975",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLinearExpression_1772520745682_2060",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockEnumeration_1772520745677_7175",
+              "type": "BlockEnumeration",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "enum6",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_LabelVisibility": false,
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowShortcuts": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipImages": [],
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_BalloonTooltipTexts": [],
+                "PW_Bitmaps": [],
+                "PW_BorderVisibility": true,
+                "PW_EnumSensitivity": [
+                  1,
+                  1
+                ],
+                "PW_EnumVisibility": [
+                  1,
+                  1
+                ],
+                "PW_HighQualityBitmap": true,
+                "PW_IconsOnly": false,
+                "PW_InitialShortcuts": [],
+                "PW_Layout": "Horizontal",
+                "PW_NumberOfColumns": 0,
+                "PW_PackedColumns": false,
+                "PW_PresentationStyle": "RadioBox",
+                "PW_Value": "工作坐标系,绝对公差",
+                "PW_Data": "WorkingCoordinateSystem,AbsoluteTolerance",
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowShortcuts",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipImages",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_BalloonTooltipTexts",
+                "PW_BorderVisibility",
+                "PW_HighQualityBitmap",
+                "PW_IconsOnly",
+                "PW_InitialShortcuts",
+                "PW_PackedColumns",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockDouble_1772520745678_8810",
+              "type": "BlockDouble",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "double0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "a",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": false,
+                "PW_AllowUnitEdit": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Vertical",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_ComboOptions": [],
+                "PW_Dimensionality": "",
+                "PW_Increment": 1,
+                "PW_KeyinFieldWidth": "Narrow",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_PresentationStyle": "Keyin",
+                "PW_ReadOnlyValue": false,
+                "PW_RetainUnits": true,
+                "PW_ScaleLimits": true,
+                "PW_ScaleMaxLimitLabel": "",
+                "PW_ScaleMinLimitLabel": "",
+                "PW_ShowScaleValue": true,
+                "PW_ShowUnitLabel": false,
+                "PW_TitleVisibility": true,
+                "PW_Value": 0,
+                "PW_VisibleDecimals": 2,
+                "PW_WrapSpin": false
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AllowUnitEdit",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_ComboOptions",
+                "PW_Increment",
+                "PW_KeyinFieldWidth",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_PresentationStyle",
+                "PW_ReadOnlyValue",
+                "PW_RetainUnits",
+                "PW_ScaleLimits",
+                "PW_ScaleMaxLimitLabel",
+                "PW_ScaleMinLimitLabel",
+                "PW_ShowScaleValue",
+                "PW_ShowUnitLabel",
+                "PW_TitleVisibility",
+                "PW_Value",
+                "PW_VisibleDecimals",
+                "PW_WrapSpin"
+              ]
+            },
+            {
+              "id": "BlockDouble_1772520745679_9332",
+              "type": "BlockDouble",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "double1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "b",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": false,
+                "PW_AllowUnitEdit": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Vertical",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_ComboOptions": [],
+                "PW_Dimensionality": "",
+                "PW_Increment": 1,
+                "PW_KeyinFieldWidth": "Narrow",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_PresentationStyle": "Keyin",
+                "PW_ReadOnlyValue": false,
+                "PW_RetainUnits": true,
+                "PW_ScaleLimits": true,
+                "PW_ScaleMaxLimitLabel": "",
+                "PW_ScaleMinLimitLabel": "",
+                "PW_ShowScaleValue": true,
+                "PW_ShowUnitLabel": false,
+                "PW_TitleVisibility": true,
+                "PW_Value": 0,
+                "PW_VisibleDecimals": 2,
+                "PW_WrapSpin": false
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AllowUnitEdit",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_ComboOptions",
+                "PW_Increment",
+                "PW_KeyinFieldWidth",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_PresentationStyle",
+                "PW_ReadOnlyValue",
+                "PW_RetainUnits",
+                "PW_ScaleLimits",
+                "PW_ScaleMaxLimitLabel",
+                "PW_ScaleMinLimitLabel",
+                "PW_ShowScaleValue",
+                "PW_ShowUnitLabel",
+                "PW_TitleVisibility",
+                "PW_Value",
+                "PW_VisibleDecimals",
+                "PW_WrapSpin"
+              ]
+            },
+            {
+              "id": "BlockDouble_1772520745681_3975",
+              "type": "BlockDouble",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "double2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "c",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": false,
+                "PW_AllowUnitEdit": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Vertical",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_ComboOptions": [],
+                "PW_Dimensionality": "",
+                "PW_Increment": 1,
+                "PW_KeyinFieldWidth": "Narrow",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_PresentationStyle": "Keyin",
+                "PW_ReadOnlyValue": false,
+                "PW_RetainUnits": true,
+                "PW_ScaleLimits": true,
+                "PW_ScaleMaxLimitLabel": "",
+                "PW_ScaleMinLimitLabel": "",
+                "PW_ShowScaleValue": true,
+                "PW_ShowUnitLabel": false,
+                "PW_TitleVisibility": true,
+                "PW_Value": 0,
+                "PW_VisibleDecimals": 2,
+                "PW_WrapSpin": false
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AllowUnitEdit",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_ComboOptions",
+                "PW_Increment",
+                "PW_KeyinFieldWidth",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_PresentationStyle",
+                "PW_ReadOnlyValue",
+                "PW_RetainUnits",
+                "PW_ScaleLimits",
+                "PW_ScaleMaxLimitLabel",
+                "PW_ScaleMinLimitLabel",
+                "PW_ShowScaleValue",
+                "PW_ShowUnitLabel",
+                "PW_TitleVisibility",
+                "PW_Value",
+                "PW_VisibleDecimals",
+                "PW_WrapSpin"
+              ]
+            },
+            {
+              "id": "BlockLinearExpression_1772520745682_2060",
+              "type": "BlockLinearExpression",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "linear_dim2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "d",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_AutoReverseDuringDrag": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableReverseDirection": false,
+                "PW_Formula": 0,
+                "PW_HandleOrientation": "0.000000 0.000000 0.000000",
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AutoReverseDuringDrag",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_EnableReverseDirection",
+                "PW_Formula",
+                "PW_HandleOrientation",
+                "PW_HandleOrigin",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745687_9559",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeInferred,MethodTypeAngle,MethodTypeCenter,MethodTypeCurvePoint,MethodTypeTwoLines,MethodTypeTangent,MethodTypeCoincident,MethodTypePointDir,MethodTypeFrenet,MethodTypeCoefficients)"
+          },
+          "props": {
+            "PW_BlockID": "group19",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "平面方位",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockReverseDirection_1772520745688_7145",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockReverseDirection_1772520745688_7145",
+              "type": "BlockReverseDirection",
+              "altProperties": {
+                "PW_Enable": false
+              },
+              "props": {
+                "PW_BlockID": "direction2",
+                "PW_Enable": false,
+                "PW_Group": false,
+                "PW_Label": "反向",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_Direction": "0.000000 0.000000 1.000000",
+                "PW_Flip": false,
+                "PW_Origin": "0.000000 0.000000 0.000000"
+              },
+              "hiddenProps": [
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_Direction",
+                "PW_Flip",
+                "PW_Origin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745683_5370",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeInferred,MethodTypeAngle,MethodTypeCenter,MethodTypeCurvePoint,MethodTypeTwoLines,MethodTypeTangent,MethodTypeCoincident,MethodTypePointDir,MethodTypeFrenet)"
+          },
+          "props": {
+            "PW_BlockID": "group18",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "偏置",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockToggle_1772520745684_7585",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLinearExpression_1772520745685_6615",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockToggle_1772520745684_7585",
+              "type": "BlockToggle",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "toggle0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "偏置",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipOffImage": "",
+                "PW_BalloonTooltipOffText": "",
+                "PW_BalloonTooltipOnImage": "",
+                "PW_BalloonTooltipOnText": "",
+                "PW_Bitmap": "",
+                "PW_BitmapOnly": false,
+                "PW_Value": true
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipOffImage",
+                "PW_BalloonTooltipOffText",
+                "PW_BalloonTooltipOnImage",
+                "PW_BalloonTooltipOnText",
+                "PW_Bitmap",
+                "PW_BitmapOnly"
+              ]
+            },
+            {
+              "id": "BlockLinearExpression_1772520745685_6615",
+              "type": "BlockLinearExpression",
+              "altProperties": {
+                "PW_Enable": true,
+                "PW_Show": "toggle0 == true"
+              },
+              "props": {
+                "PW_BlockID": "linear_dim3",
+                "PW_Enable": false,
+                "PW_Group": false,
+                "PW_Label": "距离",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_AutoReverseDuringDrag": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableReverseDirection": true,
+                "PW_Formula": 0,
+                "PW_HandleOrientation": "0.000000 0.000000 0.000000",
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Group",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AutoReverseDuringDrag",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Formula",
+                "PW_HandleOrientation",
+                "PW_HandleOrigin",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1773024469454_3_52581",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeDistance)"
+          },
+          "props": {
+            "PW_BlockID": "group24",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "偏置",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockLinearExpression_1773024469454_5_53042",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockInteger_1773024469454_6_75688",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockLinearExpression_1773024469454_5_53042",
+              "type": "BlockLinearExpression",
+              "altProperties": {
+                "PW_Enable": true
+              },
+              "props": {
+                "PW_BlockID": "linear_dim4",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "距离",
+                "PW_Show": true,
+                "PW_RetainUnits": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": true,
+                "PW_AutoReverseDuringDrag": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableReverseDirection": true,
+                "PW_Formula": 0,
+                "PW_HandleOrientation": "0.000000 0.000000 0.000000",
+                "PW_HandleOrigin": "0.000000 0.000000 0.000000",
+                "PW_LimitCheckTolerance": -1,
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 1.7976931348623157e+308,
+                "PW_MaxInclusive": true,
+                "PW_MinimumValue": -1.7976931348623157e+308,
+                "PW_MinInclusive": true,
+                "PW_PageIncrement": "1e+19",
+                "PW_ShowFocusHandle": false,
+                "PW_ShowHandle": false,
+                "PW_ShowSpin": false,
+                "PW_Value": 0,
+                "PW_WithScale": false,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_RetainUnits",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_AutoReverseDuringDrag",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Formula",
+                "PW_HandleOrientation",
+                "PW_HandleOrigin",
+                "PW_LimitCheckTolerance",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_MaxInclusive",
+                "PW_MinimumValue",
+                "PW_MinInclusive",
+                "PW_PageIncrement",
+                "PW_ShowFocusHandle",
+                "PW_ShowHandle",
+                "PW_ShowSpin",
+                "PW_Value",
+                "PW_WithScale",
+                "PW_ToolTipID"
+              ]
+            },
+            {
+              "id": "BlockInteger_1773024469454_6_75688",
+              "type": "BlockInteger",
+              "altProperties": {
+                "PW_Enable": true
+              },
+              "props": {
+                "PW_BlockID": "integer1",
+                "PW_Enable": false,
+                "PW_Group": false,
+                "PW_Label": "平面的数量",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AdaptiveScaleLimits": false,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_ComboOptions": [],
+                "PW_Increment": 1,
+                "PW_KeyinFieldWidth": "Narrow",
+                "PW_LineIncrement": "1e+19",
+                "PW_MaximumValue": 2147483647,
+                "PW_MinimumValue": 1,
+                "PW_PageIncrement": "1e+19",
+                "PW_PresentationStyle": "Keyin",
+                "PW_ReadOnlyValue": false,
+                "PW_ScaleLimits": true,
+                "PW_ScaleMaxLimitLabel": "",
+                "PW_ScaleMinLimitLabel": "",
+                "PW_ShowScaleValue": true,
+                "PW_TitleVisibility": true,
+                "PW_Value": 1,
+                "PW_ToolTipID": ""
+              },
+              "hiddenProps": [
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AdaptiveScaleLimits",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_ComboOptions",
+                "PW_Increment",
+                "PW_KeyinFieldWidth",
+                "PW_LineIncrement",
+                "PW_MaximumValue",
+                "PW_PageIncrement",
+                "PW_PresentationStyle",
+                "PW_ReadOnlyValue",
+                "PW_ScaleLimits",
+                "PW_ScaleMaxLimitLabel",
+                "PW_ScaleMinLimitLabel",
+                "PW_ShowScaleValue",
+                "PW_TitleVisibility",
+                "PW_ToolTipID"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745689_4577",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeFixedX,MethodTypeFixedY,MethodTypeFixedZ,MethodTypeFixedView)"
+          },
+          "props": {
+            "PW_BlockID": "group20",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "平面方位",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockReverseDirection_1772520745690_8171",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockReverseDirection_1772520745690_8171",
+              "type": "BlockReverseDirection",
+              "altProperties": {
+                "PW_Enable": true
+              },
+              "props": {
+                "PW_BlockID": "direction3",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "反向",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_Direction": "0.000000 0.000000 1.000000",
+                "PW_Flip": false,
+                "PW_Origin": "0.000000 0.000000 0.000000"
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_Direction",
+                "PW_Flip",
+                "PW_Origin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1773024988484_7_46698",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Show": "enum0(MethodTypeDistance)"
+          },
+          "props": {
+            "PW_BlockID": "group25",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "平面方位",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockReverseDirection_1773024988484_8_10703",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockReverseDirection_1773024988484_8_10703",
+              "type": "BlockReverseDirection",
+              "altProperties": {
+                "PW_Enable": true,
+                "PW_Show": "enum0(MethodTypeDistance)"
+              },
+              "props": {
+                "PW_BlockID": "direction1",
+                "PW_Enable": false,
+                "PW_Group": false,
+                "PW_Label": "反向",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_Direction": "0.000000 0.000000 1.000000",
+                "PW_Flip": false,
+                "PW_Origin": "0.000000 0.000000 0.000000"
+              },
+              "hiddenProps": [
+                "PW_Group",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_Direction",
+                "PW_Flip",
+                "PW_Origin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockGroup_1772520745691_5443",
+          "type": "BlockGroup",
+          "altProperties": {
+            "PW_Enable": "enum0(MethodTypeInferred,MethodTypeDistance,MethodTypeAngle,MethodTypeCenter,MethodTypeCurvePoint,MethodTypeTwoLines,MethodTypeTangent,MethodTypeCoincident,MethodTypePointDir,MethodTypeFrenet)"
+          },
+          "props": {
+            "PW_BlockID": "group21",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "设置",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockToggle_1772520745692_1130",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockToggle_1772520745692_1130",
+              "type": "BlockToggle",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "toggle1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "关联",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipOffImage": "",
+                "PW_BalloonTooltipOffText": "",
+                "PW_BalloonTooltipOnImage": "",
+                "PW_BalloonTooltipOnText": "",
+                "PW_Bitmap": "",
+                "PW_BitmapOnly": false,
+                "PW_Value": true
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipOffImage",
+                "PW_BalloonTooltipOffText",
+                "PW_BalloonTooltipOnImage",
+                "PW_BalloonTooltipOnText",
+                "PW_Bitmap",
+                "PW_BitmapOnly"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1773026638948
+}

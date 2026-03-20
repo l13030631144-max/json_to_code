@@ -1,0 +1,231 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1772269216810_46117",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 239,
+        "_y": 113
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockGroup_1772269222026_77049",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockGroup_1772269222026_77049",
+          "type": "BlockGroup",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockRGBColorPicker_1772270169942_161",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLineFont_1772270172966_36008",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLineWidth_1772270175252_31379",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockRGBColorPicker_1772270169942_161",
+              "type": "BlockRGBColorPicker",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "rGBColorPicker0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "No Title",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Value": "R 255 G 255 B 255"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Value"
+              ]
+            },
+            {
+              "id": "BlockLineFont_1772270172966_36008",
+              "type": "BlockLineFont",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "lineFont0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "线型",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AvailableOptions": [
+                  "(0x1)无更改",
+                  "(0x2)原始",
+                  "(0x4)不可见",
+                  "(0x8)实线",
+                  "(0x10)虚线",
+                  "(0x40)中心线",
+                  "(0x80)点线",
+                  "(0x100)长划线",
+                  "(0x200)点划线",
+                  "(0x400)双点划线",
+                  "(0x800)单点划线",
+                  "(0x1000)三点划线",
+                  "(0x2000)双短划线"
+                ],
+                "PW_ShowOptionLabels": true,
+                "PW_Value": "无更改"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AvailableOptions",
+                "PW_ShowOptionLabels",
+                "PW_Value"
+              ]
+            },
+            {
+              "id": "BlockLineWidth_1772270175252_31379",
+              "type": "BlockLineWidth",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "lineWidth0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "Line Width",
+                "PW_LabelVisibility": true,
+                "PW_Show": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AllowDefaultWidth": true,
+                "PW_AllowNoChangeWidth": true,
+                "PW_ShowDefaultAsOriginal": false,
+                "PW_LineWidthValue": "0.70 mm"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_LabelVisibility",
+                "PW_Show",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AllowDefaultWidth",
+                "PW_AllowNoChangeWidth",
+                "PW_ShowDefaultAsOriginal",
+                "PW_LineWidthValue"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1772270181942
+}

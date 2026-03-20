@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockFacetSelect" name="facetSelect0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>facetSelect0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_PointOverlay" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_SmartUpdateOption" stdset="0">
+                        <string>Within Modeling</string>
+                    </property>
+                    <property name="PW_SnapPointTypesEnabled" stdset="0">
+                        <number>204792</number>
+                    </property>
+                    <property name="PW_SnapPointTypesOnByDefault" stdset="0">
+                        <number>664</number>
+                    </property>
+                    <property name="PW_AutomaticProgression" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                        <string>select_facet_regions</string>
+                    </property>
+                    <property name="PW_BlendVirtualCurveOverlay" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_BrushToolSize" stdset="0">
+                        <double>10</double>
+                    </property>
+                    <property name="PW_Cue" stdset="0">
+                        <string>选择小平面体区域</string>
+                    </property>
+                    <property name="PW_FacetCollectionRules" stdset="0">
+                        <number>1023</number>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                        <string>选择小平面体区域</string>
+                    </property>
+                    <property name="PW_OwningFacetCollector" stdset="0">
+                        <number>0</number>
+                    </property>
+                    <property name="PW_SelectedFacetCollectionRule" stdset="0">
+                        <number>0</number>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Optional</string>
+                    </property>
+                    <property name="PW_SupportedFacetTypes" stdset="0">
+                        <number>0</number>
+                    </property>
+                    <property name="PW_ToolTip" stdset="0">
+                        <string>小平面区域</string>
+                    </property>
+                    <property name="PW_ToolTipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockFacetSelect</class>
+            <header>Widgets/Block/BlockFacetSelect.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

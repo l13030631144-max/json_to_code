@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\3列表框分割线对象取色器\TestDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\3列表框分割线对象取色器\TestDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\3列表框分割线对象取色器\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DB865702-2A52-358C-9AC8-7B0DB180EB48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F87A01D8-902A-3D5A-8393-B1CBC5F85549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockManipulator" name="manip0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>manip0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>Manipulator</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_EnableDoubleClickFlip" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_EnableFaceSelection" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_HasOriginGwif" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_IsOriginSpecified" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_IsWCSCoordinates" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Origin" stdset="0">
+                        <string>0.000000 0.000000 0.000000</string>
+                    </property>
+                    <property name="PW_SnapPointTypesOnByDefault" stdset="0">
+                        <number>4719256</number>
+                    </property>
+                    <property name="PW_VisibleManipulatorHandles" stdset="0">
+                        <number>1023</number>
+                    </property>
+                    <property name="PW_WCSOrientationSupport" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_XAxis" stdset="0">
+                        <string>1.000000 0.000000 0.000000</string>
+                    </property>
+                    <property name="PW_YAxis" stdset="0">
+                        <string>0.000000 1.000000 0.000000</string>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockManipulator</class>
+            <header>Widgets/Block/BlockManipulator.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

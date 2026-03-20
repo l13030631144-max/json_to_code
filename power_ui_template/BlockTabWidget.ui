@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockTabWidget" name="tabWidget">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>tabControl</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Expanded" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>No Title </string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_HighQualityBitmap" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Localize" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_RetainValue" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_ActivePage" stdset="0">
+                        <number>-1</number>
+                    </property>
+                    <property name="PW_HiddenTabPages" stdset="0">
+                        <string>-1</string>
+                    </property>
+                    <property name="PW_TabsPerRow" stdset="0">
+                        <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="page"/>
+                    <widget class="QWidget" name="page_2"/>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockTabWidget</class>
+            <header>Widgets/ContainerBlock/BlockTabWidget.h</header>
+            <addpagemethod>AddTab</addpagemethod>
+            <container>1</container>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

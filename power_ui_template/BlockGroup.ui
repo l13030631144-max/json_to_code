@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockGroup" name="group">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>group</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Expanded" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>No Title</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Localize" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_Column" stdset="0">
+                        <number>1</number>
+                    </property>
+                    <property name="PW_ShowLabel" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="groupContents">
+                        <layout class="QVBoxLayout" name="contentLayout">
+                            <item></item>
+                        </layout>
+                    </widget>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockGroup</class>
+            <header>Widgets/ContainerBlock/BlockGroup.h</header>
+            <addpagemethod>AddContent</addpagemethod>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

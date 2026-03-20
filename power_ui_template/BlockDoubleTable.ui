@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockDoubleTable" name="doubleTable0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>doubleTable0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>##16Table</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_RetainValue" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_CellWidth" stdset="0">
+                        <number>0</number>
+                    </property>
+                    <property name="PW_ColumnTitles" stdset="0">
+                        <stringlist>
+                        </stringlist>
+                    </property>
+                    <property name="PW_Increment" stdset="0">
+                        <double>0</double>
+                    </property>
+                    <property name="PW_RowTitles" stdset="0">
+                        <stringlist>
+                        </stringlist>
+                    </property>
+                    <property name="PW_Spin" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_WrapSpin" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockDoubleTable</class>
+            <header>Widgets/Block/BlockDoubleTable.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <property name="PW_Label" stdset="0">
+      <string>对话框</string>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockGroup" name="blockGroup_group0">
+            <property name="LabelText" stdset="0">
+              <string>对话框</string>
+            </property>
+            <widget class="QWidget" name="groupContents">
+              <layout class="QVBoxLayout" name="groupVBoxLayout">
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>BlockBase</extends>
+      <header>Widgets/ContainerBlock/BlockGroup.h</header>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

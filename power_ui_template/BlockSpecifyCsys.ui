@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSpecifyCsys" name="coord_system0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>coord_system0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AutomaticProgression" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_CreateInterpartLink" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_InterpartSelection" stdset="0">
+                        <string>Simple,Non-associative Interpart Copy Only,Associative and Non-associative Interpart Copy,Associative Interpart Copy</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                        <string>Specify CSYS</string>
+                    </property>
+                    <property name="PW_OutputType" stdset="0">
+                        <string>Cartesian,Cylindrical,Spherical</string>
+                    </property>
+                    <property name="PW_SmartUpdateOption" stdset="0">
+                        <string>Within Modeling,After Modeling,After Parent Body,Mixed</string>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Required,Optional,Satisfied </string>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSpecifyCsys</class>
+            <header>Widgets/Block/BlockSpecifyCsys.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSelectPart" name="selectPart0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>selectPart0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string>Select Part</string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AvailableViewStyles" stdset="0">
+                        <number>31</number>
+                    </property>
+                    <property name="PW_ColumnVisibility" stdset="0">
+                        <number>3</number>
+                    </property>
+                    <property name="PW_LoadedListExpandedState" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_LoadedListHeight" stdset="0">
+                        <number>254</number>
+                    </property>
+                    <property name="PW_LoadedListLabel" stdset="0">
+                        <string>Loaded Parts</string>
+                    </property>
+                    <property name="PW_LoadedListVisibility" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_LoadedListWidth" stdset="0">
+                        <number>400</number>
+                    </property>
+                    <property name="PW_RecentListExpandedState" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_RecentListLabel" stdset="0">
+                        <string>Recent Parts</string>
+                    </property>
+                    <property name="PW_RecentListVisibility" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_SearchButtonVisibility" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_UnloadedListExpandedState" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_UnloadedListLabel" stdset="0">
+                        <string>Unloaded Parts</string>
+                    </property>
+                    <property name="PW_UnloadedListVisibility" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_ViewStyle" stdset="0">
+                        <string>列表,中,平铺,小,特别小</string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSelectPart</class>
+            <header>Widgets/Block/BlockSelectPart.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

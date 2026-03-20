@@ -1,0 +1,220 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1772595967346_4800",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 208,
+        "_y": 98
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockGroup_1772595969017_61369",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockGroup_1772595969017_61369",
+          "type": "BlockGroup",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockTable_1772595975485_93876",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockOrientXpress_1772595979367_25113",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockMicropositioning_1772595983689_69924",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockTable_1772595975485_93876",
+              "type": "BlockTable",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "table0",
+                "PW_Enable": true,
+                "PW_Expanded": true,
+                "PW_Group": false,
+                "PW_Label": "TableLayout",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_HasColumnLabels": true,
+                "PW_NumberOfColumns": 2
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Expanded",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_HasColumnLabels",
+                "PW_NumberOfColumns"
+              ],
+              "customLayout": []
+            },
+            {
+              "id": "BlockOrientXpress_1772595979367_25113",
+              "type": "BlockOrientXpress",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "orientXpress0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_Direction": "X-Axis",
+                "PW_Plane": "YZ-Plane",
+                "PW_Reference": "Absolute - Work Part",
+                "PW_ShowAxisSubBlock": true,
+                "PW_ShowPlaneSubBlock": true,
+                "PW_ShowReferenceSubBlock": true,
+                "PW_ShowSceneControl": true,
+                "PW_ShowXAxis": true,
+                "PW_ShowXYPlane": true,
+                "PW_ShowXZPlane": true,
+                "PW_ShowYAxis": true,
+                "PW_ShowYZPlane": true,
+                "PW_ShowZAxis": true
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_Direction",
+                "PW_Plane",
+                "PW_Reference",
+                "PW_ShowAxisSubBlock",
+                "PW_ShowPlaneSubBlock",
+                "PW_ShowReferenceSubBlock",
+                "PW_ShowSceneControl",
+                "PW_ShowXAxis",
+                "PW_ShowXYPlane",
+                "PW_ShowXZPlane",
+                "PW_ShowYAxis",
+                "PW_ShowYZPlane",
+                "PW_ShowZAxis"
+              ]
+            },
+            {
+              "id": "BlockMicropositioning_1772595983689_69924",
+              "type": "BlockMicropositioning",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "micropositioning0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "微定位",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1772595985191
+}

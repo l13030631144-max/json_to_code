@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>301</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockTabWidget" name="tabControl_main">
+            <property name="Enable" stdset="0">
+              <bool>true</bool>
+            </property>
+            <property name="Show" stdset="0">
+              <bool>true</bool>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockTabWidget</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockTabWidget.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

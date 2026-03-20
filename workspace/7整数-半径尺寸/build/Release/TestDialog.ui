@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockInteger" name="blockInteger_integer">
+            <property name="LabelText" stdset="0">
+              <string>整数</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockDouble" name="blockDouble_double">
+            <property name="LabelText" stdset="0">
+              <string>双精度</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockExpression" name="blockExpression_expression">
+            <property name="LabelText" stdset="0">
+              <string>表达式</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockLinearExpression" name="blockLinear_linearDim">
+            <property name="LabelText" stdset="0">
+              <string>线性尺寸</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockAngularExpression" name="blockAngular_angularDim">
+            <property name="LabelText" stdset="0">
+              <string>角度尺寸</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockRadiusExpression" name="blockRadius_radiusDim">
+            <property name="LabelText" stdset="0">
+              <string>半径尺寸</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockInteger</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockInteger.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockDouble</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockDouble.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockExpression</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLinearExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockLinearExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockAngularExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockAngularExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockRadiusExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockRadiusExpression.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

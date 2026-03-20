@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>560</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>501</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockGroup" name="blockGroup_main">
+            <property name="LabelText" stdset="0">
+              <string>No Title</string>
+            </property>
+            <widget class="QWidget" name="groupContents">
+              <layout class="QVBoxLayout" name="groupVBoxLayout">
+                <item>
+                  <widget class="BlockSuperSection" name="superSection_main"/>
+                </item>
+                <item>
+                  <widget class="BlockCurveCollector" name="curveCollector_main"/>
+                </item>
+                <item>
+                  <widget class="BlockFaceCollector" name="faceCollector_main"/>
+                </item>
+                <item>
+                  <widget class="BlockBodyCollector" name="bodyCollector_main"/>
+                </item>
+                <item>
+                  <widget class="BlockSelectFeature" name="selectFeature_main"/>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>BlockBase</extends>
+      <header>Widgets/ContainerBlock/BlockGroup.h</header>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockSuperSection</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSuperSection.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockCurveCollector</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockCurveCollector.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockFaceCollector</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockFaceCollector.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockBodyCollector</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockBodyCollector.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockSelectFeature</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSelectFeature.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

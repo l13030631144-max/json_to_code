@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="BlockDialog" name="Dialog">
+        <property name="PW_Cue" stdset="0">
+            <string>Cue</string>
+        </property>
+        <property name="PW_Enable" stdset="0">
+            <bool>true</bool>
+        </property>
+        <property name="PW_Group" stdset="0">
+            <bool>false</bool>
+        </property>
+        <property name="PW_Label" stdset="0">
+            <string>无标题</string>
+        </property>
+        <property name="PW_Dialog_Sizing" stdset="0">
+            <string>Follow Policy,All Resize</string>
+        </property>
+        <property name="PW_Navigation_Style" stdset="0">
+            <string>OK Apply Cancel,OK Cancel,Close</string>
+        </property>
+        <property name="PW_UseMore" stdset="0">
+            <bool>true</bool>
+        </property>
+        <property name="PW_IsMore" stdset="0">
+            <bool>false</bool>
+        </property>
+
+        <widget class="QWidget" name="page">
+            <layout class="QVBoxLayout" name="verticalLayout">
+            </layout>
+        </widget>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <extends>QDialog</extends>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

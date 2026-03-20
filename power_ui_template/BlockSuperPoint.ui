@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockSuperPoint" name="superPoint0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>superPoint0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_PointOverlay" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_SmartUpdateOption" stdset="0">
+                        <string>Within Modeling</string>
+                    </property>
+                    <property name="PW_SnapPointTypesEnabled" stdset="0">
+                        <number>499708</number>
+                    </property>
+                    <property name="PW_SnapPointTypesOnByDefault" stdset="0">
+                        <number>664</number>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AllowConvergentObject" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_AllowSelfIntersecting" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_AutomaticProgression" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                        <string>pointset</string>
+                    </property>
+                    <property name="PW_BlendVirtualCurveOverlay" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_CreateInterpartLink" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Cue" stdset="0">
+                        <string>选择要绘制的平面，或为截面选择曲线</string>
+                    </property>
+                    <property name="PW_InterpartSelection" stdset="0">
+                        <string>Simple,Non-associative Interpart Copy Only,Associative and Non-associative Interpart Copy,Associative Interpart Copy</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                        <string>Specify Point</string>
+                    </property>
+                    <property name="PW_ShowFlowDirectionAndOrigin" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_SketchOnPath" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Required,Optional,Satisfied</string>
+                    </property>
+                    <property name="PW_ToolTip" stdset="0">
+                        <string>##289Point</string>
+                    </property>
+                    <property name="PW_AngularTolerance" stdset="0">
+                        <double>0.05</double>
+                    </property>
+                    <property name="PW_CurveRules" stdset="0">
+                        <number>1153</number>
+                    </property>
+                    <property name="PW_DefaultCurveRules" stdset="0">
+                        <string>Single Curve,Infer Curves,Feature Points</string>
+                    </property>
+                    <property name="PW_EntityType" stdset="0">
+                        <number>8</number>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockSuperPoint</class>
+            <header>Widgets/Block/BlockSuperPoint.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

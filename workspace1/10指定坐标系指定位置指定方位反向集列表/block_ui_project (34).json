@@ -1,0 +1,370 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1772284672110_2857",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 129,
+        "_y": 116
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockGroup_1772284680946_33259",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockGroup_1772284680946_33259",
+          "type": "BlockGroup",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "group0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_ShowLabel": true
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_ShowLabel"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockCoordSystem_1772284684871_90270",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockCursorLocation_1772284687107_31142",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockManip_1772284688740_46470",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockReverseDirection_1772284691061_94248",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockJiList_1772284694389_11353",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockCoordSystem_1772284684871_90270",
+              "type": "BlockCoordSystem",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "coord_system0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_CreateInterpartLink": false,
+                "PW_InterpartSelection": "Simple",
+                "PW_LabelString": "Specify CSYS",
+                "PW_OutputType": "Cartesian",
+                "PW_SmartUpdateOption": "After Modeling",
+                "PW_StepStatus": "Required"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_CreateInterpartLink",
+                "PW_InterpartSelection",
+                "PW_LabelString",
+                "PW_OutputType",
+                "PW_SmartUpdateOption",
+                "PW_StepStatus"
+              ]
+            },
+            {
+              "id": "BlockCursorLocation_1772284687107_31142",
+              "type": "BlockCursorLocation",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "cursorLocation0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "Cursor Location",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AutomaticProgression": true,
+                "PW_DisplayTemporaryPoint": false,
+                "PW_LabelString": "Specify Cursor Location",
+                "PW_LocationSpecified": false,
+                "PW_StepStatus": "Required"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AutomaticProgression",
+                "PW_DisplayTemporaryPoint",
+                "PW_LabelString",
+                "PW_LocationSpecified",
+                "PW_StepStatus"
+              ]
+            },
+            {
+              "id": "BlockManip_1772284688740_46470",
+              "type": "BlockManip",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "manip0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "Manipulator",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_EnableDoubleClickFlip": true,
+                "PW_EnableFacetSelection": false,
+                "PW_HasOriginGwf": true,
+                "PW_IsOriginSpecified": false,
+                "PW_IsWCSCoordinates": false,
+                "PW_Origin": "0.000000 0.000000 0.000000",
+                "PW_SnapPointTypesOnByDefault": [
+                  "(0x80)Arc Center",
+                  "(0x8)End Point",
+                  "(0x200)Existing Point",
+                  "(0x10)Mid Point"
+                ],
+                "PW_VisibleManipulatorHandles": [
+                  "(0x1)Origin",
+                  "(0x10)Rotate X",
+                  "(0x20)Rotate Y",
+                  "(0x40)Rotate Z",
+                  "(0x2)Translate X",
+                  "(0x4)Translate Y",
+                  "(0x8)Translate Z"
+                ],
+                "PW_WCSOrientationSupport": true,
+                "PW_XAxis": "1.000000 0.000000 0.000000",
+                "PW_YAxis": "0.000000 1.000000 0.000000"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_EnableDoubleClickFlip",
+                "PW_EnableFacetSelection",
+                "PW_HasOriginGwf",
+                "PW_IsOriginSpecified",
+                "PW_IsWCSCoordinates",
+                "PW_Origin",
+                "PW_SnapPointTypesOnByDefault",
+                "PW_VisibleManipulatorHandles",
+                "PW_WCSOrientationSupport",
+                "PW_XAxis",
+                "PW_YAxis"
+              ]
+            },
+            {
+              "id": "BlockReverseDirection_1772284691061_94248",
+              "type": "BlockReverseDirection",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "direction0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "Reverse Direction",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_Direction": "0.000000 0.000000 1.000000",
+                "PW_Flip": false,
+                "PW_Origin": "0.000000 0.000000 0.000000"
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_Direction",
+                "PW_Flip",
+                "PW_Origin"
+              ]
+            },
+            {
+              "id": "BlockJiList_1772284694389_11353",
+              "type": "BlockJiList",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "list0",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "",
+                "PW_Show": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_AddNewSetLabel": "Add New Set",
+                "PW_ColumnLabels": [],
+                "PW_ColumnWidths": [
+                  "-1"
+                ],
+                "PW_DefaultColumnWidth": 100,
+                "PW_Layout": "Selection",
+                "PW_ListExpanded": false,
+                "PW_MarkSeedExpressionsUnusable": false,
+                "PW_MaximumHeight": 0,
+                "PW_MinimumHeight": 4,
+                "PW_MultipleEdit": false,
+                "PW_NumberColumnString": "",
+                "PW_NumberOfColumns": 1,
+                "PW_ResizeHeightWithDialog": true,
+                "PW_SeedDlxFile": "",
+                "PW_ShowAddNewSet": true,
+                "PW_ShowColumnHeadings": false,
+                "PW_ShowRemove": true,
+                "PW_ShowReorderControls": false,
+                "PW_ShowTopBottomControls": false
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_AddNewSetLabel",
+                "PW_ColumnLabels",
+                "PW_ColumnWidths",
+                "PW_DefaultColumnWidth",
+                "PW_Layout",
+                "PW_ListExpanded",
+                "PW_MarkSeedExpressionsUnusable",
+                "PW_MaximumHeight",
+                "PW_MinimumHeight",
+                "PW_MultipleEdit",
+                "PW_NumberColumnString",
+                "PW_NumberOfColumns",
+                "PW_ResizeHeightWithDialog",
+                "PW_SeedDlxFile",
+                "PW_ShowAddNewSet",
+                "PW_ShowColumnHeadings",
+                "PW_ShowRemove",
+                "PW_ShowReorderControls",
+                "PW_ShowTopBottomControls"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1772284697482
+}

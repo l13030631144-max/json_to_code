@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockCurveCollector" name="edge_select0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>edge_select0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AllowConvergentObject" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_AutomaticProgression" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string> select curve</string>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                        <string> </string>
+                    </property>
+                    <property name="PW_BlendVirtualCurveOverlay" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_CreateInterpartLink" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Cue" stdset="0">
+                        <string>Select Curve</string>
+                    </property>
+                    <property name="PW_InterpartSelection" stdset="0">
+                        <string>Simple,Non-associative Interpart Copy Only,Associative and Non-associative Interpart Copy,Associative Interpart Copy</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                        <string>Select Curve</string>
+                    </property>
+                    <property name="PW_MaximumScope" stdset="0">
+                        <string>Entire Assembly,Within Work Part Only,Within Work Part and Components</string>
+                    </property>
+                    <property name="PW_SelectMode" stdset="0">
+                        <string>Single,Multiple</string>
+                    </property>
+                    <property name="PW_StepStatus" stdset="0">
+                        <string>Required,Optional,Staisfied</string>
+                    </property>
+                    <property name="PW_ToolTip" stdset="0">
+                        <string>Curve</string>
+                    </property>
+                    <property name="PW_AllowInferredCurveSelection" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_CurveRules" stdset="0">
+                        <number>799</number>
+                    </property>
+                    <property name="PW_DefaultCurveRules" stdset="0">
+                        <string>Single Curve,Connected Curves,Tangent Curves,Face Edges,Body Edges,Vertex Edges,Vertex Tangent Edges</string>
+                    </property>
+                    <property name="PW_EntityType" stdset="0">
+                        <number>5</number>
+                    </property>
+                    <property name="PW_InferredCurveSelection" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_PopupMenuEnabled" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ToolTipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockCurveCollector</class>
+            <header>Widgets/Block/BlockCurveCollector.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

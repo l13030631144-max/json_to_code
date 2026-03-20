@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>560</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>501</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockGroup" name="blockGroup_main">
+            <widget class="QWidget" name="groupContents">
+              <layout class="QVBoxLayout" name="groupVBoxLayout">
+                <item>
+                  <widget class="BlockAngularExpression" name="blockAngular_main"/>
+                </item>
+                <item>
+                  <widget class="BlockDoubleAnglarDim" name="doubleAngular_main"/>
+                </item>
+                <item>
+                  <widget class="BlockRadiusExpression" name="blockRadius_main"/>
+                </item>
+                <item>
+                  <widget class="BlockSelectObject" name="selectObject_main"/>
+                </item>
+                <item>
+                  <widget class="BlockSuperSection" name="superSection_main"/>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>BlockBase</extends>
+      <header>Widgets/ContainerBlock/BlockGroup.h</header>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockAngularExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockAngularExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockDoubleAnglarDim</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockDoubleAnglarDim.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockRadiusExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockRadiusExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockSelectObject</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSelectObject.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockSuperSection</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSuperSection.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockOrientXpress" name="orientXpress0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>orientXpress0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Direction" stdset="0">
+                        <string>X-Axis,Y-Axis,Z-Axis</string>
+                    </property>
+                    <property name="PW_Plane" stdset="0">
+                        <string>YZ-Plane,XZ-Plane,XY-Plane</string>
+                    </property>
+                    <property name="PW_Reference" stdset="0">
+                        <string>Absolute - Work Part,Absolute - Displayed Part,WCS - Work Part,WCS - Displayed Part,New CSYS,路径方位</string>
+                    </property>
+                    <property name="PW_ShowAxisSubBlock" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowPlaneSubBlock" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowReferenceSubBlock" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowSceneControl" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowXAxis" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowXYPlane" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowXZPlane" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowYAxis" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowYZPlane" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_ShowZAxis" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockOrientXpress</class>
+            <header>Widgets/Block/BlockOrientXpress.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

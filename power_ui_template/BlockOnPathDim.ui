@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="BlockOnPathDim" name="on_path_dim0">
+                    <property name="PW_BlockID" stdset="0">
+                        <string>on_path_dim0</string>
+                    </property>
+                    <property name="PW_Enable" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Group" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Show" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_RetainUnits" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_RetainValue" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_Bottom" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_Top" stdset="0">
+                        <string>Default</string>
+                    </property>
+                    <property name="PW_AdaptiveScaleLimits" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_BalloonTooltipImage" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_BalloonTooltipLayout" stdset="0">
+                        <string>Horizontal,Vertical</string>
+                    </property>
+                    <property name="PW_BalloonTooltipText" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_Formula" stdset="0">
+                        <string></string>
+                    </property>
+                    <property name="PW_LimitCheckTolerance" stdset="0">
+                        <double>-1</double>
+                    </property>
+                    <property name="PW_LocationOption" stdset="0">
+                        <string>Length,Percent</string>
+                    </property>
+                    <property name="PW_MaximumValue" stdset="0">
+                        <double>1.79769313486232e+308</double>
+                    </property>
+                    <property name="PW_MaxInclusive" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_MinimumValue" stdset="0">
+                        <double>-1.79769313486232e+308</double>
+                    </property>
+                    <property name="PW_MinInclusive" stdset="0">
+                        <bool>true</bool>
+                    </property>
+                    <property name="PW_OptionMask" stdset="0">
+                        <number>3</number>
+                    </property>
+                    <property name="PW_OptionMenuTitle" stdset="0">
+                        <string>Location</string>
+                    </property>
+                    <property name="PW_ShowFocusHandle" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_ShowSpin" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                        <double>0</double>
+                    </property>
+                    <property name="PW_WithScale" stdset="0">
+                        <bool>false</bool>
+                    </property>
+                    <property name="PW_TooltipID" stdset="0">
+                        <string> </string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>BlockDialog</class>
+            <header>Widgets/ContainerBlock/BlockDialog.h</header>
+            <addpagemethod>InitContainerWidget</addpagemethod>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>BlockOnPathDim</class>
+            <header>Widgets/Block/BlockOnPathDim.h</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>

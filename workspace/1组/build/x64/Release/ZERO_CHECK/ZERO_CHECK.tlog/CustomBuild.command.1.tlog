@@ -1,0 +1,10 @@
+^D:\PYTHON_PROJECT\QT_PJ\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\WORKSPACE\1组\BUILD\CMAKEFILES\13B20B9C2F95B7803425AC43F5474E45\GENERATE.STAMP.RULE
+setlocal
+E:\App\VS\vs2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/1组 -BD:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/1组/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/1组/build/TestDialog.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
