@@ -210,7 +210,7 @@ The `name` attribute of each widget in the .ui file must be **semantically named
 
 Each control type used in the .ui file must be declared in `<customwidgets>`. Use these exact declarations:
 
-**Container Blocks** (extends other than QWidget):
+**Container Blocks** — All container blocks MUST have both `<container>1</container>` and `<addpagemethod>` tags:
 
 ```xml
 <customwidget>
@@ -221,12 +221,50 @@ Each control type used in the .ui file must be declared in `<customwidgets>`. Us
   <container>1</container>
 </customwidget>
 <customwidget>
+  <class>BlockFeatureDialog</class>
+  <extends>QDialog</extends>
+  <header>Widgets/ContainerBlock/BlockFeatureDialog.h</header>
+  <addpagemethod>InitContainerWidget</addpagemethod>
+  <container>1</container>
+</customwidget>
+<customwidget>
   <class>BlockGroup</class>
   <extends>BlockBase</extends>
   <header>Widgets/ContainerBlock/BlockGroup.h</header>
   <addpagemethod>AddContent</addpagemethod>
+  <container>1</container>
+</customwidget>
+<customwidget>
+  <class>BlockScrollWindow</class>
+  <extends>QWidget</extends>
+  <header>Widgets/ContainerBlock/BlockScrollWindow.h</header>
+  <addpagemethod>AddContent</addpagemethod>
+  <container>1</container>
+</customwidget>
+<customwidget>
+  <class>BlockTabWidget</class>
+  <extends>QWidget</extends>
+  <header>Widgets/ContainerBlock/BlockTabWidget.h</header>
+  <addpagemethod>AddTab</addpagemethod>
+  <container>1</container>
+</customwidget>
+<customwidget>
+  <class>BlockWizard</class>
+  <extends>QWidget</extends>
+  <header>Widgets/ContainerBlock/BlockWizard.h</header>
+  <addpagemethod>addPage</addpagemethod>
+  <container>1</container>
+</customwidget>
+<customwidget>
+  <class>BlockExplorer</class>
+  <extends>QWidget</extends>
+  <header>Widgets/ContainerBlock/BlockExplorer.h</header>
+  <addpagemethod>AddContent</addpagemethod>
+  <container>1</container>
 </customwidget>
 ```
+
+**CRITICAL**: Every container block declaration MUST include both `<container>1</container>` AND `<addpagemethod>`. Missing either tag will cause the Qt Designer plugin to fail loading child widgets.
 
 **Expression Blocks** (extends BlockExpression):
 
