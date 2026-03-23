@@ -483,7 +483,29 @@ String array example:
 </property>
 ```
 
-Enum note: In JSON samples, `PW_Value` and `PW_Data` are often comma-separated strings (for example `PW_Value: "aa,221,as"` and `PW_Data: "a,b,c"`), not JSON arrays. Split by comma first, then write as `<stringlist>` in `.ui`.
+**Enum PW_Value / PW_Data — Two JSON Formats (MUST handle both)**:
+
+JSON input may use **either** of two formats for enum `PW_Value` and `PW_Data`:
+
+| Format | JSON Example | How to process |
+|--------|-------------|----------------|
+| **New: JSON Array** | `"PW_Value": ["1", "2"]` | Use array items directly as `<stringlist>` entries |
+| **Old: Comma-separated String** | `"PW_Value": "aa,221,as"` | Split by comma first, then write as `<stringlist>` |
+
+Both formats produce the same `.ui` output:
+
+```xml
+<property name="PW_Value" stdset="0">
+  <stringlist>
+    <string>1</string>
+    <string>2</string>
+  </stringlist>
+</property>
+```
+
+**Detection rule**: If the JSON value is a JS array (`[]`), use items directly. If it is a string, split by comma.
+
+This also applies to `PW_EnumSensitivity` and `PW_EnumVisibility` — they may appear as JSON arrays of integers (e.g., `[1, 1, 1]`).
 
 **All PW_ properties must have `stdset="0"` attribute.**
 
@@ -733,10 +755,10 @@ Means: show this control when the enum with `PW_BlockID=enumBlockID` has `Curren
 `GetString("CurrentData")` returns the currently selected entry from enum `PW_Data`.
 Based on the sample JSON in `workspace/17*/block_ui_project (46).json`, enum triggers in `PW_Show` also use `PW_Data` tokens directly.
 
-Example:
+Example (old comma-separated string format):
 
-- `PW_Value: "aa,221,as"`
-- `PW_Data: "a,b,c"`
+- `PW_Value: "aa,221,as"` or `PW_Value: ["aa","221","as"]`
+- `PW_Data: "a,b,c"` or `PW_Data: ["a","b","c"]`
 - `PW_Show: "enum0(a, c)"`
 
 Generated comparison:
@@ -755,7 +777,7 @@ if (block == {enumWidgetName})
 Mapping steps:
 
 1. Parse values inside enum trigger: `enum0(a, c)` -> `["a", "c"]`
-2. Read enum `PW_Data` (split by comma if JSON stores a comma-separated string)
+2. Read enum `PW_Data` — if it's a JSON array, use directly; if it's a comma-separated string, split by comma first
 3. Treat parsed trigger values as `PW_Data` tokens and validate they exist in `PW_Data`
 4. Compare `CurrentData` directly against those tokens
 
