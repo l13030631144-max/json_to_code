@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestDialog</class>
+ <widget class="BlockDialog" name="TestDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="page">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockTable" name="table" native="true">
+      <property name="PW_NumberOfColumns" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="PW_BlockID" stdset="0">
+       <string>table</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="BlockLabel" name="blockLabel">
+         <property name="PW_BlockID" stdset="0">
+          <string>blockLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="BlockLabel" name="blockLabel_2">
+         <property name="PW_BlockID" stdset="0">
+          <string>blockLabel_2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="BlockString" name="blockString">
+         <property name="PW_BlockID" stdset="0">
+          <string>blockString</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="BlockLabel" name="blockLabel_3">
+         <property name="PW_BlockID" stdset="0">
+          <string>blockLabel_3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="BlockString" name="blockString_2">
+         <property name="PW_BlockID" stdset="0">
+          <string>blockString_2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockLabel</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDouble</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockDouble.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockString</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockString.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockTable</class>
+   <extends>QWidget</extends>
+   <header>Widgets/ContainerBlock/BlockTable.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -2773,7 +2773,7 @@ JSON 文件的根是一个对象，包含以下字段：
 ### 3.38 表 (Table - `BlockTable`)
 对应 NX Open `BlockTable` 组件，用于以表格形式排列子控件，是一个**容器类控件**。
 
-> **POWER 模板参考**: `power_ui_template/BlockTable.ui`
+> **POWER 模板参考**: `power_ui_template/BlockTable.ui`（属性模板）、`power_ui_template/BlockTableLayoutTemplate.ui`（含子控件布局模板）
 
 | UI设计器显示名称          | 导出JSON字段名称       | 类型       | 默认值          | 说明             |
 | :------------------------ | :--------------------- | :--------- | :-------------- | :--------------- |
@@ -2808,12 +2808,126 @@ JSON 文件的根是一个对象，包含以下字段：
     "PW_Right": "Default",
     "PW_Top": "Default",
     "PW_HasColumnLabels": true,
-    "PW_NumberOfColumns": 3
+    "PW_NumberOfColumns": 2
   },
   "hiddenProps": [],
   "altProperties": {},
-  "children": [...]
+  "children": [
+    {
+      "id": "BlockLabel_1770451903113_706",
+      "type": "BlockLabel",
+      "props": { "PW_BlockID": "blockLabel" },
+      "hiddenProps": [], "altProperties": {}, "children": []
+    },
+    {
+      "id": "BlockLabel_1770451903113_707",
+      "type": "BlockLabel",
+      "props": { "PW_BlockID": "blockLabel_2" },
+      "hiddenProps": [], "altProperties": {}, "children": []
+    },
+    {
+      "id": "BlockString_1770451903113_708",
+      "type": "BlockString",
+      "props": { "PW_BlockID": "blockString" },
+      "hiddenProps": [], "altProperties": {}, "children": []
+    },
+    {
+      "id": "BlockLabel_1770451903113_709",
+      "type": "BlockLabel",
+      "props": { "PW_BlockID": "blockLabel_3" },
+      "hiddenProps": [], "altProperties": {}, "children": []
+    },
+    {
+      "id": "BlockString_1770451903113_710",
+      "type": "BlockString",
+      "props": { "PW_BlockID": "blockString_2" },
+      "hiddenProps": [], "altProperties": {}, "children": []
+    }
+  ]
 }
+```
+
+#### BlockTable 子控件 UI 生成规则
+
+`BlockTable` 是容器类控件，其 `children` 中的子控件需要按照 **`QGridLayout` 网格布局** 排列到表格中。生成 `.ui` 文件时需遵循以下规则：
+
+1. **布局方式**：`BlockTable` 内部使用 `QGridLayout`（而非 `QVBoxLayout`），子控件通过 `row` 和 `column` 属性定位到网格单元格中。
+
+2. **列数由 `PW_NumberOfColumns` 决定**：该属性指定表格的列数。子控件按照在 `children` 数组中的顺序，**从左到右、从上到下** 依次填入网格。
+
+3. **行列分配算法**：
+   - 第 0 行（`row="0"`）通常为列标题行（当 `PW_HasColumnLabels` 为 `true` 时），从 `column=0` 开始填充。
+   - 后续子控件按 `children` 数组顺序，逐行逐列填充：
+     - `children[i]` 的行号 = `i / NumberOfColumns`（整除），列号 = `i % NumberOfColumns`
+   - 如果有列标题行，则数据行从 `row=1` 开始。
+
+4. **UI 模板结构示例**（对应上述 JSON，`PW_NumberOfColumns=2`）：
+
+```xml
+<widget class="BlockTable" name="table0" native="true">
+  <property name="PW_NumberOfColumns" stdset="0">
+    <number>2</number>
+  </property>
+  <property name="PW_BlockID" stdset="0">
+    <string>table0</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+    <!-- row 0: 列标题 (BlockLabel) -->
+    <item row="0" column="1">
+      <widget class="BlockLabel" name="blockLabel">
+        <property name="PW_BlockID" stdset="0">
+          <string>blockLabel</string>
+        </property>
+      </widget>
+    </item>
+    <!-- row 1: 第一行数据 -->
+    <item row="1" column="0">
+      <widget class="BlockLabel" name="blockLabel_2">
+        <property name="PW_BlockID" stdset="0">
+          <string>blockLabel_2</string>
+        </property>
+      </widget>
+    </item>
+    <item row="1" column="1">
+      <widget class="BlockString" name="blockString">
+        <property name="PW_BlockID" stdset="0">
+          <string>blockString</string>
+        </property>
+      </widget>
+    </item>
+    <!-- row 2: 第二行数据 -->
+    <item row="2" column="0">
+      <widget class="BlockLabel" name="blockLabel_3">
+        <property name="PW_BlockID" stdset="0">
+          <string>blockLabel_3</string>
+        </property>
+      </widget>
+    </item>
+    <item row="2" column="1">
+      <widget class="BlockString" name="blockString_2">
+        <property name="PW_BlockID" stdset="0">
+          <string>blockString_2</string>
+        </property>
+      </widget>
+    </item>
+  </layout>
+</widget>
+```
+
+5. **与其他容器类控件的区别**：
+   - `BlockGroup` 使用 `QVBoxLayout`，子控件垂直排列。
+   - `BlockTabWidget` 使用多个 `QWidget` page，每个 page 对应一个选项卡。
+   - `BlockTable` 使用 `QGridLayout`，子控件按行列定位，形成表格效果。
+
+6. **`customwidgets` 声明**：`BlockTable` 在 `customwidgets` 中需声明 `<container>1</container>`，表示它是容器控件。同时需要声明其内部所有子控件的类型。
+
+```xml
+<customwidget>
+  <class>BlockTable</class>
+  <extends>QWidget</extends>
+  <header>Widgets/ContainerBlock/BlockTable.h</header>
+  <container>1</container>
+</customwidget>
 ```
 
 ### 3.39 线型 (LineFont - `BlockLineFont`)
