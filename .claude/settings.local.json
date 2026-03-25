@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(dir \"D:\\\\高端CAD软件开发\\\\前端智能体\\\\项目代码\\\\generate-dialog-skill\" /s)"
-    ]
-  }
-}
