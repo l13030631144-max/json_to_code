@@ -217,50 +217,50 @@ Each control type used in the .ui file must be declared in `<customwidgets>`. Us
   <class>BlockDialog</class>
   <extends>QDialog</extends>
   <header>Widgets/ContainerBlock/BlockDialog.h</header>
-  <addpagemethod>InitContainerWidget</addpagemethod>
   <container>1</container>
+  <addpagemethod>InitContainerWidget</addpagemethod>
 </customwidget>
 <customwidget>
   <class>BlockFeatureDialog</class>
   <extends>QDialog</extends>
   <header>Widgets/ContainerBlock/BlockFeatureDialog.h</header>
-  <addpagemethod>InitContainerWidget</addpagemethod>
   <container>1</container>
+  <addpagemethod>InitContainerWidget</addpagemethod>
 </customwidget>
 <customwidget>
   <class>BlockGroup</class>
   <extends>BlockBase</extends>
   <header>Widgets/ContainerBlock/BlockGroup.h</header>
-  <addpagemethod>AddContent</addpagemethod>
   <container>1</container>
+  <addpagemethod>AddContent</addpagemethod>
 </customwidget>
 <customwidget>
   <class>BlockScrollWindow</class>
   <extends>QWidget</extends>
   <header>Widgets/ContainerBlock/BlockScrollWindow.h</header>
-  <addpagemethod>AddContent</addpagemethod>
   <container>1</container>
+  <addpagemethod>AddContent</addpagemethod>
 </customwidget>
 <customwidget>
   <class>BlockTabWidget</class>
   <extends>QWidget</extends>
   <header>Widgets/ContainerBlock/BlockTabWidget.h</header>
-  <addpagemethod>AddTab</addpagemethod>
   <container>1</container>
+  <addpagemethod>AddTab</addpagemethod>
 </customwidget>
 <customwidget>
   <class>BlockWizard</class>
   <extends>QWidget</extends>
   <header>Widgets/ContainerBlock/BlockWizard.h</header>
-  <addpagemethod>addPage</addpagemethod>
   <container>1</container>
+  <addpagemethod>addPage</addpagemethod>
 </customwidget>
 <customwidget>
   <class>BlockExplorer</class>
   <extends>QWidget</extends>
   <header>Widgets/ContainerBlock/BlockExplorer.h</header>
-  <addpagemethod>AddContent</addpagemethod>
   <container>1</container>
+  <addpagemethod>AddContent</addpagemethod>
 </customwidget>
 ```
 

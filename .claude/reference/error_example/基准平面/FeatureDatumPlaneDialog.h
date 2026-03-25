@@ -22,135 +22,108 @@ public:
 private:
     PWOpen::BlockStyler::BlockDialog* theDialog{};
 
-    // enum0: type selector
-    PWOpen::BlockStyler::Enumeration* enum_typeSelector;
+    PWOpen::BlockStyler::Enumeration* enum_methodType;
 
-    // group0: 要定义平面的对象
-    PWOpen::BlockStyler::Group* blockGroup_objectsToDefine;
-    PWOpen::BlockStyler::SelectObject* selectObject_inferredObject;
+    PWOpen::BlockStyler::Group* blockGroup_inferredReference;
+    PWOpen::BlockStyler::SelectObject* selectObject_inferredObj;
 
-    // group1: 平面参考
-    PWOpen::BlockStyler::Group* blockGroup_planeReference;
-    PWOpen::BlockStyler::SelectObject* selectObject_planeObject;
+    PWOpen::BlockStyler::Group* blockGroup_planeRef;
+    PWOpen::BlockStyler::SelectObject* selectObject_planeRef;
 
-    // group2: 通过轴
-    PWOpen::BlockStyler::Group* blockGroup_throughAxis;
-    PWOpen::BlockStyler::SelectObject* selectObject_linearObject;
+    PWOpen::BlockStyler::Group* blockGroup_axisRef;
+    PWOpen::BlockStyler::SelectObject* selectObject_linearObj;
 
-    // group14: 第一平面
     PWOpen::BlockStyler::Group* blockGroup_firstPlane;
-    PWOpen::BlockStyler::SelectObject* selectObject_firstPlaneObject;
+    PWOpen::BlockStyler::SelectObject* selectObject_firstPlane;
 
-    // group15: 第二平面
     PWOpen::BlockStyler::Group* blockGroup_secondPlane;
-    PWOpen::BlockStyler::SelectObject* selectObject_secondPlaneObject;
+    PWOpen::BlockStyler::SelectObject* selectObject_secondPlane;
 
-    // group5: 曲线和点子类型
     PWOpen::BlockStyler::Group* blockGroup_curvePointSubtype;
     PWOpen::BlockStyler::Enumeration* enum_curvePointSubtype;
 
-    // group7: 参考几何体 (CurvePoint)
-    PWOpen::BlockStyler::Group* blockGroup_referenceGeometry;
-    PWOpen::BlockStyler::SelectObject* selectObject_inferObject;
-    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_point0;
-    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_point1;
-    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_point2;
-    PWOpen::BlockStyler::SelectObject* selectObject_curveObject;
-    PWOpen::BlockStyler::SelectObject* selectObject_parallelPlaneObject;
+    PWOpen::BlockStyler::Group* blockGroup_curveRefGeometry;
+    PWOpen::BlockStyler::SelectObject* selectObject_curveRefObj;
+    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_first;
+    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_second;
+    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_third;
+    PWOpen::BlockStyler::SelectObject* selectObject_curveObj;
+    PWOpen::BlockStyler::SelectObject* selectObject_planeObj;
 
-    // group3: 第一条直线
     PWOpen::BlockStyler::Group* blockGroup_firstLine;
-    PWOpen::BlockStyler::SelectObject* selectObject_firstLinear;
+    PWOpen::BlockStyler::SelectObject* selectObject_firstLine;
 
-    // group4: 第二条直线
     PWOpen::BlockStyler::Group* blockGroup_secondLine;
-    PWOpen::BlockStyler::SelectObject* selectObject_secondLinear;
+    PWOpen::BlockStyler::SelectObject* selectObject_secondLine;
 
-    // group6: 相切子类型
     PWOpen::BlockStyler::Group* blockGroup_tangentSubtype;
     PWOpen::BlockStyler::Enumeration* enum_tangentSubtype;
 
-    // group23: 参考几何体 (Tangent)
     PWOpen::BlockStyler::Group* blockGroup_tangentRefGeometry;
-    PWOpen::BlockStyler::SelectObject* selectObject_tangentInferObject;
-    PWOpen::BlockStyler::SelectObject* selectObject_tangentFace;
-    PWOpen::BlockStyler::SelectObject* selectObject_tangentSecondFace;
-    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_tangentPoint;
+    PWOpen::BlockStyler::SelectObject* selectObject_tangentObj;
+    PWOpen::BlockStyler::SelectObject* selectObject_tangentFace1;
+    PWOpen::BlockStyler::SelectObject* selectObject_tangentFace2;
+    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_tangent;
     PWOpen::BlockStyler::SelectObject* selectObject_tangentFaceSel;
     PWOpen::BlockStyler::SelectObject* selectObject_tangentLinear;
-    PWOpen::BlockStyler::SelectObject* selectObject_tangentAnglePlane;
+    PWOpen::BlockStyler::SelectObject* selectObject_tangentPlane;
 
-    // group22: 角度
     PWOpen::BlockStyler::Group* blockGroup_angle;
     PWOpen::BlockStyler::Enumeration* enum_angleOption;
-    PWOpen::BlockStyler::AngularDimension* angularDim_angle;
+    PWOpen::BlockStyler::AngularDimension* blockAngular_angle;
 
-    // group8: 通过对象
-    PWOpen::BlockStyler::Group* blockGroup_throughObject;
-    PWOpen::BlockStyler::SelectObject* selectObject_coincidentObject;
+    PWOpen::BlockStyler::Group* blockGroup_throughObj;
+    PWOpen::BlockStyler::SelectObject* selectObject_throughObj;
 
-    // group9: 通过点
     PWOpen::BlockStyler::Group* blockGroup_throughPoint;
-    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_originPoint;
+    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_pointDir;
 
-    // group10: 法向
-    PWOpen::BlockStyler::Group* blockGroup_normal;
+    PWOpen::BlockStyler::Group* blockGroup_normalDir;
     PWOpen::BlockStyler::SpecifyVector* specifyVector_normal;
 
-    // group11: 曲线
     PWOpen::BlockStyler::Group* blockGroup_curve;
-    PWOpen::BlockStyler::CurveCollector* curveCollector_curve;
-    PWOpen::BlockStyler::ReverseDirection* reverseDirection_curveDir;
+    PWOpen::BlockStyler::SectionBuilder* sectionBuilder_curveSelect;
+    PWOpen::BlockStyler::ReverseDirection* reverseDir_curve;
 
-    // group12: 曲线上的位置
     PWOpen::BlockStyler::Group* blockGroup_positionOnCurve;
-    PWOpen::BlockStyler::Enumeration* enum_positionMethod;
-    PWOpen::BlockStyler::LinearDimension* linearDim_arcLength;
-    PWOpen::BlockStyler::ExpressionBlock* expression_arcLengthPercent;
-    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_positionPoint;
+    PWOpen::BlockStyler::Enumeration* enum_curvePosition;
+    PWOpen::BlockStyler::LinearDimension* blockLinear_arcLength;
+    PWOpen::BlockStyler::ExpressionBlock* blockExpression_arcPercent;
+    PWOpen::BlockStyler::SpecifyPoint* specifyPoint_onCurve;
 
-    // group13: 曲线上的方位
-    PWOpen::BlockStyler::Group* blockGroup_orientationOnCurve;
-    PWOpen::BlockStyler::Enumeration* enum_orientationMethod;
-    PWOpen::BlockStyler::SelectObject* selectObject_projectObject;
-    PWOpen::BlockStyler::SpecifyVector* specifyVector_orientVector;
+    PWOpen::BlockStyler::Group* blockGroup_orientOnCurve;
+    PWOpen::BlockStyler::Enumeration* enum_frenetOrientation;
+    PWOpen::BlockStyler::SelectObject* selectObject_orientObj;
+    PWOpen::BlockStyler::SpecifyVector* specifyVector_frenet;
 
-    // group16: 偏置和参考
     PWOpen::BlockStyler::Group* blockGroup_offsetAndRef;
-    PWOpen::BlockStyler::Enumeration* enum_csysRef;
-    PWOpen::BlockStyler::LinearDimension* linearDim_distance;
+    PWOpen::BlockStyler::Enumeration* enum_coordSys;
+    PWOpen::BlockStyler::LinearDimension* blockLinear_offsetDist;
 
-    // group17: 系数
     PWOpen::BlockStyler::Group* blockGroup_coefficients;
-    PWOpen::BlockStyler::Enumeration* enum_coeffCsys;
-    PWOpen::BlockStyler::DoubleBlock* doubleBlock_coeffA;
-    PWOpen::BlockStyler::DoubleBlock* doubleBlock_coeffB;
-    PWOpen::BlockStyler::DoubleBlock* doubleBlock_coeffC;
-    PWOpen::BlockStyler::LinearDimension* linearDim_coeffD;
+    PWOpen::BlockStyler::Enumeration* enum_coeffCoordSys;
+    PWOpen::BlockStyler::DoubleBlock* blockDouble_coeffA;
+    PWOpen::BlockStyler::DoubleBlock* blockDouble_coeffB;
+    PWOpen::BlockStyler::DoubleBlock* blockDouble_coeffC;
+    PWOpen::BlockStyler::LinearDimension* blockLinear_coeffD;
 
-    // group19: 平面方位 (most methods)
-    PWOpen::BlockStyler::Group* blockGroup_planeOrientation;
-    PWOpen::BlockStyler::ReverseDirection* reverseDirection_planeFlip;
+    PWOpen::BlockStyler::Group* blockGroup_planeOrientGeneral;
+    PWOpen::BlockStyler::ReverseDirection* reverseDir_general;
 
-    // group18: 偏置 (most methods)
-    PWOpen::BlockStyler::Group* blockGroup_offset;
-    PWOpen::BlockStyler::Toggle* toggle_offset;
-    PWOpen::BlockStyler::LinearDimension* linearDim_offsetDistance;
+    PWOpen::BlockStyler::Group* blockGroup_offsetBias;
+    PWOpen::BlockStyler::Toggle* blockToggle_offsetEnable;
+    PWOpen::BlockStyler::LinearDimension* blockLinear_biasDist;
 
-    // group24: 偏置 (Distance method)
     PWOpen::BlockStyler::Group* blockGroup_distanceOffset;
-    PWOpen::BlockStyler::LinearDimension* linearDim_distanceValue;
-    PWOpen::BlockStyler::IntegerBlock* integerBlock_planeCount;
+    PWOpen::BlockStyler::LinearDimension* blockLinear_multiDist;
+    PWOpen::BlockStyler::IntegerBlock* blockInteger_planeCount;
 
-    // group20: 平面方位 (Fixed/View methods)
-    PWOpen::BlockStyler::Group* blockGroup_fixedPlaneOrientation;
-    PWOpen::BlockStyler::ReverseDirection* reverseDirection_fixedFlip;
+    PWOpen::BlockStyler::Group* blockGroup_planeOrientFixed;
+    PWOpen::BlockStyler::ReverseDirection* reverseDir_fixed;
 
-    // group25: 平面方位 (Distance method)
-    PWOpen::BlockStyler::Group* blockGroup_distancePlaneOrientation;
-    PWOpen::BlockStyler::ReverseDirection* reverseDirection_distanceFlip;
+    PWOpen::BlockStyler::Group* blockGroup_planeOrientDistance;
+    PWOpen::BlockStyler::ReverseDirection* reverseDir_distance;
 
-    // group21: 设置
     PWOpen::BlockStyler::Group* blockGroup_settings;
-    PWOpen::BlockStyler::Toggle* toggle_associative;
+    PWOpen::BlockStyler::Toggle* blockToggle_associative;
 };
