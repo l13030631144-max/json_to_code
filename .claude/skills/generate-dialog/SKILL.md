@@ -483,29 +483,50 @@ String array example:
 </property>
 ```
 
-**Enum PW_Value / PW_Data — Two JSON Formats (MUST handle both)**:
+**Enum stringlist properties — MUST always output as `<stringlist>` (CRITICAL)**:
 
-JSON input may use **either** of two formats for enum `PW_Value` and `PW_Data`:
+The following BlockEnumeration properties MUST ALWAYS be output as `<stringlist>` with individual `<string>` entries, **NEVER** as a single comma-separated `<string>`:
+- **`PW_Value`**
+- **`PW_Data`**
+- **`PW_Bitmaps`**
+- **`PW_EnumSensitivity`**
+- **`PW_EnumVisibility`**
+
+JSON input may use **either** of two formats:
 
 | Format | JSON Example | How to process |
 |--------|-------------|----------------|
-| **New: JSON Array** | `"PW_Value": ["1", "2"]` | Use array items directly as `<stringlist>` entries |
-| **Old: Comma-separated String** | `"PW_Value": "aa,221,as"` | Split by comma first, then write as `<stringlist>` |
+| **JSON Array** | `"PW_Value": ["A", "B"]` | Use array items directly as `<stringlist>` entries |
+| **Comma-separated String** | `"PW_Data": "aa,bb,cc"` | Split by comma first, then write each as `<stringlist>` entry |
 
-Both formats produce the same `.ui` output:
+**Detection rule**: If the JSON value is an array (`[]`), use items directly. If it is a string, split by comma.
+
+Both formats produce the same `.ui` output — always `<stringlist>`:
 
 ```xml
 <property name="PW_Value" stdset="0">
   <stringlist>
-    <string>1</string>
-    <string>2</string>
+    <string>A</string>
+    <string>B</string>
+  </stringlist>
+</property>
+<property name="PW_Data" stdset="0">
+  <stringlist>
+    <string>aa</string>
+    <string>bb</string>
+    <string>cc</string>
   </stringlist>
 </property>
 ```
 
-**Detection rule**: If the JSON value is a JS array (`[]`), use items directly. If it is a string, split by comma.
+**WRONG** (do NOT generate this):
+```xml
+<!-- WRONG: single comma-separated string -->
+<property name="PW_Value" stdset="0"><string>A,B</string></property>
+<property name="PW_Data" stdset="0"><string>aa,bb,cc</string></property>
+```
 
-This also applies to `PW_EnumSensitivity` and `PW_EnumVisibility` — they may appear as JSON arrays of integers (e.g., `[1, 1, 1]`).
+`PW_EnumSensitivity` and `PW_EnumVisibility` may appear as JSON arrays of integers (e.g., `[1, 1, 1]`) — convert each integer to a string in the `<stringlist>`.
 
 **All PW_ properties must have `stdset="0"` attribute.**
 
@@ -744,6 +765,16 @@ specifyPoint_origin = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog
 ```
 
 ### update_cb() Code Generation - altProperties Logic
+
+**CRITICAL — String type rule**: In `.cpp` code, **NEVER use `std::string`** for values returned by `GetString()`. Always use `PWOpen::PWString`. Example:
+
+```cpp
+// CORRECT:
+PWOpen::PWString enumValue = widget->GetProperties()->GetString("CurrentData");
+
+// WRONG — do NOT use std::string:
+std::string enumValue = widget->GetProperties()->GetString("CurrentData");
+```
 
 The `altProperties` field on each component defines dynamic behavior. Parse these rules and generate `if/else` logic.
 

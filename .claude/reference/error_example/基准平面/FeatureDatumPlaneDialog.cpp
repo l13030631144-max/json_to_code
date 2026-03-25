@@ -14,40 +14,27 @@ FeatureDatumPlaneDialog::FeatureDatumPlaneDialog()
     {
         FeatureDatumPlaneDialog::theSession = PWOpen::Session::GetSession();
         FeatureDatumPlaneDialog::theUI = PWOpen::UI::GetUI();
-
         theDialog = theUI->CreateDialog("FeatureDatumPlaneDialog.ui");
-
         theDialog->AddApplyHandler([this] { return apply_cb(); });
         theDialog->AddOkHandler([this] { return ok_cb(); });
         theDialog->AddUpdateHandler([this](auto && PH1) { return update_cb(std::forward<decltype(PH1)>(PH1)); });
         theDialog->AddInitializeHandler([this] { initialize_cb(); });
         theDialog->AddDialogShownHandler([this] { dialogShown_cb(); });
     }
-    catch (std::exception& ex)
-    {
-        return;
-    }
+    catch (std::exception& ex) { return; }
 }
 
 FeatureDatumPlaneDialog::~FeatureDatumPlaneDialog()
 {
-    if (theDialog)
-    {
-        delete theDialog;
-    }
+    if (theDialog) { delete theDialog; }
 }
 
 PWOpen::BlockStyler::BlockDialog::DialogResponse FeatureDatumPlaneDialog::Launch()
 {
     PWOpen::BlockStyler::BlockDialog::DialogResponse dialogResponse = PWOpen::BlockStyler::BlockDialog::DialogResponse::DialogResponseInvalid;
-    try
-    {
-        dialogResponse = theDialog->Launch();
-    }
+    try { dialogResponse = theDialog->Launch(); }
     catch(std::exception& ex)
-    {
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
+    { FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
     return dialogResponse;
 }
 
@@ -55,169 +42,180 @@ void FeatureDatumPlaneDialog::initialize_cb()
 {
     try
     {
-        enum_methodType        = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum0"));
+        // Type selector
+        enum_typeSelector = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum0"));
 
-        blockGroup_inferObject = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group0"));
-        selectObject_inferObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject16"));
+        // group0: 要定义平面的对象
+        blockGroup_objectsToDefine = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group0"));
+        selectObject_inferredObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject16"));
 
+        // group1: 平面参考
         blockGroup_planeReference = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group1"));
-        selectObject_planeRef  = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject0"));
+        selectObject_planeObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject0"));
 
+        // group2: 通过轴
         blockGroup_throughAxis = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group2"));
-        selectObject_axisLinear = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject1"));
+        selectObject_linearObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject1"));
 
-        blockGroup_firstPlane  = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group14"));
-        selectObject_firstPlane = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject2"));
+        // group14: 第一平面
+        blockGroup_firstPlane = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group14"));
+        selectObject_firstPlaneObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject2"));
 
+        // group15: 第二平面
         blockGroup_secondPlane = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group15"));
-        selectObject_secondPlane = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject14"));
+        selectObject_secondPlaneObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject14"));
 
+        // group5: 曲线和点子类型
         blockGroup_curvePointSubtype = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group5"));
         enum_curvePointSubtype = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum1"));
 
-        blockGroup_refGeomCurvePoint = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group7"));
-        selectObject_pointInfer = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject4"));
-        specifyPoint_point1    = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point0"));
-        specifyPoint_point2    = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point1"));
-        specifyPoint_point3    = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point2"));
-        selectObject_curveForPlane = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject5"));
-        selectObject_planeForPoint = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject6"));
+        // group7: 参考几何体 (CurvePoint)
+        blockGroup_referenceGeometry = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group7"));
+        selectObject_inferObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject4"));
+        specifyPoint_point0 = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point0"));
+        specifyPoint_point1 = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point1"));
+        specifyPoint_point2 = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point2"));
+        selectObject_curveObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject5"));
+        selectObject_parallelPlaneObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject6"));
 
-        blockGroup_firstLine   = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group3"));
-        selectObject_firstLine = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject15"));
+        // group3: 第一条直线
+        blockGroup_firstLine = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group3"));
+        selectObject_firstLinear = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject15"));
 
-        blockGroup_secondLine  = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group4"));
-        selectObject_secondLine = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject3"));
+        // group4: 第二条直线
+        blockGroup_secondLine = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group4"));
+        selectObject_secondLinear = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject3"));
 
+        // group6: 相切子类型
         blockGroup_tangentSubtype = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group6"));
-        enum_tangentSubtype    = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum2"));
+        enum_tangentSubtype = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum2"));
 
-        blockGroup_refGeomTangent = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group23"));
-        selectObject_tangentInfer = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject7"));
-        selectObject_tangentFace  = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject8"));
-        selectObject_tangentFace2 = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject17"));
+        // group23: 参考几何体 (Tangent)
+        blockGroup_tangentRefGeometry = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group23"));
+        selectObject_tangentInferObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject7"));
+        selectObject_tangentFace = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject8"));
+        selectObject_tangentSecondFace = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject17"));
         specifyPoint_tangentPoint = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point5"));
-        selectObject_tangentLinearFace = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject9"));
+        selectObject_tangentFaceSel = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject9"));
         selectObject_tangentLinear = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject10"));
         selectObject_tangentAnglePlane = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject18"));
 
-        blockGroup_angle       = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group22"));
-        enum_angleOption       = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum7"));
-        blockAngular_angle     = dynamic_cast<PWOpen::BlockStyler::AngularDimension*>(theDialog->TopBlock()->FindBlock("angular_dim0"));
+        // group22: 角度
+        blockGroup_angle = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group22"));
+        enum_angleOption = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum7"));
+        angularDim_angle = dynamic_cast<PWOpen::BlockStyler::AngularDimension*>(theDialog->TopBlock()->FindBlock("angular_dim0"));
 
-        blockGroup_coincidentObject = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group8"));
-        selectObject_coincidentObj  = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject19"));
+        // group8: 通过对象
+        blockGroup_throughObject = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group8"));
+        selectObject_coincidentObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject19"));
 
-        blockGroup_pointDir    = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group9"));
-        specifyPoint_pointDir  = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point3"));
+        // group9: 通过点
+        blockGroup_throughPoint = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group9"));
+        specifyPoint_originPoint = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point3"));
 
-        blockGroup_normalDir   = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group10"));
-        specifyVector_normalDir = dynamic_cast<PWOpen::BlockStyler::SpecifyVector*>(theDialog->TopBlock()->FindBlock("vector0"));
+        // group10: 法向
+        blockGroup_normal = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group10"));
+        specifyVector_normal = dynamic_cast<PWOpen::BlockStyler::SpecifyVector*>(theDialog->TopBlock()->FindBlock("vector0"));
 
-        blockGroup_curve       = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group11"));
-        sectionBuilder_curve   = dynamic_cast<PWOpen::BlockStyler::SectionBuilder*>(theDialog->TopBlock()->FindBlock("section0"));
-        reverseDir_curveDir    = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction0"));
+        // group11: 曲线
+        blockGroup_curve = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group11"));
+        curveCollector_curve = dynamic_cast<PWOpen::BlockStyler::CurveCollector*>(theDialog->TopBlock()->FindBlock("section0"));
+        reverseDirection_curveDir = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction0"));
 
-        blockGroup_curvePosition = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group12"));
-        enum_positionMethod    = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum3"));
-        blockLinear_arcLength  = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim0"));
-        blockExpression_arcPercent = dynamic_cast<PWOpen::BlockStyler::ExpressionBlock*>(theDialog->TopBlock()->FindBlock("expression0"));
-        specifyPoint_frenetPoint = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point4"));
+        // group12: 曲线上的位置
+        blockGroup_positionOnCurve = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group12"));
+        enum_positionMethod = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum3"));
+        linearDim_arcLength = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim0"));
+        expression_arcLengthPercent = dynamic_cast<PWOpen::BlockStyler::ExpressionBlock*>(theDialog->TopBlock()->FindBlock("expression0"));
+        specifyPoint_positionPoint = dynamic_cast<PWOpen::BlockStyler::SpecifyPoint*>(theDialog->TopBlock()->FindBlock("point4"));
 
-        blockGroup_frenetOrientation = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group13"));
-        enum_frenetDirection   = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum4"));
-        selectObject_frenetProject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject11"));
-        specifyVector_frenetVector = dynamic_cast<PWOpen::BlockStyler::SpecifyVector*>(theDialog->TopBlock()->FindBlock("vector1"));
+        // group13: 曲线上的方位
+        blockGroup_orientationOnCurve = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group13"));
+        enum_orientationMethod = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum4"));
+        selectObject_projectObject = dynamic_cast<PWOpen::BlockStyler::SelectObject*>(theDialog->TopBlock()->FindBlock("selectobject11"));
+        specifyVector_orientVector = dynamic_cast<PWOpen::BlockStyler::SpecifyVector*>(theDialog->TopBlock()->FindBlock("vector1"));
 
-        blockGroup_offsetReference = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group16"));
-        enum_coordSystem       = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum5"));
-        blockLinear_fixedDistance = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim1"));
+        // group16: 偏置和参考
+        blockGroup_offsetAndRef = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group16"));
+        enum_csysRef = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum5"));
+        linearDim_distance = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim1"));
 
+        // group17: 系数
         blockGroup_coefficients = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group17"));
-        enum_coeffCoordSystem  = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum6"));
-        blockDouble_coeffA     = dynamic_cast<PWOpen::BlockStyler::DoubleBlock*>(theDialog->TopBlock()->FindBlock("double0"));
-        blockDouble_coeffB     = dynamic_cast<PWOpen::BlockStyler::DoubleBlock*>(theDialog->TopBlock()->FindBlock("double1"));
-        blockDouble_coeffC     = dynamic_cast<PWOpen::BlockStyler::DoubleBlock*>(theDialog->TopBlock()->FindBlock("double2"));
-        blockLinear_coeffD     = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim2"));
+        enum_coeffCsys = dynamic_cast<PWOpen::BlockStyler::Enumeration*>(theDialog->TopBlock()->FindBlock("enum6"));
+        doubleBlock_coeffA = dynamic_cast<PWOpen::BlockStyler::DoubleBlock*>(theDialog->TopBlock()->FindBlock("double0"));
+        doubleBlock_coeffB = dynamic_cast<PWOpen::BlockStyler::DoubleBlock*>(theDialog->TopBlock()->FindBlock("double1"));
+        doubleBlock_coeffC = dynamic_cast<PWOpen::BlockStyler::DoubleBlock*>(theDialog->TopBlock()->FindBlock("double2"));
+        linearDim_coeffD = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim2"));
 
+        // group19: 平面方位 (most methods)
         blockGroup_planeOrientation = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group19"));
-        reverseDir_planeOrient = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction2"));
+        reverseDirection_planeFlip = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction2"));
 
-        blockGroup_offset      = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group18"));
-        blockToggle_offset     = dynamic_cast<PWOpen::BlockStyler::Toggle*>(theDialog->TopBlock()->FindBlock("toggle0"));
-        blockLinear_offsetDist = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim3"));
+        // group18: 偏置 (most methods)
+        blockGroup_offset = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group18"));
+        toggle_offset = dynamic_cast<PWOpen::BlockStyler::Toggle*>(theDialog->TopBlock()->FindBlock("toggle0"));
+        linearDim_offsetDistance = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim3"));
 
+        // group24: 偏置 (Distance method)
         blockGroup_distanceOffset = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group24"));
-        blockLinear_distanceDist  = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim4"));
-        blockInteger_planeCount   = dynamic_cast<PWOpen::BlockStyler::IntegerBlock*>(theDialog->TopBlock()->FindBlock("integer1"));
+        linearDim_distanceValue = dynamic_cast<PWOpen::BlockStyler::LinearDimension*>(theDialog->TopBlock()->FindBlock("linear_dim4"));
+        integerBlock_planeCount = dynamic_cast<PWOpen::BlockStyler::IntegerBlock*>(theDialog->TopBlock()->FindBlock("integer1"));
 
-        blockGroup_fixedPlaneOrient = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group20"));
-        reverseDir_fixedOrient  = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction3"));
+        // group20: 平面方位 (Fixed/View methods)
+        blockGroup_fixedPlaneOrientation = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group20"));
+        reverseDirection_fixedFlip = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction3"));
 
-        blockGroup_distancePlaneOrient = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group25"));
-        reverseDir_distanceOrient = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction1"));
+        // group25: 平面方位 (Distance method)
+        blockGroup_distancePlaneOrientation = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group25"));
+        reverseDirection_distanceFlip = dynamic_cast<PWOpen::BlockStyler::ReverseDirection*>(theDialog->TopBlock()->FindBlock("direction1"));
 
-        blockGroup_settings    = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group21"));
-        blockToggle_associative = dynamic_cast<PWOpen::BlockStyler::Toggle*>(theDialog->TopBlock()->FindBlock("toggle1"));
-
-        // Static initial states
-        reverseDir_planeOrient->GetProperties()->SetLogical("Enable", false);
-        blockLinear_distanceDist->GetProperties()->SetLogical("Enable", true);
-        blockInteger_planeCount->GetProperties()->SetLogical("Enable", true);
-        reverseDir_distanceOrient->GetProperties()->SetLogical("Enable", true);
-        blockLinear_offsetDist->GetProperties()->SetLogical("Enable", true);
+        // group21: 设置
+        blockGroup_settings = dynamic_cast<PWOpen::BlockStyler::Group*>(theDialog->TopBlock()->FindBlock("group21"));
+        toggle_associative = dynamic_cast<PWOpen::BlockStyler::Toggle*>(theDialog->TopBlock()->FindBlock("toggle1"));
     }
     catch(std::exception& ex)
-    {
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
+    { FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
 }
 
 void FeatureDatumPlaneDialog::dialogShown_cb()
 {
     try
     {
-        // Apply initial visibility based on current enum/toggle states
-        update_cb(enum_methodType);
+        // Trigger update for enum0 (top-level type selector)
+        update_cb(enum_typeSelector);
+        // Trigger update for enum1 (curve/point subtype)
         update_cb(enum_curvePointSubtype);
+        // Trigger update for enum2 (tangent subtype)
         update_cb(enum_tangentSubtype);
+        // Trigger update for enum3 (position on curve)
         update_cb(enum_positionMethod);
-        update_cb(enum_frenetDirection);
+        // Trigger update for enum4 (orientation on curve)
+        update_cb(enum_orientationMethod);
+        // Trigger update for enum7 (angle option)
         update_cb(enum_angleOption);
-        update_cb(blockToggle_offset);
+        // Trigger update for toggle0 (offset toggle)
+        update_cb(toggle_offset);
     }
     catch(std::exception& ex)
-    {
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
+    { FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
 }
 
 int FeatureDatumPlaneDialog::apply_cb()
 {
     int errorCode = 0;
-    try
-    {
-    }
+    try {}
     catch(std::exception& ex)
-    {
-        errorCode = 1;
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
+    { errorCode = 1; FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
     return errorCode;
 }
 
 int FeatureDatumPlaneDialog::ok_cb()
 {
     int errorCode = 0;
-    try
-    {
-        errorCode = apply_cb();
-    }
+    try { errorCode = apply_cb(); }
     catch(std::exception& ex)
-    {
-        errorCode = 1;
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
+    { errorCode = 1; FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
     return errorCode;
 }
 
@@ -225,332 +223,245 @@ int FeatureDatumPlaneDialog::update_cb(PWOpen::BlockStyler::UIBlock* block)
 {
     try
     {
-        if (block == enum_methodType)
+        // --- enum0: top-level type selector ---
+        if (block == enum_typeSelector)
         {
-            PWOpen::PWString enumValue = enum_methodType->GetProperties()->GetString("CurrentData");
+            PWOpen::PWString enum0Val = enum_typeSelector->GetProperties()->GetString("CurrentData");
 
-            blockGroup_inferObject->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeInferred");
+            // group0: show for MethodTypeInferred
+            blockGroup_objectsToDefine->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeInferred");
 
+            // group1: show for MethodTypeDistance or MethodTypeAngle
             blockGroup_planeReference->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeDistance" || enumValue == "MethodTypeAngle");
+                enum0Val == "MethodTypeDistance" || enum0Val == "MethodTypeAngle");
 
+            // group2: show for MethodTypeAngle
             blockGroup_throughAxis->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeAngle");
+                enum0Val == "MethodTypeAngle");
 
+            // group14: show for MethodTypeCenter
             blockGroup_firstPlane->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCenter");
+                enum0Val == "MethodTypeCenter");
 
+            // group15: show for MethodTypeCenter
             blockGroup_secondPlane->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCenter");
+                enum0Val == "MethodTypeCenter");
 
+            // group5: show for MethodTypeCurvePoint
             blockGroup_curvePointSubtype->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCurvePoint");
+                enum0Val == "MethodTypeCurvePoint");
 
-            blockGroup_refGeomCurvePoint->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCurvePoint");
+            // group7: show for MethodTypeCurvePoint
+            blockGroup_referenceGeometry->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeCurvePoint");
 
+            // group3: show for MethodTypeTwoLines
             blockGroup_firstLine->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTwoLines");
+                enum0Val == "MethodTypeTwoLines");
 
+            // group4: show for MethodTypeTwoLines
             blockGroup_secondLine->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTwoLines");
+                enum0Val == "MethodTypeTwoLines");
 
+            // group6: show for MethodTypeTangent
             blockGroup_tangentSubtype->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangent");
+                enum0Val == "MethodTypeTangent");
 
-            blockGroup_refGeomTangent->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangent");
+            // group23: show for MethodTypeTangent
+            blockGroup_tangentRefGeometry->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeTangent");
 
+            // group22: show for MethodTypeAngle or MethodTypeTangent
             blockGroup_angle->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeAngle" || enumValue == "MethodTypeTangent");
+                enum0Val == "MethodTypeAngle" || enum0Val == "MethodTypeTangent");
 
-            blockGroup_coincidentObject->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCoincident");
+            // group8: show for MethodTypeCoincident
+            blockGroup_throughObject->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeCoincident");
 
-            blockGroup_pointDir->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypePointDir");
+            // group9: show for MethodTypePointDir
+            blockGroup_throughPoint->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypePointDir");
 
-            blockGroup_normalDir->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypePointDir");
+            // group10: show for MethodTypePointDir
+            blockGroup_normal->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypePointDir");
 
+            // group11: show for MethodTypeFrenet
             blockGroup_curve->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeFrenet");
+                enum0Val == "MethodTypeFrenet");
 
-            blockGroup_curvePosition->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeFrenet");
+            // group12: show for MethodTypeFrenet
+            blockGroup_positionOnCurve->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeFrenet");
 
-            blockGroup_frenetOrientation->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeFrenet");
+            // group13: show for MethodTypeFrenet
+            blockGroup_orientationOnCurve->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeFrenet");
 
-            blockGroup_offsetReference->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeFixedX" || enumValue == "MethodTypeFixedY" || enumValue == "MethodTypeFixedZ");
+            // group16: show for MethodTypeFixedX, MethodTypeFixedY, MethodTypeFixedZ
+            blockGroup_offsetAndRef->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeFixedX" || enum0Val == "MethodTypeFixedY" || enum0Val == "MethodTypeFixedZ");
 
+            // group17: show for MethodTypeCoefficients
             blockGroup_coefficients->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCoefficients");
+                enum0Val == "MethodTypeCoefficients");
 
+            // group19: show for most methods (not fixed planes, not distance)
             blockGroup_planeOrientation->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeInferred" || enumValue == "MethodTypeAngle" ||
-                enumValue == "MethodTypeCenter" || enumValue == "MethodTypeCurvePoint" ||
-                enumValue == "MethodTypeTwoLines" || enumValue == "MethodTypeTangent" ||
-                enumValue == "MethodTypeCoincident" || enumValue == "MethodTypePointDir" ||
-                enumValue == "MethodTypeFrenet" || enumValue == "MethodTypeCoefficients");
+                enum0Val == "MethodTypeInferred" || enum0Val == "MethodTypeAngle" ||
+                enum0Val == "MethodTypeCenter" || enum0Val == "MethodTypeCurvePoint" ||
+                enum0Val == "MethodTypeTwoLines" || enum0Val == "MethodTypeTangent" ||
+                enum0Val == "MethodTypeCoincident" || enum0Val == "MethodTypePointDir" ||
+                enum0Val == "MethodTypeFrenet" || enum0Val == "MethodTypeCoefficients");
 
+            // group18: show for most methods (not fixed planes, not distance)
             blockGroup_offset->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeInferred" || enumValue == "MethodTypeAngle" ||
-                enumValue == "MethodTypeCenter" || enumValue == "MethodTypeCurvePoint" ||
-                enumValue == "MethodTypeTwoLines" || enumValue == "MethodTypeTangent" ||
-                enumValue == "MethodTypeCoincident" || enumValue == "MethodTypePointDir" ||
-                enumValue == "MethodTypeFrenet");
+                enum0Val == "MethodTypeInferred" || enum0Val == "MethodTypeAngle" ||
+                enum0Val == "MethodTypeCenter" || enum0Val == "MethodTypeCurvePoint" ||
+                enum0Val == "MethodTypeTwoLines" || enum0Val == "MethodTypeTangent" ||
+                enum0Val == "MethodTypeCoincident" || enum0Val == "MethodTypePointDir" ||
+                enum0Val == "MethodTypeFrenet");
 
+            // group24: show for MethodTypeDistance
             blockGroup_distanceOffset->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeDistance");
+                enum0Val == "MethodTypeDistance");
 
-            blockGroup_fixedPlaneOrient->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeFixedX" || enumValue == "MethodTypeFixedY" ||
-                enumValue == "MethodTypeFixedZ" || enumValue == "MethodTypeFixedView");
+            // group20: show for MethodTypeFixedX, MethodTypeFixedY, MethodTypeFixedZ, MethodTypeFixedView
+            blockGroup_fixedPlaneOrientation->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeFixedX" || enum0Val == "MethodTypeFixedY" ||
+                enum0Val == "MethodTypeFixedZ" || enum0Val == "MethodTypeFixedView");
 
-            blockGroup_distancePlaneOrient->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeDistance");
+            // group25: show for MethodTypeDistance
+            blockGroup_distancePlaneOrientation->GetProperties()->SetLogical("Show",
+                enum0Val == "MethodTypeDistance");
 
-            reverseDir_distanceOrient->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeDistance");
-
+            // group21: enable for most methods (not fixed planes)
             blockGroup_settings->GetProperties()->SetLogical("Enable",
-                enumValue == "MethodTypeInferred" || enumValue == "MethodTypeDistance" ||
-                enumValue == "MethodTypeAngle" || enumValue == "MethodTypeCenter" ||
-                enumValue == "MethodTypeCurvePoint" || enumValue == "MethodTypeTwoLines" ||
-                enumValue == "MethodTypeTangent" || enumValue == "MethodTypeCoincident" ||
-                enumValue == "MethodTypePointDir" || enumValue == "MethodTypeFrenet");
+                enum0Val == "MethodTypeInferred" || enum0Val == "MethodTypeDistance" ||
+                enum0Val == "MethodTypeAngle" || enum0Val == "MethodTypeCenter" ||
+                enum0Val == "MethodTypeCurvePoint" || enum0Val == "MethodTypeTwoLines" ||
+                enum0Val == "MethodTypeTangent" || enum0Val == "MethodTypeCoincident" ||
+                enum0Val == "MethodTypePointDir" || enum0Val == "MethodTypeFrenet");
         }
+        // --- enum1: curve/point subtype ---
         else if (block == enum_curvePointSubtype)
         {
-            PWOpen::PWString enumValue = enum_curvePointSubtype->GetProperties()->GetString("CurrentData");
+            PWOpen::PWString enum1Val = enum_curvePointSubtype->GetProperties()->GetString("CurrentData");
 
-            selectObject_pointInfer->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypePointInfer");
+            // selectobject4: show for MethodTypePointInfer
+            selectObject_inferObject->GetProperties()->SetLogical("Show",
+                enum1Val == "MethodTypePointInfer");
 
+            // point0: show for MethodTypePoint, MethodTypeTwoPoints, MethodTypeThreePoints, MethodTypeCurvePoint, MethodTypeParallelPoint
+            specifyPoint_point0->GetProperties()->SetLogical("Show",
+                enum1Val == "MethodTypePoint" || enum1Val == "MethodTypeTwoPoints" ||
+                enum1Val == "MethodTypeThreePoints" || enum1Val == "MethodTypeCurvePoint" ||
+                enum1Val == "MethodTypeParallelPoint");
+
+            // point1: show for MethodTypeTwoPoints, MethodTypeThreePoints
             specifyPoint_point1->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypePoint" || enumValue == "MethodTypeTwoPoints" ||
-                enumValue == "MethodTypeThreePoints" || enumValue == "MethodTypeCurvePoint" ||
-                enumValue == "MethodTypeParallelPoint");
+                enum1Val == "MethodTypeTwoPoints" || enum1Val == "MethodTypeThreePoints");
 
+            // point2: show for MethodTypeThreePoints
             specifyPoint_point2->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTwoPoints" || enumValue == "MethodTypeThreePoints");
+                enum1Val == "MethodTypeThreePoints");
 
-            specifyPoint_point3->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeThreePoints");
+            // selectobject5: show for MethodTypeCurvePoint
+            selectObject_curveObject->GetProperties()->SetLogical("Show",
+                enum1Val == "MethodTypeCurvePoint");
 
-            selectObject_curveForPlane->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeCurvePoint");
-
-            selectObject_planeForPoint->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeParallelPoint");
+            // selectobject6: show for MethodTypeParallelPoint
+            selectObject_parallelPlaneObject->GetProperties()->SetLogical("Show",
+                enum1Val == "MethodTypeParallelPoint");
         }
+        // --- enum2: tangent subtype ---
         else if (block == enum_tangentSubtype)
         {
-            PWOpen::PWString enumValue = enum_tangentSubtype->GetProperties()->GetString("CurrentData");
+            PWOpen::PWString enum2Val = enum_tangentSubtype->GetProperties()->GetString("CurrentData");
 
-            selectObject_tangentInfer->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangentInfer");
+            // selectobject7: show for MethodTypeTangentInfer
+            selectObject_tangentInferObject->GetProperties()->SetLogical("Show",
+                enum2Val == "MethodTypeTangentInfer");
 
+            // selectobject8: show for MethodTypeTangent, MethodTypeTangentPoint, MethodTypeTangentTwoFaces, MethodTypeTangentAnglePlane
             selectObject_tangentFace->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangent" || enumValue == "MethodTypeTangentPoint" ||
-                enumValue == "MethodTypeTangentTwoFaces" || enumValue == "MethodTypeTangentAnglePlane");
+                enum2Val == "MethodTypeTangent" || enum2Val == "MethodTypeTangentPoint" ||
+                enum2Val == "MethodTypeTangentTwoFaces" || enum2Val == "MethodTypeTangentAnglePlane");
 
-            selectObject_tangentFace2->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangentTwoFaces");
+            // selectobject17: show for MethodTypeTangentTwoFaces
+            selectObject_tangentSecondFace->GetProperties()->SetLogical("Show",
+                enum2Val == "MethodTypeTangentTwoFaces");
 
+            // point5: show for MethodTypeTangentPoint
             specifyPoint_tangentPoint->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangentPoint");
+                enum2Val == "MethodTypeTangentPoint");
 
-            selectObject_tangentLinearFace->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangentLinear");
+            // selectobject9: show for MethodTypeTangentLinear
+            selectObject_tangentFaceSel->GetProperties()->SetLogical("Show",
+                enum2Val == "MethodTypeTangentLinear");
 
+            // selectobject10: show for MethodTypeTangentLinear
             selectObject_tangentLinear->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangentLinear");
+                enum2Val == "MethodTypeTangentLinear");
 
+            // selectobject18: show for MethodTypeTangentAnglePlane
             selectObject_tangentAnglePlane->GetProperties()->SetLogical("Show",
-                enumValue == "MethodTypeTangentAnglePlane");
+                enum2Val == "MethodTypeTangentAnglePlane");
         }
+        // --- enum3: position on curve ---
         else if (block == enum_positionMethod)
         {
-            PWOpen::PWString enumValue = enum_positionMethod->GetProperties()->GetString("CurrentData");
+            PWOpen::PWString enum3Val = enum_positionMethod->GetProperties()->GetString("CurrentData");
 
-            blockLinear_arcLength->GetProperties()->SetLogical("Show",
-                enumValue == "SetExpression");
+            // linear_dim0: show for SetExpression
+            linearDim_arcLength->GetProperties()->SetLogical("Show",
+                enum3Val == "SetExpression");
 
-            blockExpression_arcPercent->GetProperties()->SetLogical("Show",
-                enumValue == "SetPercent");
+            // expression0: show for SetPercent
+            expression_arcLengthPercent->GetProperties()->SetLogical("Show",
+                enum3Val == "SetPercent");
 
-            specifyPoint_frenetPoint->GetProperties()->SetLogical("Show",
-                enumValue == "SetPoint");
+            // point4: show for SetPoint
+            specifyPoint_positionPoint->GetProperties()->SetLogical("Show",
+                enum3Val == "SetPoint");
         }
-        else if (block == enum_frenetDirection)
+        // --- enum4: orientation on curve ---
+        else if (block == enum_orientationMethod)
         {
-            PWOpen::PWString enumValue = enum_frenetDirection->GetProperties()->GetString("CurrentData");
+            PWOpen::PWString enum4Val = enum_orientationMethod->GetProperties()->GetString("CurrentData");
 
-            selectObject_frenetProject->GetProperties()->SetLogical("Show",
-                enumValue == "FrenetSubtypeProject");
+            // selectobject11: show for FrenetSubtypeProject
+            selectObject_projectObject->GetProperties()->SetLogical("Show",
+                enum4Val == "FrenetSubtypeProject");
 
-            specifyVector_frenetVector->GetProperties()->SetLogical("Show",
-                enumValue == "FrenetSubtypeNormalToVector" ||
-                enumValue == "FrenetSubtypeParallelToVector" ||
-                enumValue == "FrenetSubtypeThruAxis");
+            // vector1: show for FrenetSubtypeNormalToVector, FrenetSubtypeParallelToVector, FrenetSubtypeThruAxis
+            specifyVector_orientVector->GetProperties()->SetLogical("Show",
+                enum4Val == "FrenetSubtypeNormalToVector" || enum4Val == "FrenetSubtypeParallelToVector" ||
+                enum4Val == "FrenetSubtypeThruAxis");
         }
+        // --- enum7: angle option ---
         else if (block == enum_angleOption)
         {
-            PWOpen::PWString enumValue = enum_angleOption->GetProperties()->GetString("CurrentData");
+            PWOpen::PWString enum7Val = enum_angleOption->GetProperties()->GetString("CurrentData");
 
-            blockAngular_angle->GetProperties()->SetLogical("Show",
-                enumValue == "Value");
+            // angular_dim0: show for Value
+            angularDim_angle->GetProperties()->SetLogical("Show",
+                enum7Val == "Value");
         }
-        else if (block == blockToggle_offset)
+        // --- toggle0: offset toggle ---
+        else if (block == toggle_offset)
         {
-            bool toggleValue = blockToggle_offset->GetProperties()->GetLogical("Value");
+            bool toggle0Val = toggle_offset->GetProperties()->GetLogical("Value");
 
-            blockLinear_offsetDist->GetProperties()->SetLogical("Show", toggleValue);
-        }
-        else if (block == selectObject_inferObject)
-        {
-        }
-        else if (block == selectObject_planeRef)
-        {
-        }
-        else if (block == selectObject_axisLinear)
-        {
-        }
-        else if (block == selectObject_firstPlane)
-        {
-        }
-        else if (block == selectObject_secondPlane)
-        {
-        }
-        else if (block == selectObject_pointInfer)
-        {
-        }
-        else if (block == specifyPoint_point1)
-        {
-        }
-        else if (block == specifyPoint_point2)
-        {
-        }
-        else if (block == specifyPoint_point3)
-        {
-        }
-        else if (block == selectObject_curveForPlane)
-        {
-        }
-        else if (block == selectObject_planeForPoint)
-        {
-        }
-        else if (block == selectObject_firstLine)
-        {
-        }
-        else if (block == selectObject_secondLine)
-        {
-        }
-        else if (block == selectObject_tangentInfer)
-        {
-        }
-        else if (block == selectObject_tangentFace)
-        {
-        }
-        else if (block == selectObject_tangentFace2)
-        {
-        }
-        else if (block == specifyPoint_tangentPoint)
-        {
-        }
-        else if (block == selectObject_tangentLinearFace)
-        {
-        }
-        else if (block == selectObject_tangentLinear)
-        {
-        }
-        else if (block == selectObject_tangentAnglePlane)
-        {
-        }
-        else if (block == blockAngular_angle)
-        {
-        }
-        else if (block == selectObject_coincidentObj)
-        {
-        }
-        else if (block == specifyPoint_pointDir)
-        {
-        }
-        else if (block == specifyVector_normalDir)
-        {
-        }
-        else if (block == sectionBuilder_curve)
-        {
-        }
-        else if (block == reverseDir_curveDir)
-        {
-        }
-        else if (block == blockLinear_arcLength)
-        {
-        }
-        else if (block == blockExpression_arcPercent)
-        {
-        }
-        else if (block == specifyPoint_frenetPoint)
-        {
-        }
-        else if (block == selectObject_frenetProject)
-        {
-        }
-        else if (block == specifyVector_frenetVector)
-        {
-        }
-        else if (block == enum_coordSystem)
-        {
-        }
-        else if (block == blockLinear_fixedDistance)
-        {
-        }
-        else if (block == enum_coeffCoordSystem)
-        {
-        }
-        else if (block == blockDouble_coeffA)
-        {
-        }
-        else if (block == blockDouble_coeffB)
-        {
-        }
-        else if (block == blockDouble_coeffC)
-        {
-        }
-        else if (block == blockLinear_coeffD)
-        {
-        }
-        else if (block == reverseDir_planeOrient)
-        {
-        }
-        else if (block == blockLinear_offsetDist)
-        {
-        }
-        else if (block == blockLinear_distanceDist)
-        {
-        }
-        else if (block == blockInteger_planeCount)
-        {
-        }
-        else if (block == reverseDir_fixedOrient)
-        {
-        }
-        else if (block == reverseDir_distanceOrient)
-        {
-        }
-        else if (block == blockToggle_associative)
-        {
+            // linear_dim3: show and enable based on toggle0
+            linearDim_offsetDistance->GetProperties()->SetLogical("Show", toggle0Val);
+            linearDim_offsetDistance->GetProperties()->SetLogical("Enable", true);
         }
     }
     catch(std::exception& ex)
-    {
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
+    { FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
     return 0;
 }
 
@@ -563,12 +474,6 @@ extern "C" DllExport void ufusr(char *param, int *retcod, int param_len)
         dialog->Launch();
     }
     catch(const std::exception& ex)
-    {
-        FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what());
-    }
-    if(dialog != NULL)
-    {
-        delete dialog;
-        dialog = NULL;
-    }
+    { FeatureDatumPlaneDialog::theUI->PWMessageBox()->Show("Block Styler", PWOpen::PWMessageBox::DialogTypeError, ex.what()); }
+    if(dialog != NULL) { delete dialog; dialog = NULL; }
 }

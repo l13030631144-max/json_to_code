@@ -3,34 +3,22 @@
   <class>FeatureDatumPlaneDialog</class>
   <widget class="BlockDialog" name="FeatureDatumPlaneDialog">
     <property name="geometry">
-      <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>472</width>
-        <height>1155</height>
-      </rect>
+      <rect><x>0</x><y>0</y><width>472</width><height>1155</height></rect>
     </property>
-    <property name="PW_Label" stdset="0">
-      <string>基准平面</string>
-    </property>
+    <property name="PW_Label" stdset="0"><string>基准平面</string></property>
+    <property name="PW_BlockID" stdset="0"><string>Dialog0</string></property>
     <widget class="QWidget" name="page">
       <property name="geometry">
-        <rect>
-          <x>19</x>
-          <y>39</y>
-          <width>711</width>
-          <height>401</height>
-        </rect>
+        <rect><x>19</x><y>39</y><width>711</width><height>401</height></rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
+
+        <!-- enum0: Type selector -->
         <item>
-          <widget class="BlockEnumeration" name="enum_methodType">
-            <property name="PW_BlockID" stdset="0">
-              <string>enum0</string>
-            </property>
-            <property name="PW_LabelVisibility" stdset="0">
-              <bool>false</bool>
-            </property>
+          <widget class="BlockEnumeration" name="enum_typeSelector">
+            <property name="PW_BlockID" stdset="0"><string>enum0</string></property>
+            <property name="PW_Label" stdset="0"><string> </string></property>
+            <property name="PW_LabelVisibility" stdset="0"><bool>false</bool></property>
             <property name="PW_Bitmaps" stdset="0">
               <stringlist>
                 <string>infer_datum_plane</string>
@@ -52,680 +40,590 @@
             </property>
             <property name="PW_EnumSensitivity" stdset="0">
               <stringlist>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
+                <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
+                <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
+                <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
               </stringlist>
             </property>
             <property name="PW_EnumVisibility" stdset="0">
               <stringlist>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
-                <string>1</string>
+                <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
+                <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
+                <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
               </stringlist>
             </property>
             <property name="PW_Value" stdset="0">
-              <string>自动判断,按某一距离,成一角度,二等分,曲线和点,两直线,相切,通过对象,点和方向,曲线上,YC-ZC 平面,XC-ZC 平面,XC-YC 平面,视图平面,按系数</string>
+              <stringlist>
+                <string>自动判断</string>
+                <string>按某一距离</string>
+                <string>成一角度</string>
+                <string>二等分</string>
+                <string>曲线和点</string>
+                <string>两直线</string>
+                <string>相切</string>
+                <string>通过对象</string>
+                <string>点和方向</string>
+                <string>曲线上</string>
+                <string>YC-ZC 平面</string>
+                <string>XC-ZC 平面</string>
+                <string>XC-YC 平面</string>
+                <string>视图平面</string>
+                <string>按系数</string>
+              </stringlist>
             </property>
             <property name="PW_Data" stdset="0">
-              <string>MethodTypeInferred,MethodTypeDistance,MethodTypeAngle,MethodTypeCenter,MethodTypeCurvePoint,MethodTypeTwoLines,MethodTypeTangent,MethodTypeCoincident,MethodTypePointDir,MethodTypeFrenet,MethodTypeFixedX,MethodTypeFixedY,MethodTypeFixedZ,MethodTypeFixedView,MethodTypeCoefficients</string>
+              <stringlist>
+                <string>MethodTypeInferred</string>
+                <string>MethodTypeDistance</string>
+                <string>MethodTypeAngle</string>
+                <string>MethodTypeCenter</string>
+                <string>MethodTypeCurvePoint</string>
+                <string>MethodTypeTwoLines</string>
+                <string>MethodTypeTangent</string>
+                <string>MethodTypeCoincident</string>
+                <string>MethodTypePointDir</string>
+                <string>MethodTypeFrenet</string>
+                <string>MethodTypeFixedX</string>
+                <string>MethodTypeFixedY</string>
+                <string>MethodTypeFixedZ</string>
+                <string>MethodTypeFixedView</string>
+                <string>MethodTypeCoefficients</string>
+              </stringlist>
             </property>
+            <property name="PW_NumberOfColumns" stdset="0"><number>65535</number></property>
+            <property name="PW_Layout" stdset="0"><string>Vertical</string></property>
+            <property name="PW_PresentationStyle" stdset="0"><string>OptionMenu</string></property>
           </widget>
         </item>
+
+        <!-- group0: 要定义平面的对象 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_inferObject">
-            <property name="PW_Label" stdset="0">
-              <string>要定义平面的对象</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_objectsToDefine">
+            <property name="PW_BlockID" stdset="0"><string>group0</string></property>
+            <property name="PW_Label" stdset="0"><string>要定义平面的对象</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents">
               <layout class="QVBoxLayout" name="groupVBoxLayout">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_inferObject">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject16</string>
-                    </property>
-                    <property name="PW_PointOverlay" stdset="0">
-                      <bool>true</bool>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_inferredObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject16</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>true</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group1: 平面参考 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_planeReference">
-            <property name="PW_BlockID" stdset="0">
-              <string>group1</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>平面参考</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group1</string></property>
+            <property name="PW_Label" stdset="0"><string>平面参考</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_1">
               <layout class="QVBoxLayout" name="groupVBoxLayout_1">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_planeRef">
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择平面对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_planeObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject0</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择平面对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group2: 通过轴 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_throughAxis">
-            <property name="PW_BlockID" stdset="0">
-              <string>group2</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>通过轴</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group2</string></property>
+            <property name="PW_Label" stdset="0"><string>通过轴</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_2">
               <layout class="QVBoxLayout" name="groupVBoxLayout_2">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_axisLinear">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject1</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择线性对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_linearObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject1</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择线性对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group14: 第一平面 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_firstPlane">
-            <property name="PW_BlockID" stdset="0">
-              <string>group14</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>第一平面</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group14</string></property>
+            <property name="PW_Label" stdset="0"><string>第一平面</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_3">
               <layout class="QVBoxLayout" name="groupVBoxLayout_3">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_firstPlane">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject2</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择平面对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_firstPlaneObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject2</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择平面对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group15: 第二平面 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_secondPlane">
-            <property name="PW_BlockID" stdset="0">
-              <string>group15</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>第二平面</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group15</string></property>
+            <property name="PW_Label" stdset="0"><string>第二平面</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_4">
               <layout class="QVBoxLayout" name="groupVBoxLayout_4">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_secondPlane">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject14</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择平面对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_secondPlaneObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject14</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择平面对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group5: 曲线和点子类型 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_curvePointSubtype">
-            <property name="PW_BlockID" stdset="0">
-              <string>group5</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>曲线和点子类型</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group5</string></property>
+            <property name="PW_Label" stdset="0"><string>曲线和点子类型</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_5">
               <layout class="QVBoxLayout" name="groupVBoxLayout_5">
                 <item>
                   <widget class="BlockEnumeration" name="enum_curvePointSubtype">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum1</string>
+                    <property name="PW_BlockID" stdset="0"><string>enum1</string></property>
+                    <property name="PW_Label" stdset="0"><string>子类型</string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>true</bool></property>
+                    <property name="PW_Value" stdset="0">
+                      <stringlist>
+                        <string>曲线和点</string>
+                        <string>一点</string>
+                        <string>两点</string>
+                        <string>三点</string>
+                        <string>点和曲线/轴</string>
+                        <string>点和平面/面</string>
+                      </stringlist>
                     </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>子类型</string>
-                    </property>
-                    <property name="PW_Bitmaps" stdset="0">
-                      <stringlist/>
+                    <property name="PW_Data" stdset="0">
+                      <stringlist>
+                        <string>MethodTypePointInfer</string>
+                        <string>MethodTypePoint</string>
+                        <string>MethodTypeTwoPoints</string>
+                        <string>MethodTypeThreePoints</string>
+                        <string>MethodTypeCurvePoint</string>
+                        <string>MethodTypeParallelPoint</string>
+                      </stringlist>
                     </property>
                     <property name="PW_EnumSensitivity" stdset="0">
                       <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
+                        <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
                       </stringlist>
                     </property>
                     <property name="PW_EnumVisibility" stdset="0">
                       <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
+                        <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
                       </stringlist>
                     </property>
-                    <property name="PW_Value" stdset="0">
-                      <string>曲线和点,一点,两点,三点,点和曲线/轴,点和平面/面</string>
-                    </property>
-                    <property name="PW_Data" stdset="0">
-                      <string>MethodTypePointInfer,MethodTypePoint,MethodTypeTwoPoints,MethodTypeThreePoints,MethodTypeCurvePoint,MethodTypeParallelPoint</string>
-                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>65535</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Vertical</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>OptionMenu</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group7: 参考几何体 (for CurvePoint) -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_refGeomCurvePoint">
-            <property name="PW_BlockID" stdset="0">
-              <string>group7</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>参考几何体</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_referenceGeometry">
+            <property name="PW_BlockID" stdset="0"><string>group7</string></property>
+            <property name="PW_Label" stdset="0"><string>参考几何体</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_6">
               <layout class="QVBoxLayout" name="groupVBoxLayout_6">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_pointInfer">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject4</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_inferObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject4</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>true</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择对象</string></property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockSpecifyPoint" name="specifyPoint_point0">
+                    <property name="PW_BlockID" stdset="0"><string>point0</string></property>
+                    <property name="PW_Label" stdset="0"><string> </string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定点</string></property>
                   </widget>
                 </item>
                 <item>
                   <widget class="BlockSpecifyPoint" name="specifyPoint_point1">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>point0</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定点</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定点</string>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>point1</string></property>
+                    <property name="PW_Label" stdset="0"><string> </string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定点</string></property>
                   </widget>
                 </item>
                 <item>
                   <widget class="BlockSpecifyPoint" name="specifyPoint_point2">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>point1</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定点</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定点</string>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>point2</string></property>
+                    <property name="PW_Label" stdset="0"><string> </string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定点</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSpecifyPoint" name="specifyPoint_point3">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>point2</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定点</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定点</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_curveObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject5</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择曲线对象</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_curveForPlane">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject5</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择曲线对象</string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="BlockSelectObject" name="selectObject_planeForPoint">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject6</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择平面对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_parallelPlaneObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject6</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择平面对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group3: 第一条直线 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_firstLine">
-            <property name="PW_BlockID" stdset="0">
-              <string>group3</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>第一条直线</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group3</string></property>
+            <property name="PW_Label" stdset="0"><string>第一条直线</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_7">
               <layout class="QVBoxLayout" name="groupVBoxLayout_7">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_firstLine">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject15</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择线性对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_firstLinear">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject15</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择线性对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group4: 第二条直线 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_secondLine">
-            <property name="PW_BlockID" stdset="0">
-              <string>group4</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>第二条直线</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group4</string></property>
+            <property name="PW_Label" stdset="0"><string>第二条直线</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_8">
               <layout class="QVBoxLayout" name="groupVBoxLayout_8">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_secondLine">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject3</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择线性对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_secondLinear">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject3</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择线性对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group6: 相切子类型 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_tangentSubtype">
-            <property name="PW_BlockID" stdset="0">
-              <string>group6</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>相切子类型</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group6</string></property>
+            <property name="PW_Label" stdset="0"><string>相切子类型</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_9">
               <layout class="QVBoxLayout" name="groupVBoxLayout_9">
                 <item>
                   <widget class="BlockEnumeration" name="enum_tangentSubtype">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum2</string>
+                    <property name="PW_BlockID" stdset="0"><string>enum2</string></property>
+                    <property name="PW_Label" stdset="0"><string>子类型</string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>true</bool></property>
+                    <property name="PW_Value" stdset="0">
+                      <stringlist>
+                        <string>相切</string>
+                        <string>一个面</string>
+                        <string>通过点</string>
+                        <string>通过线条</string>
+                        <string>两个面</string>
+                        <string>与平面成一角度</string>
+                      </stringlist>
                     </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>子类型</string>
-                    </property>
-                    <property name="PW_Bitmaps" stdset="0">
-                      <stringlist/>
+                    <property name="PW_Data" stdset="0">
+                      <stringlist>
+                        <string>MethodTypeTangentInfer</string>
+                        <string>MethodTypeTangent</string>
+                        <string>MethodTypeTangentPoint</string>
+                        <string>MethodTypeTangentLinear</string>
+                        <string>MethodTypeTangentTwoFaces</string>
+                        <string>MethodTypeTangentAnglePlane</string>
+                      </stringlist>
                     </property>
                     <property name="PW_EnumSensitivity" stdset="0">
                       <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
+                        <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
                       </stringlist>
                     </property>
                     <property name="PW_EnumVisibility" stdset="0">
                       <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
+                        <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
                       </stringlist>
                     </property>
-                    <property name="PW_Value" stdset="0">
-                      <string>相切,一个面,通过点,通过线条,两个面,与平面成一角度</string>
-                    </property>
-                    <property name="PW_Data" stdset="0">
-                      <string>MethodTypeTangentInfer,MethodTypeTangent,MethodTypeTangentPoint,MethodTypeTangentLinear,MethodTypeTangentTwoFaces,MethodTypeTangentAnglePlane</string>
-                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>65535</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Vertical</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>OptionMenu</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group23: 参考几何体 (for Tangent) -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_refGeomTangent">
-            <property name="PW_BlockID" stdset="0">
-              <string>group23</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>参考几何体</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_tangentRefGeometry">
+            <property name="PW_BlockID" stdset="0"><string>group23</string></property>
+            <property name="PW_Label" stdset="0"><string>参考几何体</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_10">
               <layout class="QVBoxLayout" name="groupVBoxLayout_10">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_tangentInfer">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject7</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_tangentInferObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject7</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>true</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择对象</string></property>
                   </widget>
                 </item>
                 <item>
                   <widget class="BlockSelectObject" name="selectObject_tangentFace">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject8</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择面</string>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>selectobject8</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择面</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_tangentFace2">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject17</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择面</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_tangentSecondFace">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject17</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择面</string></property>
                   </widget>
                 </item>
                 <item>
                   <widget class="BlockSpecifyPoint" name="specifyPoint_tangentPoint">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>point5</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定点</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定点</string>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>point5</string></property>
+                    <property name="PW_Label" stdset="0"><string> </string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定点</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_tangentLinearFace">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject9</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择相切面</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_tangentFaceSel">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject9</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择相切面</string></property>
                   </widget>
                 </item>
                 <item>
                   <widget class="BlockSelectObject" name="selectObject_tangentLinear">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject10</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择线性对象</string>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>selectobject10</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择线性对象</string></property>
                   </widget>
                 </item>
                 <item>
                   <widget class="BlockSelectObject" name="selectObject_tangentAnglePlane">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject18</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择平面对象</string>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>selectobject18</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择平面对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group22: 角度 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_angle">
-            <property name="PW_BlockID" stdset="0">
-              <string>group22</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>角度</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group22</string></property>
+            <property name="PW_Label" stdset="0"><string>角度</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_11">
               <layout class="QVBoxLayout" name="groupVBoxLayout_11">
                 <item>
                   <widget class="BlockEnumeration" name="enum_angleOption">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum7</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>角度选项</string>
-                    </property>
-                    <property name="PW_Bitmaps" stdset="0">
-                      <stringlist/>
-                    </property>
-                    <property name="PW_EnumSensitivity" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
-                    </property>
-                    <property name="PW_EnumVisibility" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
-                    </property>
+                    <property name="PW_BlockID" stdset="0"><string>enum7</string></property>
+                    <property name="PW_Label" stdset="0"><string>角度选项</string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>true</bool></property>
                     <property name="PW_Value" stdset="0">
-                      <string>值,垂直,平行</string>
+                      <stringlist>
+                        <string>值</string>
+                        <string>垂直</string>
+                        <string>平行</string>
+                      </stringlist>
                     </property>
                     <property name="PW_Data" stdset="0">
-                      <string>Value,Vertical,Parallel</string>
+                      <stringlist>
+                        <string>Value</string>
+                        <string>Vertical</string>
+                        <string>Parallel</string>
+                      </stringlist>
                     </property>
+                    <property name="PW_EnumSensitivity" stdset="0">
+                      <stringlist><string>1</string><string>1</string><string>1</string></stringlist>
+                    </property>
+                    <property name="PW_EnumVisibility" stdset="0">
+                      <stringlist><string>1</string><string>1</string><string>1</string></stringlist>
+                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>65535</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Vertical</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>OptionMenu</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockAngularExpression" name="blockAngular_angle">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>angular_dim0</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>角度</string>
-                    </property>
-                    <property name="PW_MaximumValue" stdset="0">
-                      <double>360</double>
-                    </property>
-                    <property name="PW_MinimumValue" stdset="0">
-                      <double>0</double>
-                    </property>
-                    <property name="PW_Formula" stdset="0">
-                      <number>90</number>
-                    </property>
+                  <widget class="BlockAngularExpression" name="angularDim_angle">
+                    <property name="PW_BlockID" stdset="0"><string>angular_dim0</string></property>
+                    <property name="PW_Label" stdset="0"><string>角度</string></property>
+                    <property name="PW_MaximumValue" stdset="0"><double>360</double></property>
+                    <property name="PW_MinimumValue" stdset="0"><double>0</double></property>
+                    <property name="PW_Formula" stdset="0"><number>90</number></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group8: 通过对象 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_coincidentObject">
-            <property name="PW_BlockID" stdset="0">
-              <string>group8</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>通过对象</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_throughObject">
+            <property name="PW_BlockID" stdset="0"><string>group8</string></property>
+            <property name="PW_Label" stdset="0"><string>通过对象</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_12">
               <layout class="QVBoxLayout" name="groupVBoxLayout_12">
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_coincidentObj">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject19</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_coincidentObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject19</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择对象</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group9: 通过点 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_pointDir">
-            <property name="PW_BlockID" stdset="0">
-              <string>group9</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>通过点</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_throughPoint">
+            <property name="PW_BlockID" stdset="0"><string>group9</string></property>
+            <property name="PW_Label" stdset="0"><string>通过点</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_13">
               <layout class="QVBoxLayout" name="groupVBoxLayout_13">
                 <item>
-                  <widget class="BlockSpecifyPoint" name="specifyPoint_pointDir">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>point3</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定点</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定点</string>
-                    </property>
+                  <widget class="BlockSpecifyPoint" name="specifyPoint_originPoint">
+                    <property name="PW_BlockID" stdset="0"><string>point3</string></property>
+                    <property name="PW_Label" stdset="0"><string>指定点</string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定点</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group10: 法向 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_normalDir">
-            <property name="PW_BlockID" stdset="0">
-              <string>group10</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>法向</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_normal">
+            <property name="PW_BlockID" stdset="0"><string>group10</string></property>
+            <property name="PW_Label" stdset="0"><string>法向</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_14">
               <layout class="QVBoxLayout" name="groupVBoxLayout_14">
                 <item>
-                  <widget class="BlockSpecifyVector" name="specifyVector_normalDir">
-                    <property name="PW_Label" stdset="0">
-                      <string>选择矢量</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定矢量</string>
-                    </property>
+                  <widget class="BlockSpecifyVector" name="specifyVector_normal">
+                    <property name="PW_BlockID" stdset="0"><string>vector0</string></property>
+                    <property name="PW_Label" stdset="0"><string>选择矢量</string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定矢量</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group11: 曲线 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_curve">
-            <property name="PW_BlockID" stdset="0">
-              <string>group11</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>曲线</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group11</string></property>
+            <property name="PW_Label" stdset="0"><string>曲线</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_15">
               <layout class="QVBoxLayout" name="groupVBoxLayout_15">
                 <item>
-                  <widget class="BlockSectionBuilder" name="sectionBuilder_curve">
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择曲线</string>
-                    </property>
+                  <widget class="BlockSectionBuilder" name="curveCollector_curve">
+                    <property name="PW_BlockID" stdset="0"><string>section0</string></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择曲线</string></property>
+                    <property name="PW_Cue" stdset="0"><string>Select curve</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockReverseDirection" name="reverseDir_curveDir">
-                    <property name="PW_Enable" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>反向</string>
-                    </property>
+                  <widget class="BlockReverseDirection" name="reverseDirection_curveDir">
+                    <property name="PW_BlockID" stdset="0"><string>direction0</string></property>
+                    <property name="PW_Label" stdset="0"><string>反向</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>false</bool></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group12: 曲线上的位置 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_curvePosition">
-            <property name="PW_BlockID" stdset="0">
-              <string>group12</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>曲线上的位置</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_positionOnCurve">
+            <property name="PW_BlockID" stdset="0"><string>group12</string></property>
+            <property name="PW_Label" stdset="0"><string>曲线上的位置</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_16">
               <layout class="QVBoxLayout" name="groupVBoxLayout_16">
                 <item>
                   <widget class="BlockEnumeration" name="enum_positionMethod">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum3</string>
+                    <property name="PW_BlockID" stdset="0"><string>enum3</string></property>
+                    <property name="PW_Label" stdset="0"><string>位置</string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>true</bool></property>
+                    <property name="PW_Value" stdset="0">
+                      <stringlist>
+                        <string>弧长</string>
+                        <string>弧长百分比</string>
+                        <string>通过点</string>
+                      </stringlist>
                     </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>位置</string>
+                    <property name="PW_Data" stdset="0">
+                      <stringlist>
+                        <string>SetExpression</string>
+                        <string>SetPercent</string>
+                        <string>SetPoint</string>
+                      </stringlist>
                     </property>
                     <property name="PW_Bitmaps" stdset="0">
                       <stringlist>
@@ -735,527 +633,365 @@
                       </stringlist>
                     </property>
                     <property name="PW_EnumSensitivity" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
+                      <stringlist><string>1</string><string>1</string><string>1</string><string>1</string></stringlist>
                     </property>
                     <property name="PW_EnumVisibility" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
+                      <stringlist><string>1</string><string>1</string><string>1</string><string>1</string></stringlist>
                     </property>
-                    <property name="PW_Value" stdset="0">
-                      <string>弧长,弧长百分比,通过点</string>
-                    </property>
-                    <property name="PW_Data" stdset="0">
-                      <string>SetExpression,SetPercent,SetPoint</string>
-                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>65535</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Vertical</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>OptionMenu</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockLinearExpression" name="blockLinear_arcLength">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>linear_dim0</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>弧长</string>
-                    </property>
-                    <property name="PW_EnableReverseDirection" stdset="0">
-                      <bool>false</bool>
-                    </property>
+                  <widget class="BlockLinearExpression" name="linearDim_arcLength">
+                    <property name="PW_BlockID" stdset="0"><string>linear_dim0</string></property>
+                    <property name="PW_Label" stdset="0"><string>弧长</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockExpression" name="blockExpression_arcPercent">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>expression0</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>弧长百分比</string>
-                    </property>
+                  <widget class="BlockExpression" name="expression_arcLengthPercent">
+                    <property name="PW_BlockID" stdset="0"><string>expression0</string></property>
+                    <property name="PW_Label" stdset="0"><string>弧长百分比</string></property>
+                    <property name="PW_Dimensionality" stdset="0"><string> </string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSpecifyPoint" name="specifyPoint_frenetPoint">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>point4</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定点</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定点</string>
-                    </property>
+                  <widget class="BlockSpecifyPoint" name="specifyPoint_positionPoint">
+                    <property name="PW_BlockID" stdset="0"><string>point4</string></property>
+                    <property name="PW_Label" stdset="0"><string>指定点</string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定点</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group13: 曲线上的方位 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_frenetOrientation">
-            <property name="PW_BlockID" stdset="0">
-              <string>group13</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>曲线上的方位</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_orientationOnCurve">
+            <property name="PW_BlockID" stdset="0"><string>group13</string></property>
+            <property name="PW_Label" stdset="0"><string>曲线上的方位</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_17">
               <layout class="QVBoxLayout" name="groupVBoxLayout_17">
                 <item>
-                  <widget class="BlockEnumeration" name="enum_frenetDirection">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum4</string>
+                  <widget class="BlockEnumeration" name="enum_orientationMethod">
+                    <property name="PW_BlockID" stdset="0"><string>enum4</string></property>
+                    <property name="PW_Label" stdset="0"><string>方向</string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>true</bool></property>
+                    <property name="PW_Value" stdset="0">
+                      <stringlist>
+                        <string>垂直于路径</string>
+                        <string>路径的切向</string>
+                        <string>双向垂直与路径</string>
+                        <string>相对于对象</string>
+                        <string>垂直于矢量</string>
+                        <string>平行于矢量</string>
+                        <string>通过轴</string>
+                      </stringlist>
                     </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>方向</string>
-                    </property>
-                    <property name="PW_Bitmaps" stdset="0">
-                      <stringlist/>
+                    <property name="PW_Data" stdset="0">
+                      <stringlist>
+                        <string>FrenetSubtypeNormal</string>
+                        <string>FrenetSubtypeTangent</string>
+                        <string>FrenetSubtypeBinormal</string>
+                        <string>FrenetSubtypeProject</string>
+                        <string>FrenetSubtypeNormalToVector</string>
+                        <string>FrenetSubtypeParallelToVector</string>
+                        <string>FrenetSubtypeThruAxis</string>
+                      </stringlist>
                     </property>
                     <property name="PW_EnumSensitivity" stdset="0">
                       <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
+                        <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
                       </stringlist>
                     </property>
                     <property name="PW_EnumVisibility" stdset="0">
                       <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
-                        <string>1</string>
+                        <string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string><string>1</string>
                       </stringlist>
                     </property>
-                    <property name="PW_Value" stdset="0">
-                      <string>垂直于路径,路径的切向,双向垂直与路径,相对于对象,垂直于矢量,平行于矢量,通过轴</string>
-                    </property>
-                    <property name="PW_Data" stdset="0">
-                      <string>FrenetSubtypeNormal,FrenetSubtypeTangent,FrenetSubtypeBinormal,FrenetSubtypeProject,FrenetSubtypeNormalToVector,FrenetSubtypeParallelToVector,FrenetSubtypeThruAxis</string>
-                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>65535</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Vertical</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>OptionMenu</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSelectObject" name="selectObject_frenetProject">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>selectobject11</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>选择对象</string>
-                    </property>
+                  <widget class="BlockSelectObject" name="selectObject_projectObject">
+                    <property name="PW_BlockID" stdset="0"><string>selectobject11</string></property>
+                    <property name="PW_PointOverlay" stdset="0"><bool>false</bool></property>
+                    <property name="PW_LabelString" stdset="0"><string>选择对象</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockSpecifyVector" name="specifyVector_frenetVector">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>vector1</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>指定矢量</string>
-                    </property>
-                    <property name="PW_LabelString" stdset="0">
-                      <string>指定矢量</string>
-                    </property>
+                  <widget class="BlockSpecifyVector" name="specifyVector_orientVector">
+                    <property name="PW_BlockID" stdset="0"><string>vector1</string></property>
+                    <property name="PW_Label" stdset="0"><string>指定矢量</string></property>
+                    <property name="PW_LabelString" stdset="0"><string>指定矢量</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group16: 偏置和参考 -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_offsetReference">
-            <property name="PW_BlockID" stdset="0">
-              <string>group16</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>偏置和参考</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_offsetAndRef">
+            <property name="PW_BlockID" stdset="0"><string>group16</string></property>
+            <property name="PW_Label" stdset="0"><string>偏置和参考</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_18">
               <layout class="QVBoxLayout" name="groupVBoxLayout_18">
                 <item>
-                  <widget class="BlockEnumeration" name="enum_coordSystem">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum5</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string> </string>
-                    </property>
-                    <property name="PW_LabelVisibility" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Bitmaps" stdset="0">
-                      <stringlist/>
-                    </property>
-                    <property name="PW_EnumSensitivity" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
-                    </property>
-                    <property name="PW_EnumVisibility" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
-                    </property>
-                    <property name="PW_Layout" stdset="0">
-                      <string>Horizontal</string>
-                    </property>
-                    <property name="PW_NumberOfColumns" stdset="0">
-                      <number>0</number>
-                    </property>
-                    <property name="PW_PresentationStyle" stdset="0">
-                      <string>RadioBox</string>
-                    </property>
+                  <widget class="BlockEnumeration" name="enum_csysRef">
+                    <property name="PW_BlockID" stdset="0"><string>enum5</string></property>
+                    <property name="PW_Label" stdset="0"><string> </string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>false</bool></property>
                     <property name="PW_Value" stdset="0">
-                      <string>工作坐标系,绝对</string>
+                      <stringlist>
+                        <string>工作坐标系</string>
+                        <string>绝对</string>
+                      </stringlist>
                     </property>
                     <property name="PW_Data" stdset="0">
-                      <string>WorkingCoordinateSystem,Absolute</string>
+                      <stringlist>
+                        <string>WorkingCoordinateSystem</string>
+                        <string>Absolute</string>
+                      </stringlist>
                     </property>
+                    <property name="PW_EnumSensitivity" stdset="0">
+                      <stringlist><string>1</string><string>1</string></stringlist>
+                    </property>
+                    <property name="PW_EnumVisibility" stdset="0">
+                      <stringlist><string>1</string><string>1</string></stringlist>
+                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>0</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Horizontal</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>RadioBox</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockLinearExpression" name="blockLinear_fixedDistance">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>linear_dim1</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>距离</string>
-                    </property>
-                    <property name="PW_EnableReverseDirection" stdset="0">
-                      <bool>true</bool>
-                    </property>
+                  <widget class="BlockLinearExpression" name="linearDim_distance">
+                    <property name="PW_BlockID" stdset="0"><string>linear_dim1</string></property>
+                    <property name="PW_Label" stdset="0"><string>距离</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group17: 系数 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_coefficients">
-            <property name="PW_BlockID" stdset="0">
-              <string>group17</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>系数(aY+bX+cZ=d)</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group17</string></property>
+            <property name="PW_Label" stdset="0"><string>系数(aY+bX+cZ=d)</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_19">
               <layout class="QVBoxLayout" name="groupVBoxLayout_19">
                 <item>
-                  <widget class="BlockEnumeration" name="enum_coeffCoordSystem">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>enum6</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string> </string>
-                    </property>
-                    <property name="PW_LabelVisibility" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Bitmaps" stdset="0">
-                      <stringlist/>
-                    </property>
-                    <property name="PW_EnumSensitivity" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
-                    </property>
-                    <property name="PW_EnumVisibility" stdset="0">
-                      <stringlist>
-                        <string>1</string>
-                        <string>1</string>
-                      </stringlist>
-                    </property>
-                    <property name="PW_Layout" stdset="0">
-                      <string>Horizontal</string>
-                    </property>
-                    <property name="PW_NumberOfColumns" stdset="0">
-                      <number>0</number>
-                    </property>
-                    <property name="PW_PresentationStyle" stdset="0">
-                      <string>RadioBox</string>
-                    </property>
+                  <widget class="BlockEnumeration" name="enum_coeffCsys">
+                    <property name="PW_BlockID" stdset="0"><string>enum6</string></property>
+                    <property name="PW_Label" stdset="0"><string> </string></property>
+                    <property name="PW_LabelVisibility" stdset="0"><bool>false</bool></property>
                     <property name="PW_Value" stdset="0">
-                      <string>工作坐标系,绝对公差</string>
+                      <stringlist>
+                        <string>工作坐标系</string>
+                        <string>绝对公差</string>
+                      </stringlist>
                     </property>
                     <property name="PW_Data" stdset="0">
-                      <string>WorkingCoordinateSystem,AbsoluteTolerance</string>
+                      <stringlist>
+                        <string>WorkingCoordinateSystem</string>
+                        <string>AbsoluteTolerance</string>
+                      </stringlist>
                     </property>
+                    <property name="PW_EnumSensitivity" stdset="0">
+                      <stringlist><string>1</string><string>1</string></stringlist>
+                    </property>
+                    <property name="PW_EnumVisibility" stdset="0">
+                      <stringlist><string>1</string><string>1</string></stringlist>
+                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0"><number>0</number></property>
+                    <property name="PW_Layout" stdset="0"><string>Horizontal</string></property>
+                    <property name="PW_PresentationStyle" stdset="0"><string>RadioBox</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockDouble" name="blockDouble_coeffA">
-                    <property name="PW_Label" stdset="0">
-                      <string>a</string>
-                    </property>
-                    <property name="PW_BalloonTooltipLayout" stdset="0">
-                      <string>Vertical</string>
-                    </property>
-                    <property name="PW_Dimensionality" stdset="0">
-                      <string> </string>
-                    </property>
+                  <widget class="BlockDouble" name="doubleBlock_coeffA">
+                    <property name="PW_BlockID" stdset="0"><string>double0</string></property>
+                    <property name="PW_Label" stdset="0"><string>a</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockDouble" name="blockDouble_coeffB">
-                    <property name="PW_Label" stdset="0">
-                      <string>b</string>
-                    </property>
-                    <property name="PW_BalloonTooltipLayout" stdset="0">
-                      <string>Vertical</string>
-                    </property>
-                    <property name="PW_Dimensionality" stdset="0">
-                      <string> </string>
-                    </property>
+                  <widget class="BlockDouble" name="doubleBlock_coeffB">
+                    <property name="PW_BlockID" stdset="0"><string>double1</string></property>
+                    <property name="PW_Label" stdset="0"><string>b</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockDouble" name="blockDouble_coeffC">
-                    <property name="PW_Label" stdset="0">
-                      <string>c</string>
-                    </property>
-                    <property name="PW_BalloonTooltipLayout" stdset="0">
-                      <string>Vertical</string>
-                    </property>
-                    <property name="PW_Dimensionality" stdset="0">
-                      <string> </string>
-                    </property>
+                  <widget class="BlockDouble" name="doubleBlock_coeffC">
+                    <property name="PW_BlockID" stdset="0"><string>double2</string></property>
+                    <property name="PW_Label" stdset="0"><string>c</string></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockLinearExpression" name="blockLinear_coeffD">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>linear_dim2</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>d</string>
-                    </property>
+                  <widget class="BlockLinearExpression" name="linearDim_coeffD">
+                    <property name="PW_BlockID" stdset="0"><string>linear_dim2</string></property>
+                    <property name="PW_Label" stdset="0"><string>d</string></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group19: 平面方位 (for most methods) -->
         <item>
           <widget class="BlockGroup" name="blockGroup_planeOrientation">
-            <property name="PW_BlockID" stdset="0">
-              <string>group19</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>平面方位</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group19</string></property>
+            <property name="PW_Label" stdset="0"><string>平面方位</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_20">
               <layout class="QVBoxLayout" name="groupVBoxLayout_20">
                 <item>
-                  <widget class="BlockReverseDirection" name="reverseDir_planeOrient">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>direction2</string>
-                    </property>
-                    <property name="PW_Enable" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>反向</string>
-                    </property>
+                  <widget class="BlockReverseDirection" name="reverseDirection_planeFlip">
+                    <property name="PW_BlockID" stdset="0"><string>direction2</string></property>
+                    <property name="PW_Label" stdset="0"><string>反向</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>false</bool></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group18: 偏置 (for most methods) -->
         <item>
           <widget class="BlockGroup" name="blockGroup_offset">
-            <property name="PW_BlockID" stdset="0">
-              <string>group18</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>偏置</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group18</string></property>
+            <property name="PW_Label" stdset="0"><string>偏置</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_21">
               <layout class="QVBoxLayout" name="groupVBoxLayout_21">
                 <item>
-                  <widget class="BlockToggle" name="blockToggle_offset">
-                    <property name="PW_Label" stdset="0">
-                      <string>偏置</string>
-                    </property>
-                    <property name="PW_Value" stdset="0">
-                      <bool>true</bool>
-                    </property>
+                  <widget class="BlockToggle" name="toggle_offset">
+                    <property name="PW_BlockID" stdset="0"><string>toggle0</string></property>
+                    <property name="PW_Label" stdset="0"><string>偏置</string></property>
+                    <property name="PW_Value" stdset="0"><bool>true</bool></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockLinearExpression" name="blockLinear_offsetDist">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>linear_dim3</string>
-                    </property>
-                    <property name="PW_Enable" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>距离</string>
-                    </property>
-                    <property name="PW_EnableReverseDirection" stdset="0">
-                      <bool>true</bool>
-                    </property>
+                  <widget class="BlockLinearExpression" name="linearDim_offsetDistance">
+                    <property name="PW_BlockID" stdset="0"><string>linear_dim3</string></property>
+                    <property name="PW_Label" stdset="0"><string>距离</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>false</bool></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group24: 偏置 (for Distance method) -->
         <item>
           <widget class="BlockGroup" name="blockGroup_distanceOffset">
-            <property name="PW_BlockID" stdset="0">
-              <string>group24</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>偏置</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group24</string></property>
+            <property name="PW_Label" stdset="0"><string>偏置</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_22">
               <layout class="QVBoxLayout" name="groupVBoxLayout_22">
                 <item>
-                  <widget class="BlockLinearExpression" name="blockLinear_distanceDist">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>linear_dim4</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>距离</string>
-                    </property>
-                    <property name="PW_EnableReverseDirection" stdset="0">
-                      <bool>true</bool>
-                    </property>
+                  <widget class="BlockLinearExpression" name="linearDim_distanceValue">
+                    <property name="PW_BlockID" stdset="0"><string>linear_dim4</string></property>
+                    <property name="PW_Label" stdset="0"><string>距离</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>true</bool></property>
                   </widget>
                 </item>
                 <item>
-                  <widget class="BlockInteger" name="blockInteger_planeCount">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>integer1</string>
-                    </property>
-                    <property name="PW_Enable" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>平面的数量</string>
-                    </property>
-                    <property name="PW_MinimumValue" stdset="0">
-                      <number>1</number>
-                    </property>
-                    <property name="PW_Value" stdset="0">
-                      <number>1</number>
-                    </property>
+                  <widget class="BlockInteger" name="integerBlock_planeCount">
+                    <property name="PW_BlockID" stdset="0"><string>integer1</string></property>
+                    <property name="PW_Label" stdset="0"><string>平面的数量</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>false</bool></property>
+                    <property name="PW_Value" stdset="0"><number>1</number></property>
+                    <property name="PW_MinimumValue" stdset="0"><number>1</number></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group20: 平面方位 (for Fixed/View methods) -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_fixedPlaneOrient">
-            <property name="PW_BlockID" stdset="0">
-              <string>group20</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>平面方位</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_fixedPlaneOrientation">
+            <property name="PW_BlockID" stdset="0"><string>group20</string></property>
+            <property name="PW_Label" stdset="0"><string>平面方位</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_23">
               <layout class="QVBoxLayout" name="groupVBoxLayout_23">
                 <item>
-                  <widget class="BlockReverseDirection" name="reverseDir_fixedOrient">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>direction3</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>反向</string>
-                    </property>
+                  <widget class="BlockReverseDirection" name="reverseDirection_fixedFlip">
+                    <property name="PW_BlockID" stdset="0"><string>direction3</string></property>
+                    <property name="PW_Label" stdset="0"><string>反向</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>true</bool></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group25: 平面方位 (for Distance method) -->
         <item>
-          <widget class="BlockGroup" name="blockGroup_distancePlaneOrient">
-            <property name="PW_BlockID" stdset="0">
-              <string>group25</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>平面方位</string>
-            </property>
+          <widget class="BlockGroup" name="blockGroup_distancePlaneOrientation">
+            <property name="PW_BlockID" stdset="0"><string>group25</string></property>
+            <property name="PW_Label" stdset="0"><string>平面方位</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_24">
               <layout class="QVBoxLayout" name="groupVBoxLayout_24">
                 <item>
-                  <widget class="BlockReverseDirection" name="reverseDir_distanceOrient">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>direction1</string>
-                    </property>
-                    <property name="PW_Enable" stdset="0">
-                      <bool>false</bool>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>反向</string>
-                    </property>
+                  <widget class="BlockReverseDirection" name="reverseDirection_distanceFlip">
+                    <property name="PW_BlockID" stdset="0"><string>direction1</string></property>
+                    <property name="PW_Label" stdset="0"><string>反向</string></property>
+                    <property name="PW_Enable" stdset="0"><bool>false</bool></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
+        <!-- group21: 设置 -->
         <item>
           <widget class="BlockGroup" name="blockGroup_settings">
-            <property name="PW_BlockID" stdset="0">
-              <string>group21</string>
-            </property>
-            <property name="PW_Label" stdset="0">
-              <string>设置</string>
-            </property>
+            <property name="PW_BlockID" stdset="0"><string>group21</string></property>
+            <property name="PW_Label" stdset="0"><string>设置</string></property>
+            <property name="PW_Expanded" stdset="0"><bool>true</bool></property>
             <widget class="QWidget" name="groupContents_25">
               <layout class="QVBoxLayout" name="groupVBoxLayout_25">
                 <item>
-                  <widget class="BlockToggle" name="blockToggle_associative">
-                    <property name="PW_BlockID" stdset="0">
-                      <string>toggle1</string>
-                    </property>
-                    <property name="PW_Label" stdset="0">
-                      <string>关联</string>
-                    </property>
-                    <property name="PW_Value" stdset="0">
-                      <bool>true</bool>
-                    </property>
+                  <widget class="BlockToggle" name="toggle_associative">
+                    <property name="PW_BlockID" stdset="0"><string>toggle1</string></property>
+                    <property name="PW_Label" stdset="0"><string>关联</string></property>
+                    <property name="PW_Value" stdset="0"><bool>true</bool></property>
                   </widget>
                 </item>
               </layout>
             </widget>
           </widget>
         </item>
+
         <item>
           <spacer name="verticalSpacer">
-            <property name="orientation">
-              <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-              <size>
-                <width>20</width>
-                <height>40</height>
-              </size>
-            </property>
+            <property name="orientation"><enum>Qt::Vertical</enum></property>
+            <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
           </spacer>
         </item>
+
       </layout>
     </widget>
   </widget>
@@ -1263,75 +999,72 @@
     <customwidget>
       <class>BlockDialog</class>
       <extends>QDialog</extends>
-      <header>Widgets/ContainerBlock/BlockDialog.h</header>
-      <addpagemethod>InitContainerWidget</addpagemethod>
-      <container>1</container>
-    </customwidget>
-    <customwidget>
-      <class>BlockGroup</class>
-      <extends>BlockBase</extends>
-      <header>Widgets/ContainerBlock/BlockGroup.h</header>
-      <addpagemethod>AddContent</addpagemethod>
+      <header>PWOpen/BlockStyler_BlockDialog.hxx</header>
     </customwidget>
     <customwidget>
       <class>BlockEnumeration</class>
       <extends>QWidget</extends>
-      <header>Widgets/Block/BlockEnumeration.h</header>
+      <header>PWOpen/BlockStyler_Enumeration.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_Group.hxx</header>
     </customwidget>
     <customwidget>
       <class>BlockSelectObject</class>
       <extends>QWidget</extends>
-      <header>Widgets/Block/BlockSelectObject.h</header>
+      <header>PWOpen/BlockStyler_SelectObject.hxx</header>
     </customwidget>
     <customwidget>
       <class>BlockSpecifyPoint</class>
       <extends>QWidget</extends>
-      <header>Widgets/Block/BlockSpecifyPoint.h</header>
+      <header>PWOpen/BlockStyler_SpecifyPoint.hxx</header>
     </customwidget>
     <customwidget>
       <class>BlockSpecifyVector</class>
       <extends>QWidget</extends>
-      <header>Widgets/Block/BlockSpecifyVector.h</header>
-    </customwidget>
-    <customwidget>
-      <class>BlockLinearExpression</class>
-      <extends>BlockExpression</extends>
-      <header>Widgets/Block/BlockLinearExpression.h</header>
-    </customwidget>
-    <customwidget>
-      <class>BlockAngularExpression</class>
-      <extends>BlockExpression</extends>
-      <header>Widgets/Block/BlockAngularExpression.h</header>
-    </customwidget>
-    <customwidget>
-      <class>BlockExpression</class>
-      <extends>QWidget</extends>
-      <header>Widgets/Block/BlockExpression.h</header>
-    </customwidget>
-    <customwidget>
-      <class>BlockReverseDirection</class>
-      <extends>QWidget</extends>
-      <header>Widgets/Block/BlockReverseDirection.h</header>
-    </customwidget>
-    <customwidget>
-      <class>BlockToggle</class>
-      <extends>QWidget</extends>
-      <header>Widgets/Block/BlockToggle.h</header>
-    </customwidget>
-    <customwidget>
-      <class>BlockDouble</class>
-      <extends>QWidget</extends>
-      <header>Widgets/Block/BlockDouble.h</header>
+      <header>PWOpen/BlockStyler_SpecifyVector.hxx</header>
     </customwidget>
     <customwidget>
       <class>BlockSectionBuilder</class>
       <extends>QWidget</extends>
-      <header>Widgets/Block/BlockSectionBuilder.h</header>
+      <header>PWOpen/BlockStyler_CurveCollector.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockReverseDirection</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_ReverseDirection.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockAngularExpression</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_AngularDimension.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLinearExpression</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_LinearDimension.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockExpression</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_ExpressionBlock.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockDouble</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_DoubleBlock.hxx</header>
     </customwidget>
     <customwidget>
       <class>BlockInteger</class>
       <extends>QWidget</extends>
-      <header>Widgets/Block/BlockInteger.h</header>
+      <header>PWOpen/BlockStyler_IntegerBlock.hxx</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockToggle</class>
+      <extends>QWidget</extends>
+      <header>PWOpen/BlockStyler_Toggle.hxx</header>
     </customwidget>
   </customwidgets>
   <resources/>
