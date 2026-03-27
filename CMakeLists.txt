@@ -32,8 +32,8 @@ add_definitions(-D_SECURE_SCL=0 -D_CRT_SECURE_NO_WARNINGS -D_USRDLL -D_NO_BYTE -
 
 add_library(${PROJECT_NAME} SHARED ${MAIN_CPP} ${MAIN_HEADERS})
 
-set(HEADER_DIR   "E:\App\PowerCAD\PowerCAD_20260306\PowerCAD_1.0.0.998f5e0e\Debug\PWOPEN\include")
-set(LIB_DIR      "E:\App\PowerCAD\PowerCAD_20260306\PowerCAD_1.0.0.998f5e0e\Debug\PWOPEN\lib")
+set(HEADER_DIR   "D:\powercad\cad3.27\Release\PWOPEN\include")
+set(LIB_DIR      "D:\powercad\cad3.27\Release\PWOPEN\lib")
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${HEADER_DIR})
 

@@ -7,7 +7,7 @@ SOURCE_PATHS = [
     r"D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\10反向-树列表\build\Debug\TestDialog.dll",
     r"D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\10反向-树列表\build\Debug\TestDialog.ui",
 ]
-DESTINATION_DIR = r"E:\App\PowerCAD\PowerCAD_20260306\PowerCAD_1.0.0.998f5e0e\Debug\PWBIN\Workbench"
+DESTINATION_DIR = r"D:\powercad\cad3.27\Release\PWBIN\Workbench"
 OVERWRITE = True
 
 
