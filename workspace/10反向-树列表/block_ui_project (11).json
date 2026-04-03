@@ -1,0 +1,451 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1774600527848_18648",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 98,
+        "_y": 196
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockReverseDirection_1774600532558_76789",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockSetList_1774600533800_80483",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockOrientXpress_1774600535102_59388",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockMicroposition_1774600536666_89006",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockFileSelection_1774600540401_82874",
+            "operation": "insert-zone",
+            "position": "after",
+            "targetNodeId": "BlockMicroposition_1774600536666_89006"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockFolderSelection_1774600544881_49472",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockSelectExpression_1774600547203_27638",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockTree_1774600551199_20572",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockReverseDirection_1774600532558_76789",
+          "type": "BlockReverseDirection",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "direction0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "Reverse Direction",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_Direction": "0.000000 0.000000 1.000000",
+            "PW_Flip": false,
+            "PW_Origin": "0.000000 0.000000 0.000000",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_Direction",
+            "PW_Flip",
+            "PW_Origin",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockSetList_1774600533800_80483",
+          "type": "BlockSetList",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "list0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_AddNewSetLabel": "Add New Set",
+            "PW_ColumnLabels": [],
+            "PW_ColumnWidths": [
+              "-1"
+            ],
+            "PW_DefaultColumnWidth": 100,
+            "PW_Layout": "Selection",
+            "PW_ListExpanded": false,
+            "PW_MarkSeedExpressionsUnusable": false,
+            "PW_MaximumHeight": 0,
+            "PW_MinimumHeight": 4,
+            "PW_MultipleEdit": false,
+            "PW_NumberColumnString": "",
+            "PW_NumberOfColumns": 1,
+            "PW_ResizeHeightWithDialog": true,
+            "PW_SeedDlxFile": "",
+            "PW_ShowAddNewSet": true,
+            "PW_ShowColumnHeadings": false,
+            "PW_ShowRemove": true,
+            "PW_ShowReorderControls": false,
+            "PW_ShowTopBottomControls": false
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_AddNewSetLabel",
+            "PW_ColumnLabels",
+            "PW_ColumnWidths",
+            "PW_DefaultColumnWidth",
+            "PW_Layout",
+            "PW_ListExpanded",
+            "PW_MarkSeedExpressionsUnusable",
+            "PW_MaximumHeight",
+            "PW_MinimumHeight",
+            "PW_MultipleEdit",
+            "PW_NumberColumnString",
+            "PW_NumberOfColumns",
+            "PW_ResizeHeightWithDialog",
+            "PW_SeedDlxFile",
+            "PW_ShowAddNewSet",
+            "PW_ShowColumnHeadings",
+            "PW_ShowRemove",
+            "PW_ShowReorderControls",
+            "PW_ShowTopBottomControls"
+          ]
+        },
+        {
+          "id": "BlockOrientXpress_1774600535102_59388",
+          "type": "BlockOrientXpress",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "orientXpress0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_Direction": "X-Axis",
+            "PW_Plane": "YZ-Plane",
+            "PW_Reference": "Absolute - Work Part",
+            "PW_ShowAxisSubBlock": true,
+            "PW_ShowPlaneSubBlock": true,
+            "PW_ShowReferenceSubBlock": true,
+            "PW_ShowSceneControl": true,
+            "PW_ShowXAxis": true,
+            "PW_ShowXYPlane": true,
+            "PW_ShowXZPlane": true,
+            "PW_ShowYAxis": true,
+            "PW_ShowYZPlane": true,
+            "PW_ShowZAxis": true,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_Direction",
+            "PW_Plane",
+            "PW_Reference",
+            "PW_ShowAxisSubBlock",
+            "PW_ShowPlaneSubBlock",
+            "PW_ShowReferenceSubBlock",
+            "PW_ShowSceneControl",
+            "PW_ShowXAxis",
+            "PW_ShowXYPlane",
+            "PW_ShowXZPlane",
+            "PW_ShowYAxis",
+            "PW_ShowYZPlane",
+            "PW_ShowZAxis",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockMicroposition_1774600536666_89006",
+          "type": "BlockMicroposition",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "micropositioning0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "微定位",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockFileSelection_1774600540401_82874",
+          "type": "BlockFileSelection",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "nativeFileBrowser0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "File Browser",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_Filter": "",
+            "PW_FilterIndex": -1,
+            "PW_Path": "",
+            "PW_RetainStringValue": true,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_Filter",
+            "PW_FilterIndex",
+            "PW_Path",
+            "PW_RetainStringValue",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockFolderSelection_1774600544881_49472",
+          "type": "BlockFolderSelection",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "nativeFolderBrowser0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "Folder Browser",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_Path": "",
+            "PW_RetainStringValue": true,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_Path",
+            "PW_RetainStringValue",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockSelectExpression_1774600547203_27638",
+          "type": "BlockSelectExpression",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "selectExpression0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Expanded": true,
+            "PW_Label": "选择表达式",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_ExpressionSortType": "AlphaNumeric",
+            "PW_ExpressionTypeIndex": "Number",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Expanded",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_ExpressionSortType",
+            "PW_ExpressionTypeIndex",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockTree_1774600551199_20572",
+          "type": "BlockTree",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "tree_control0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_CanStretchHeight": true,
+            "PW_CanStretchWidth": true,
+            "PW_ColumnNames": [],
+            "PW_ColumnWidths": [],
+            "PW_Height": 0,
+            "PW_MaximumHeight": 0,
+            "PW_MaximumWidth": 0,
+            "PW_MinimumHeight": 0,
+            "PW_MinimumWidth": 0,
+            "PW_ScrollFrozenColumn": 0,
+            "PW_ScrollLineNumber": -1,
+            "PW_SelectionMode": "Multiple",
+            "PW_ShowExpandCollapseMarker": true,
+            "PW_ShowHeader": true,
+            "PW_ShowMultipleColumns": true,
+            "PW_ShowToolTips": true,
+            "PW_SortRootNodes": true,
+            "PW_Width": 0,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_CanStretchHeight",
+            "PW_CanStretchWidth",
+            "PW_ColumnNames",
+            "PW_ColumnWidths",
+            "PW_Height",
+            "PW_MaximumHeight",
+            "PW_MaximumWidth",
+            "PW_MinimumHeight",
+            "PW_MinimumWidth",
+            "PW_ScrollFrozenColumn",
+            "PW_ScrollLineNumber",
+            "PW_SelectionMode",
+            "PW_ShowExpandCollapseMarker",
+            "PW_ShowHeader",
+            "PW_ShowMultipleColumns",
+            "PW_ShowToolTips",
+            "PW_SortRootNodes",
+            "PW_Width",
+            "PW_TooltipID"
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1774600553730
+}

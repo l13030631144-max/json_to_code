@@ -4,10 +4,10 @@ from pathlib import Path
 
 # Explicit source paths (adjust as needed)
 SOURCE_PATHS = [
-    r"D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\10反向-树列表\build\Debug\TestDialog.dll",
-    r"D:\python_project\Qt_pj\CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE\workspace\10反向-树列表\build\Debug\TestDialog.ui",
+    r"D:\python_project\Qt_pj\json _to_code_by_skills\workspace\11标签-开关\build\Debug\TestDialog.dll",
+    r"D:\python_project\Qt_pj\json _to_code_by_skills\workspace\11标签-开关\build\Debug\TestDialog.ui",
 ]
-DESTINATION_DIR = r"D:\powercad\cad3.27\Release\PWBIN\Workbench"
+DESTINATION_DIR = r"D:\powercad\cad3.27\Release\PWBIN\Workbench\gui"
 OVERWRITE = True
 
 

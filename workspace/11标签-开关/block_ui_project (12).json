@@ -1,0 +1,151 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1774928090198_3326",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 276,
+        "_y": 162
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockLabel_1774928093107_83318",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockToggle_1774928094376_9959",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockLabel_1774928093107_83318",
+          "type": "BlockLabel",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "label0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "无标题",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_Bitmap": "",
+            "PW_DisplayBitmapLabel": false,
+            "PW_HighQualityBitmap": true,
+            "PW_Tooltip": "",
+            "PW_WordWrap": false,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_Bitmap",
+            "PW_DisplayBitmapLabel",
+            "PW_HighQualityBitmap",
+            "PW_Tooltip",
+            "PW_WordWrap",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockToggle_1774928094376_9959",
+          "type": "BlockToggle",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "toggle0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_RetainValue": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipOffImage": "",
+            "PW_BalloonTooltipOffText": "",
+            "PW_BalloonTooltipOnImage": "",
+            "PW_BalloonTooltipOnText": "",
+            "PW_Bitmap": "",
+            "PW_BitmapOnly": false,
+            "PW_Value": false,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_RetainValue",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipOffImage",
+            "PW_BalloonTooltipOffText",
+            "PW_BalloonTooltipOnImage",
+            "PW_BalloonTooltipOnText",
+            "PW_Bitmap",
+            "PW_BitmapOnly",
+            "PW_Value",
+            "PW_TooltipID"
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1774928095246
+}

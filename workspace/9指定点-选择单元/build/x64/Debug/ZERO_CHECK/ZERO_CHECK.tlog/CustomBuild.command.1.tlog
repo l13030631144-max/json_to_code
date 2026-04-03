@@ -1,0 +1,10 @@
+^D:\PYTHON_PROJECT\QT_PJ\JSON _TO_CODE_BY_SKILLS\WORKSPACE\9指定点-选择单元\BUILD\CMAKEFILES\3374CF2F9E7448AEB6A6E419C3C5D596\GENERATE.STAMP.RULE
+setlocal
+E:\App\VS\vs2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe "-SD:/python_project/Qt_pj/json _to_code_by_skills/workspace/9指定点-选择单元" "-BD:/python_project/Qt_pj/json _to_code_by_skills/workspace/9指定点-选择单元/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/python_project/Qt_pj/json _to_code_by_skills/workspace/9指定点-选择单元/build/TestDialog.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

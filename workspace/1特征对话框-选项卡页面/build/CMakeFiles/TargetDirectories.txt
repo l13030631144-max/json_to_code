@@ -1,0 +1,3 @@
+D:/python_project/Qt_pj/json _to_code_by_skills/workspace/1特征对话框-选项卡页面/build/CMakeFiles/FeatureDialog.dir
+D:/python_project/Qt_pj/json _to_code_by_skills/workspace/1特征对话框-选项卡页面/build/CMakeFiles/ALL_BUILD.dir
+D:/python_project/Qt_pj/json _to_code_by_skills/workspace/1特征对话框-选项卡页面/build/CMakeFiles/ZERO_CHECK.dir

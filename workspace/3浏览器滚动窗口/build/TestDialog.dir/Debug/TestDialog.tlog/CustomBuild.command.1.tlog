@@ -1,0 +1,10 @@
+^D:\PYTHON_PROJECT\QT_PJ\JSON _TO_CODE_BY_SKILLS\WORKSPACE\3浏览器滚动窗口\CMAKELISTS.TXT
+setlocal
+E:\App\VS\vs2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe "-SD:/python_project/Qt_pj/json _to_code_by_skills/workspace/3浏览器滚动窗口" "-BD:/python_project/Qt_pj/json _to_code_by_skills/workspace/3浏览器滚动窗口/build" --check-stamp-file "D:/python_project/Qt_pj/json _to_code_by_skills/workspace/3浏览器滚动窗口/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,2501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BridgeSurfaceDialog</class>
+ <widget class="BlockDialog" name="BridgeSurfaceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>1092</height>
+   </rect>
+  </property>
+  <property name="PW_BlockID" stdset="0">
+   <string>Dialog</string>
+  </property>
+  <property name="PW_Label" stdset="0">
+   <string>桥接曲面</string>
+  </property>
+  <property name="PW_Cue" stdset="0">
+   <string/>
+  </property>
+  <property name="PW_Enable" stdset="0">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="page">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>39</y>
+     <width>711</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockGroup" name="blockGroup_edgeGroup">
+      <property name="PW_BlockID" stdset="0">
+       <string>edgeGroup</string>
+      </property>
+      <property name="PW_Label" stdset="0">
+       <string>边</string>
+      </property>
+      <property name="PW_Expanded" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="PW_Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Top" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_Bottom" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_BalloonTooltipText" stdset="0">
+       <string/>
+      </property>
+      <property name="PW_Enable" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="PW_Show" stdset="0">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="groupContents_edgeGroup">
+       <layout class="QVBoxLayout" name="groupVBoxLayout_edgeGroup">
+        <item>
+         <widget class="BlockEnumeration" name="enum_firstObjectTypeEnum">
+          <property name="PW_BlockID" stdset="0">
+           <string>firstObjectTypeEnum</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_LabelVisibility" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <stringlist>
+            <string>边</string>
+            <string>曲线</string>
+           </stringlist>
+          </property>
+          <property name="PW_Data" stdset="0">
+           <stringlist>
+            <string>EndObjectTypeEdge</string>
+            <string>EndObjectTypeCurve</string>
+           </stringlist>
+          </property>
+          <property name="PW_Layout" stdset="0">
+           <string>Horizontal</string>
+          </property>
+          <property name="PW_NumberOfColumns" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_PresentationStyle" stdset="0">
+           <string>RadioBox</string>
+          </property>
+          <property name="PW_EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_Bitmaps" stdset="0">
+           <stringlist>
+
+           </stringlist>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSelectObject" name="selectObject_selectFirstEdge">
+          <property name="PW_BlockID" stdset="0">
+           <string>selectFirstEdge</string>
+          </property>
+          <property name="PW_LabelString" stdset="0">
+           <string>选择边1</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bitmap" stdset="0">
+           <string>select_edge</string>
+          </property>
+          <property name="PW_Cue" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_StepStatus" stdset="0">
+           <string>Required</string>
+          </property>
+          <property name="PW_SelectMode" stdset="0">
+           <string>Single</string>
+          </property>
+          <property name="PW_MaximumScope" stdset="0">
+           <string>Within Work Part Only</string>
+          </property>
+          <property name="PW_ToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_AutomaticProgression" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_InterpartSelection" stdset="0">
+           <string>Simple</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSelectObject" name="selectObject_selectFirstCurve">
+          <property name="PW_BlockID" stdset="0">
+           <string>selectFirstCurve</string>
+          </property>
+          <property name="PW_LabelString" stdset="0">
+           <string>选择曲线1</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bitmap" stdset="0">
+           <string>cursorlocation</string>
+          </property>
+          <property name="PW_Cue" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_StepStatus" stdset="0">
+           <string>Required</string>
+          </property>
+          <property name="PW_SelectMode" stdset="0">
+           <string>Single</string>
+          </property>
+          <property name="PW_MaximumScope" stdset="0">
+           <string>Within Work Part Only</string>
+          </property>
+          <property name="PW_ToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_AutomaticProgression" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_InterpartSelection" stdset="0">
+           <string>Simple</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockReverseDirection" name="reverseDir_reverseFirstDirection">
+          <property name="PW_BlockID" stdset="0">
+           <string>reverseFirstDirection</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>反向</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Direction" stdset="0">
+           <string>0.000000 0.000000 1.000000</string>
+          </property>
+          <property name="PW_Flip" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Origin" stdset="0">
+           <string>0.000000 0.000000 0.000000</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSeparator" name="separator_lineSeparator">
+          <property name="PW_BlockID" stdset="0">
+           <string>lineSeparator</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockEnumeration" name="enum_secondObjectTypeEnum">
+          <property name="PW_BlockID" stdset="0">
+           <string>secondObjectTypeEnum</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_LabelVisibility" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <stringlist>
+            <string>边</string>
+            <string>曲线</string>
+           </stringlist>
+          </property>
+          <property name="PW_Data" stdset="0">
+           <stringlist>
+            <string>EndObjectTypeEdge</string>
+            <string>EndObjectTypeCurve</string>
+           </stringlist>
+          </property>
+          <property name="PW_Layout" stdset="0">
+           <string>Horizontal</string>
+          </property>
+          <property name="PW_NumberOfColumns" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_PresentationStyle" stdset="0">
+           <string>RadioBox</string>
+          </property>
+          <property name="PW_EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_Bitmaps" stdset="0">
+           <stringlist>
+
+           </stringlist>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSelectObject" name="selectObject_selectSecondEdge">
+          <property name="PW_BlockID" stdset="0">
+           <string>selectSecondEdge</string>
+          </property>
+          <property name="PW_LabelString" stdset="0">
+           <string>选择边2</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bitmap" stdset="0">
+           <string>select_edge</string>
+          </property>
+          <property name="PW_Cue" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_StepStatus" stdset="0">
+           <string>Optional</string>
+          </property>
+          <property name="PW_SelectMode" stdset="0">
+           <string>Single</string>
+          </property>
+          <property name="PW_MaximumScope" stdset="0">
+           <string>Within Work Part Only</string>
+          </property>
+          <property name="PW_ToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_AutomaticProgression" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_InterpartSelection" stdset="0">
+           <string>Simple</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSelectObject" name="selectObject_selectSecondCurve">
+          <property name="PW_BlockID" stdset="0">
+           <string>selectSecondCurve</string>
+          </property>
+          <property name="PW_LabelString" stdset="0">
+           <string>选择曲线2</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bitmap" stdset="0">
+           <string>sectionbuilder</string>
+          </property>
+          <property name="PW_Cue" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_StepStatus" stdset="0">
+           <string>Optional</string>
+          </property>
+          <property name="PW_SelectMode" stdset="0">
+           <string>Single</string>
+          </property>
+          <property name="PW_MaximumScope" stdset="0">
+           <string>Within Work Part Only</string>
+          </property>
+          <property name="PW_ToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_AutomaticProgression" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_InterpartSelection" stdset="0">
+           <string>Simple</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockReverseDirection" name="reverseDir_reverseSecondDirection">
+          <property name="PW_BlockID" stdset="0">
+           <string>reverseSecondDirection</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>反向</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Direction" stdset="0">
+           <string>0.000000 0.000000 1.000000</string>
+          </property>
+          <property name="PW_Flip" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Origin" stdset="0">
+           <string>0.000000 0.000000 0.000000</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="blockGroup_shapeGroup">
+      <property name="PW_BlockID" stdset="0">
+       <string>shapeGroup</string>
+      </property>
+      <property name="PW_Label" stdset="0">
+       <string>形状</string>
+      </property>
+      <property name="PW_Expanded" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="PW_Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Top" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_Bottom" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_BalloonTooltipText" stdset="0">
+       <string/>
+      </property>
+      <property name="PW_Enable" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="PW_Show" stdset="0">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="groupContents_shapeGroup">
+       <layout class="QVBoxLayout" name="groupVBoxLayout_shapeGroup">
+        <item>
+         <widget class="BlockEnumeration" name="enum_firstEdgeContinuityEnum">
+          <property name="PW_BlockID" stdset="0">
+           <string>firstEdgeContinuityEnum</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 1 连续性</string>
+          </property>
+          <property name="PW_LabelVisibility" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <stringlist>
+            <string>G0 (位置)</string>
+            <string>G1 (相切)</string>
+            <string>G2 (曲率)</string>
+            <string>G3 (流)</string>
+           </stringlist>
+          </property>
+          <property name="PW_Data" stdset="0">
+           <stringlist>
+            <string>ContinuityTypesG0</string>
+            <string>ContinuityTypesG1</string>
+            <string>ContinuityTypesG2</string>
+            <string>ContinuityTypesG3</string>
+           </stringlist>
+          </property>
+          <property name="PW_Layout" stdset="0">
+           <string>Horizontal</string>
+          </property>
+          <property name="PW_NumberOfColumns" stdset="0">
+           <number>4</number>
+          </property>
+          <property name="PW_PresentationStyle" stdset="0">
+           <string>OptionMenu</string>
+          </property>
+          <property name="PW_EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_Bitmaps" stdset="0">
+           <stringlist>
+
+           </stringlist>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockReverseDirection" name="reverseDir_reverseFirstEdgeDir">
+          <property name="PW_BlockID" stdset="0">
+           <string>reverseFirstEdgeDir</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>反向</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Direction" stdset="0">
+           <string>0.000000 0.000000 1.000000</string>
+          </property>
+          <property name="PW_Flip" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Origin" stdset="0">
+           <string>0.000000 0.000000 0.000000</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockEnumeration" name="enum_secondEdgeContinuityEnum">
+          <property name="PW_BlockID" stdset="0">
+           <string>secondEdgeContinuityEnum</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 2 连续性</string>
+          </property>
+          <property name="PW_LabelVisibility" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <stringlist>
+            <string>G0 (位置)</string>
+            <string>G1 (相切)</string>
+            <string>G2 (曲率)</string>
+            <string>G3 (流)</string>
+           </stringlist>
+          </property>
+          <property name="PW_Data" stdset="0">
+           <stringlist>
+            <string>ContinuityTypesG0</string>
+            <string>ContinuityTypesG1</string>
+            <string>ContinuityTypesG2</string>
+            <string>ContinuityTypesG3</string>
+           </stringlist>
+          </property>
+          <property name="PW_Layout" stdset="0">
+           <string>Horizontal</string>
+          </property>
+          <property name="PW_NumberOfColumns" stdset="0">
+           <number>4</number>
+          </property>
+          <property name="PW_PresentationStyle" stdset="0">
+           <string>OptionMenu</string>
+          </property>
+          <property name="PW_EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_Bitmaps" stdset="0">
+           <stringlist>
+
+           </stringlist>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockReverseDirection" name="reverseDir_reverseSecondEdgeDir">
+          <property name="PW_BlockID" stdset="0">
+           <string>reverseSecondEdgeDir</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>反向</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Direction" stdset="0">
+           <string>0.000000 0.000000 1.000000</string>
+          </property>
+          <property name="PW_Flip" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Origin" stdset="0">
+           <string>0.000000 0.000000 0.000000</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockEnumeration" name="enum_flowDirectionEnum">
+          <property name="PW_BlockID" stdset="0">
+           <string>flowDirectionEnum</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>流向</string>
+          </property>
+          <property name="PW_LabelVisibility" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <stringlist>
+            <string>未指定</string>
+            <string>等参数</string>
+            <string>垂直</string>
+           </stringlist>
+          </property>
+          <property name="PW_Data" stdset="0">
+           <stringlist>
+
+           </stringlist>
+          </property>
+          <property name="PW_Layout" stdset="0">
+           <string>Horizontal</string>
+          </property>
+          <property name="PW_NumberOfColumns" stdset="0">
+           <number>3</number>
+          </property>
+          <property name="PW_PresentationStyle" stdset="0">
+           <string>OptionMenu</string>
+          </property>
+          <property name="PW_EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_Bitmaps" stdset="0">
+           <stringlist>
+
+           </stringlist>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockEnumeration" name="enum_tangencyControlEnum">
+          <property name="PW_BlockID" stdset="0">
+           <string>tangencyControlEnum</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>相切控制</string>
+          </property>
+          <property name="PW_LabelVisibility" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <stringlist>
+            <string>恒定</string>
+            <string>线性</string>
+           </stringlist>
+          </property>
+          <property name="PW_Data" stdset="0">
+           <stringlist>
+            <string>TangencyControlConstant</string>
+            <string>TangencyControlLinear</string>
+           </stringlist>
+          </property>
+          <property name="PW_Layout" stdset="0">
+           <string>Horizontal</string>
+          </property>
+          <property name="PW_NumberOfColumns" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="PW_PresentationStyle" stdset="0">
+           <string>OptionMenu</string>
+          </property>
+          <property name="PW_EnumSensitivity" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_EnumVisibility" stdset="0">
+           <stringlist>
+            <string>1</string>
+            <string>1</string>
+           </stringlist>
+          </property>
+          <property name="PW_Bitmaps" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockExpression" name="blockExpr_firstEdgeConstantExpr">
+          <property name="PW_BlockID" stdset="0">
+           <string>firstEdgeConstantExpr</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 1 恒定</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Formula" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_MaximumValue" stdset="0">
+           <double>1.7976931348623157e+308</double>
+          </property>
+          <property name="PW_MinimumValue" stdset="0">
+           <double>-1.7976931348623157e+308</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockExpression" name="blockExpr_secondEdgeConstantExpr">
+          <property name="PW_BlockID" stdset="0">
+           <string>secondEdgeConstantExpr</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 2 恒定</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Formula" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_MaximumValue" stdset="0">
+           <double>1.7976931348623157e+308</double>
+          </property>
+          <property name="PW_MinimumValue" stdset="0">
+           <double>-1.7976931348623157e+308</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockExpression" name="blockExpr_firstEdgeStartExpr">
+          <property name="PW_BlockID" stdset="0">
+           <string>firstEdgeStartExpr</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 1 起始</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Formula" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_MaximumValue" stdset="0">
+           <double>1.7976931348623157e+308</double>
+          </property>
+          <property name="PW_MinimumValue" stdset="0">
+           <double>-1.7976931348623157e+308</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockExpression" name="blockExpr_firstEdgeEndExpr">
+          <property name="PW_BlockID" stdset="0">
+           <string>firstEdgeEndExpr</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 1 终止</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Formula" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_MaximumValue" stdset="0">
+           <double>1.7976931348623157e+308</double>
+          </property>
+          <property name="PW_MinimumValue" stdset="0">
+           <double>-1.7976931348623157e+308</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockExpression" name="blockExpr_secondEdgeStartExpr">
+          <property name="PW_BlockID" stdset="0">
+           <string>secondEdgeStartExpr</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 2 起始</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Formula" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_MaximumValue" stdset="0">
+           <double>1.7976931348623157e+308</double>
+          </property>
+          <property name="PW_MinimumValue" stdset="0">
+           <double>-1.7976931348623157e+308</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockExpression" name="blockExpr_secondEdgeEndExpr">
+          <property name="PW_BlockID" stdset="0">
+           <string>secondEdgeEndExpr</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>边 2 终止</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Formula" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_MaximumValue" stdset="0">
+           <double>1.7976931348623157e+308</double>
+          </property>
+          <property name="PW_MinimumValue" stdset="0">
+           <double>-1.7976931348623157e+308</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="blockGroup_edgeLimitGroup">
+      <property name="PW_BlockID" stdset="0">
+       <string>edgeLimitGroup</string>
+      </property>
+      <property name="PW_Label" stdset="0">
+       <string>边限制</string>
+      </property>
+      <property name="PW_Expanded" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="PW_Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Top" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_Bottom" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_BalloonTooltipText" stdset="0">
+       <string/>
+      </property>
+      <property name="PW_Enable" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="PW_Show" stdset="0">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="groupContents_edgeLimitGroup">
+       <layout class="QVBoxLayout" name="groupVBoxLayout_edgeLimitGroup">
+        <item>
+         <widget class="BlockToggle" name="blockToggle_linkStartHandleToggle">
+          <property name="PW_BlockID" stdset="0">
+           <string>linkStartHandleToggle</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>链接开始手柄</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Bitmap" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockToggle" name="blockToggle_linkEndHandleToggle">
+          <property name="PW_BlockID" stdset="0">
+           <string>linkEndHandleToggle</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>链接结束手柄</string>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Value" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="PW_Bitmap" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockTabControl" name="tabControl_blockTabWidget0">
+          <property name="PW_BlockID" stdset="0">
+           <string>BlockTabWidget0</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>No Title</string>
+          </property>
+          <property name="PW_Expanded" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <widget class="BlockTabPage" name="tabPage_blockTabPage0">
+           <property name="PW_BlockID" stdset="0">
+            <string>BlockTabPage0</string>
+           </property>
+           <property name="PW_Label" stdset="0">
+            <string>边 1</string>
+           </property>
+           <property name="PW_Expanded" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PW_Left" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Right" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Top" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Bottom" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_BalloonTooltipText" stdset="0">
+            <string/>
+           </property>
+           <property name="PW_Enable" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PW_Show" stdset="0">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="groupContents_blockTabPage0">
+            <layout class="QVBoxLayout" name="groupVBoxLayout_blockTabPage0">
+             <item>
+              <widget class="BlockToggle" name="blockToggle_toggle0">
+               <property name="PW_BlockID" stdset="0">
+                <string>toggle0</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>端点到端点</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="PW_Bitmap" stdset="0">
+                <string>lock</string>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression3">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression3</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>起点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <string>100</string>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression4">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression4</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>终点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>100</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <string>100</string>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression7">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression7</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>起点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <string>0</string>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <double>1.7976931348623157e+308</double>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <double>-1.7976931348623157e+308</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression8">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression8</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>终点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <double>1.7976931348623157e+308</double>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <double>-1.7976931348623157e+308</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression5">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression5</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>偏置百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <string>100</string>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="BlockTabPage" name="tabPage_blockTabPage2">
+           <property name="PW_BlockID" stdset="0">
+            <string>BlockTabPage2</string>
+           </property>
+           <property name="PW_Label" stdset="0">
+            <string>边 2</string>
+           </property>
+           <property name="PW_Expanded" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PW_Left" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Right" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Top" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Bottom" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_BalloonTooltipText" stdset="0">
+            <string/>
+           </property>
+           <property name="PW_Enable" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PW_Show" stdset="0">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="groupContents_blockTabPage2">
+            <layout class="QVBoxLayout" name="groupVBoxLayout_blockTabPage2">
+             <item>
+              <widget class="BlockToggle" name="blockToggle_endpointToEndpointToggle">
+               <property name="PW_BlockID" stdset="0">
+                <string>endpointToEndpointToggle</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>端点到端点</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="PW_Bitmap" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression0">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression0</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>起点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>8888888</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <string>100</string>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression1">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression1</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>终点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>13</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <string>100</string>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression9">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression9</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>起点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <double>1.7976931348623157e+308</double>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <double>-1.7976931348623157e+308</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression10">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression10</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>终点百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <string>0</string>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <double>1.7976931348623157e+308</double>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <double>-1.7976931348623157e+308</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockExpression" name="blockExpr_expression2">
+               <property name="PW_BlockID" stdset="0">
+                <string>expression2</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>偏置百分比</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Formula" stdset="0">
+                <double>307.62109375</double>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <string>100</string>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="blockGroup_settingGroup">
+      <property name="PW_BlockID" stdset="0">
+       <string>settingGroup</string>
+      </property>
+      <property name="PW_Label" stdset="0">
+       <string>设置</string>
+      </property>
+      <property name="PW_Expanded" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="PW_Left" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Right" stdset="0">
+       <string>Dialog</string>
+      </property>
+      <property name="PW_Top" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_Bottom" stdset="0">
+       <string>Default</string>
+      </property>
+      <property name="PW_BalloonTooltipText" stdset="0">
+       <string/>
+      </property>
+      <property name="PW_Enable" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="PW_Show" stdset="0">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="groupContents_settingGroup">
+       <layout class="QVBoxLayout" name="groupVBoxLayout_settingGroup">
+        <item>
+         <widget class="BlockTabControl" name="tabControl_blockTabWidget1">
+          <property name="PW_BlockID" stdset="0">
+           <string>BlockTabWidget1</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Expanded" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <widget class="BlockTabPage" name="tabPage_blockTabPage1">
+           <property name="PW_BlockID" stdset="0">
+            <string>BlockTabPage1</string>
+           </property>
+           <property name="PW_Label" stdset="0">
+            <string>引导线</string>
+           </property>
+           <property name="PW_Expanded" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PW_Left" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Right" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Top" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_Bottom" stdset="0">
+            <string>Default</string>
+           </property>
+           <property name="PW_BalloonTooltipText" stdset="0">
+            <string/>
+           </property>
+           <property name="PW_Enable" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PW_Show" stdset="0">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="groupContents_blockTabPage1">
+            <layout class="QVBoxLayout" name="groupVBoxLayout_blockTabPage1">
+             <item>
+              <widget class="BlockEnumeration" name="enum_enum0">
+               <property name="PW_BlockID" stdset="0">
+                <string>enum0</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>重新构建</string>
+               </property>
+               <property name="PW_LabelVisibility" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <stringlist>
+                 <string>无</string>
+                 <string>次数和公差</string>
+                 <string>自动拟合</string>
+                </stringlist>
+               </property>
+               <property name="PW_Data" stdset="0">
+                <string>1,2,3</string>
+               </property>
+               <property name="PW_Layout" stdset="0">
+                <string>Vertical</string>
+               </property>
+               <property name="PW_NumberOfColumns" stdset="0">
+                <number>65535</number>
+               </property>
+               <property name="PW_PresentationStyle" stdset="0">
+                <string>OptionMenu</string>
+               </property>
+               <property name="PW_EnumSensitivity" stdset="0">
+                <stringlist>
+                 <string>1</string>
+                 <string>1</string>
+                 <string>1</string>
+                </stringlist>
+               </property>
+               <property name="PW_EnumVisibility" stdset="0">
+                <stringlist>
+                 <string>1</string>
+                 <string>1</string>
+                 <string>1</string>
+                </stringlist>
+               </property>
+               <property name="PW_Bitmaps" stdset="0">
+                <stringlist>
+
+                </stringlist>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockInteger" name="blockInteger_integer0">
+               <property name="PW_BlockID" stdset="0">
+                <string>integer0</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>次数</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>3</number>
+               </property>
+               <property name="PW_PresentationStyle" stdset="0">
+                <string>Keyin</string>
+               </property>
+               <property name="PW_Bitmap" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Increment" stdset="0">
+                <number>1</number>
+               </property>
+               <property name="PW_KeyinFieldWidth" stdset="0">
+                <string>Narrow</string>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <number>2147483647</number>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <number>-2147483648</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockInteger" name="blockInteger_integer1">
+               <property name="PW_BlockID" stdset="0">
+                <string>integer1</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>最高次数</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>7</number>
+               </property>
+               <property name="PW_PresentationStyle" stdset="0">
+                <string>Keyin</string>
+               </property>
+               <property name="PW_Bitmap" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Increment" stdset="0">
+                <number>1</number>
+               </property>
+               <property name="PW_KeyinFieldWidth" stdset="0">
+                <string>Narrow</string>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <number>2147483647</number>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <number>-2147483648</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="BlockInteger" name="blockInteger_integer2">
+               <property name="PW_BlockID" stdset="0">
+                <string>integer2</string>
+               </property>
+               <property name="PW_Label" stdset="0">
+                <string>最大段数</string>
+               </property>
+               <property name="PW_Left" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Right" stdset="0">
+                <string>Dialog</string>
+               </property>
+               <property name="PW_Top" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Bottom" stdset="0">
+                <string>Default</string>
+               </property>
+               <property name="PW_Value" stdset="0">
+                <number>1</number>
+               </property>
+               <property name="PW_PresentationStyle" stdset="0">
+                <string>Keyin</string>
+               </property>
+               <property name="PW_Bitmap" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_BalloonTooltipText" stdset="0">
+                <string/>
+               </property>
+               <property name="PW_Enable" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Show" stdset="0">
+                <bool>true</bool>
+               </property>
+               <property name="PW_Increment" stdset="0">
+                <number>1</number>
+               </property>
+               <property name="PW_KeyinFieldWidth" stdset="0">
+                <string>Narrow</string>
+               </property>
+               <property name="PW_MaximumValue" stdset="0">
+                <number>2147483647</number>
+               </property>
+               <property name="PW_MinimumValue" stdset="0">
+                <number>-2147483648</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockGroup" name="blockGroup_group0">
+          <property name="PW_BlockID" stdset="0">
+           <string>group0</string>
+          </property>
+          <property name="PW_Label" stdset="0">
+           <string>公差</string>
+          </property>
+          <property name="PW_Expanded" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Left" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="PW_Right" stdset="0">
+           <string>Dialog</string>
+          </property>
+          <property name="PW_Top" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_Bottom" stdset="0">
+           <string>Default</string>
+          </property>
+          <property name="PW_BalloonTooltipText" stdset="0">
+           <string/>
+          </property>
+          <property name="PW_Enable" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PW_Show" stdset="0">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="groupContents_group0">
+           <layout class="QVBoxLayout" name="groupVBoxLayout_group0">
+            <item>
+             <widget class="BlockLinearExpression" name="blockLinear_linearDim0">
+              <property name="PW_BlockID" stdset="0">
+               <string>linear_dim0</string>
+              </property>
+              <property name="PW_Label" stdset="0">
+               <string>G0（位置</string>
+              </property>
+              <property name="PW_Left" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Right" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Top" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Bottom" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Value" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="PW_BalloonTooltipText" stdset="0">
+               <string/>
+              </property>
+              <property name="PW_Formula" stdset="0">
+               <double>0.001</double>
+              </property>
+              <property name="PW_Enable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PW_Show" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PW_EnableReverseDirection" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PW_MaximumValue" stdset="0">
+               <double>1.7976931348623157e+308</double>
+              </property>
+              <property name="PW_MinimumValue" stdset="0">
+               <double>-1.7976931348623157e+308</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="BlockAngularExpression" name="blockAngular_angularDim0">
+              <property name="PW_BlockID" stdset="0">
+               <string>angular_dim0</string>
+              </property>
+              <property name="PW_Label" stdset="0">
+               <string>G1（相切）</string>
+              </property>
+              <property name="PW_Left" stdset="0">
+               <string>Dialog</string>
+              </property>
+              <property name="PW_Right" stdset="0">
+               <string>Dialog</string>
+              </property>
+              <property name="PW_Top" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Bottom" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Value" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="PW_BalloonTooltipText" stdset="0">
+               <string/>
+              </property>
+              <property name="PW_Formula" stdset="0">
+               <double>0.05</double>
+              </property>
+              <property name="PW_Enable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PW_Show" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PW_MaximumValue" stdset="0">
+               <double>1.7976931348623157e+308</double>
+              </property>
+              <property name="PW_MinimumValue" stdset="0">
+               <double>-1.7976931348623157e+308</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="BlockExpression" name="blockExpr_expression6">
+              <property name="PW_BlockID" stdset="0">
+               <string>expression6</string>
+              </property>
+              <property name="PW_Label" stdset="0">
+               <string>G2（曲率）</string>
+              </property>
+              <property name="PW_Left" stdset="0">
+               <string>Dialog</string>
+              </property>
+              <property name="PW_Right" stdset="0">
+               <string>Dialog</string>
+              </property>
+              <property name="PW_Top" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Bottom" stdset="0">
+               <string>Default</string>
+              </property>
+              <property name="PW_Value" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="PW_BalloonTooltipText" stdset="0">
+               <string/>
+              </property>
+              <property name="PW_Formula" stdset="0">
+               <double>0.5</double>
+              </property>
+              <property name="PW_Enable" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PW_Show" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PW_MaximumValue" stdset="0">
+               <double>1.7976931348623157e+308</double>
+              </property>
+              <property name="PW_MinimumValue" stdset="0">
+               <double>-1.7976931348623157e+308</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockGroup</class>
+   <extends>BlockBase</extends>
+   <header>Widgets/ContainerBlock/BlockGroup.h</header>
+   <addpagemethod>AddContent</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>BlockEnumeration</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockEnumeration.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSelectObject</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSelectObject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockReverseDirection</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockReverseDirection.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSeparator</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSeparator.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockExpression</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockTabControl</class>
+   <extends>QWidget</extends>
+   <header>Widgets/ContainerBlock/BlockTabControl.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockTabPage</class>
+   <extends>QWidget</extends>
+   <header>Widgets/ContainerBlock/BlockTabPage.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockInteger</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockInteger.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockLinearExpression</class>
+   <extends>BlockExpression</extends>
+   <header>Widgets/Block/BlockLinearExpression.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockAngularExpression</class>
+   <extends>BlockExpression</extends>
+   <header>Widgets/Block/BlockAngularExpression.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

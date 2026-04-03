@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockInteger" name="blockInteger_count">
+            <property name="PW_BlockID" stdset="0">
+              <string>integer0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockDouble" name="blockDouble_value">
+            <property name="PW_BlockID" stdset="0">
+              <string>double0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockExpression" name="blockExpression_expr">
+            <property name="PW_BlockID" stdset="0">
+              <string>expression0</string>
+            </property>
+            <property name="PW_Lable" stdset="0">
+              <string>expression</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockLinearExpression" name="blockLinear_length">
+            <property name="PW_BlockID" stdset="0">
+              <string>linear_dim0</string>
+            </property>
+            <property name="PW_Lable" stdset="0">
+              <string>linear</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockAngularExpression" name="blockAngular_angle">
+            <property name="PW_BlockID" stdset="0">
+              <string>angular_dim0</string>
+            </property>
+            <property name="PW_Lable" stdset="0">
+              <string>angular</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockRadiusExpression" name="blockRadius_radius">
+            <property name="PW_BlockID" stdset="0">
+              <string>radius_dim0</string>
+            </property>
+            <property name="PW_Lable" stdset="0">
+              <string>radius</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockOnPathDim" name="onPathDim_distance">
+            <property name="PW_BlockID" stdset="0">
+              <string>on_path_dim0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockIntegerTable" name="integerTable_data">
+            <property name="PW_BlockID" stdset="0">
+              <string>integerTable0</string>
+            </property>
+          </widget>
+        </item> 
+        <item>
+          <widget class="BlockDoubleTable" name="doubleTable_data">
+            <property name="PW_BlockID" stdset="0">
+              <string>doubleTable0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockInteger</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockInteger.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockDouble</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockDouble.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockExpression</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLinearExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockLinearExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockAngularExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockAngularExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockRadiusExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockRadiusExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockOnPathDim</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockOnPathDim.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockIntegerTable</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockIntegerTable.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockDoubleTable</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockDoubleTable.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

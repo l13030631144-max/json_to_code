@@ -1,0 +1,254 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1774592308648_38884",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 101,
+        "_y": 131
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockSeparator_1774592326114_96801",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockObjectColorPicker_1774592327366_87247",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockRGBColorPicker_1774592328456_46247",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockDrawingArea_1774592329997_48939",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockLayer_1774592337140_69739",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockSeparator_1774592326114_96801",
+          "type": "BlockSeparator",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "separator0",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default"
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top"
+          ]
+        },
+        {
+          "id": "BlockObjectColorPicker_1774592327366_87247",
+          "type": "BlockObjectColorPicker",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "colorPicker0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "o",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_RetainValue": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_NumberSelectable": 1,
+            "PW_Value": [
+              1
+            ],
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Show",
+            "PW_Localize",
+            "PW_RetainValue",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_NumberSelectable",
+            "PW_Value",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockRGBColorPicker_1774592328456_46247",
+          "type": "BlockRGBColorPicker",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "rGBColorPicker0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "c",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_RetainValue": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_BalloonTooltipImage": "",
+            "PW_BalloonTooltipLayout": "Horizontal",
+            "PW_BalloonTooltipText": "",
+            "PW_Value": "R 255 G 255 B 255",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Show",
+            "PW_Localize",
+            "PW_RetainValue",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_BalloonTooltipImage",
+            "PW_BalloonTooltipLayout",
+            "PW_BalloonTooltipText",
+            "PW_Value",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockDrawingArea_1774592329997_48939",
+          "type": "BlockDrawingArea",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "drawingArea0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_Height": 0,
+            "PW_Image": "",
+            "PW_Width": 0,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_Height",
+            "PW_Image",
+            "PW_Width",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockLayer_1774592337140_69739",
+          "type": "BlockLayer",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "layer0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_LayerOption": 3,
+            "PW_LayerValue": 1,
+            "PW_ShowMaintainLayerOption": false,
+            "PW_ShowOriginalLayerOption": false,
+            "PW_ShowUserDefinedLayerOption": true,
+            "PW_ShowWorkLayerOption": true,
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_LayerOption",
+            "PW_LayerValue",
+            "PW_ShowMaintainLayerOption",
+            "PW_ShowOriginalLayerOption",
+            "PW_ShowUserDefinedLayerOption",
+            "PW_ShowWorkLayerOption",
+            "PW_TooltipID"
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1774592362603
+}

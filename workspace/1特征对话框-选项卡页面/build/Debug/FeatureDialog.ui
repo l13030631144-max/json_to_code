@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>FeatureDialog</class>
+  <widget class="BlockFeatureDialog" name="FeatureDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockGroup" name="blockGroup_main">
+            <property name="PW_BlockID" stdset="0">
+              <string>group0</string>
+            </property>
+            <widget class="QWidget" name="groupContents">
+              <layout class="QVBoxLayout" name="groupVBoxLayout">
+                <item>
+                  <widget class="BlockTable" name="blockTable_layout" native="true">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>table0</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout">
+                      <item row="0" column="0">
+                        <widget class="BlockLabel" name="blockLabel_title">
+                          <property name="PW_BlockID" stdset="0">
+                            <string>label0</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockTabWidget" name="tabControl_main">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>tabControl0</string>
+                    </property>
+                    <property name="PW_HiddenTabPages" stdset="0">
+                      <stringlist>
+                        <string>-1</string>
+                        <string>-1</string>
+                      </stringlist>
+                    </property>
+                    <widget class="QWidget" name="tabPage_first">
+                      <property name="PW_BlockID" stdset="0">
+                        <string>tabPage0</string>
+                      </property>
+                      <attribute name="title">
+                        <string>Tab</string>
+                      </attribute>
+                      <layout class="QVBoxLayout" name="tabPageLayout_0">
+                        <item>
+                          <widget class="BlockToggle" name="blockToggle_toggle">
+                            <property name="PW_BlockID" stdset="0">
+                              <string>toggle0</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="BlockLabel" name="blockLabel_info">
+                            <property name="PW_BlockID" stdset="0">
+                              <string>label1</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </widget>
+                    <widget class="QWidget" name="tabPage_second">
+                      <property name="PW_BlockID" stdset="0">
+                        <string>tabPage1</string>
+                      </property>
+                      <attribute name="title">
+                        <string>Tab</string>
+                      </attribute>
+                    </widget>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockFeatureDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockFeatureDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>BlockBase</extends>
+      <header>Widgets/ContainerBlock/BlockGroup.h</header>
+      <container>1</container>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockTable</class>
+      <extends>QWidget</extends>
+      <header>Widgets/ContainerBlock/BlockTable.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>BlockTabWidget</class>
+      <extends>QWidget</extends>
+      <header>Widgets/ContainerBlock/BlockTabWidget.h</header>
+      <container>1</container>
+      <addpagemethod>AddTab</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockLabel</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLabel.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockToggle</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockToggle.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

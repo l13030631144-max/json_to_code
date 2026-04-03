@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>IntersectionCurve</class>
+  <widget class="BlockDialog" name="IntersectionCurve">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>496</width>
+        <height>851</height>
+      </rect>
+    </property>
+    <property name="PW_BlockID" stdset="0">
+      <string>Dialog</string>
+    </property>
+    <property name="PW_Label" stdset="0">
+      <string>相交曲线</string>
+    </property>
+    <property name="PW_Cue" stdset="0">
+      <string/>
+    </property>
+    <property name="PW_UseMore" stdset="0">
+      <bool>true</bool>
+    </property>
+    <property name="PW_IsMore" stdset="0">
+      <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockGroup" name="blockGroup_firstInput">
+            <property name="PW_BlockID" stdset="0">
+              <string>group</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string>第一组</string>
+            </property>
+            <property name="PW_Left" stdset="0">
+              <string>Dialog</string>
+            </property>
+            <property name="PW_Right" stdset="0">
+              <string>Dialog</string>
+            </property>
+            <widget class="QWidget" name="groupContents_firstInput">
+              <layout class="QVBoxLayout" name="groupVBoxLayout_firstInput">
+                <item>
+                  <widget class="BlockFaceCollector" name="faceCollector_firstFace">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>face_select0</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                      <string>选择面</string>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                      <string>select-face</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockSpecifyPlane" name="specifyPlane_firstPlane">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>plane0</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                      <string>指定平面</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_keepFirstSelected">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>keepSelected</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>保持选定</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockGroup" name="blockGroup_secondInput">
+            <property name="PW_BlockID" stdset="0">
+              <string>group_2</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string>第一组</string>
+            </property>
+            <property name="PW_Left" stdset="0">
+              <string>Dialog</string>
+            </property>
+            <property name="PW_Right" stdset="0">
+              <string>Dialog</string>
+            </property>
+            <widget class="QWidget" name="groupContents_secondInput">
+              <layout class="QVBoxLayout" name="groupVBoxLayout_secondInput">
+                <item>
+                  <widget class="BlockFaceCollector" name="faceCollector_secondFace">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>face_select1</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                      <string>选择面</string>
+                    </property>
+                    <property name="PW_Bitmap" stdset="0">
+                      <string>select-face</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockSpecifyPlane" name="specifyPlane_secondPlane">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>plane1</string>
+                    </property>
+                    <property name="PW_LabelString" stdset="0">
+                      <string>指定平面</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_keepSecondSelected">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>keepSelected_2</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>保持选定</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockGroup" name="blockGroup_settings">
+            <property name="PW_BlockID" stdset="0">
+              <string>group_3</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string>设置</string>
+            </property>
+            <property name="PW_Left" stdset="0">
+              <string>Dialog</string>
+            </property>
+            <property name="PW_Right" stdset="0">
+              <string>Dialog</string>
+            </property>
+            <widget class="QWidget" name="groupContents_settings">
+              <layout class="QVBoxLayout" name="groupVBoxLayout_settings">
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_associative">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>associative</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>关联</string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <bool>true</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_advancedCurveFitting">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>advancedCurveFitting</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>高级曲线拟合</string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <bool>true</bool>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockEnumeration" name="enum_method">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>method</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>方法</string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <stringlist>
+                        <string>次数和段数</string>
+                        <string>次数和公差</string>
+                        <string>自动拟合</string>
+                      </stringlist>
+                    </property>
+                    <property name="PW_Data" stdset="0">
+                      <stringlist>
+                        <string>1</string>
+                        <string>2</string>
+                        <string>3</string>
+                      </stringlist>
+                    </property>
+                    <property name="PW_EnumSensitivity" stdset="0">
+                      <stringlist>
+                        <string>1</string>
+                        <string>1</string>
+                        <string>1</string>
+                      </stringlist>
+                    </property>
+                    <property name="PW_EnumVisibility" stdset="0">
+                      <stringlist>
+                        <string>1</string>
+                        <string>1</string>
+                        <string>1</string>
+                      </stringlist>
+                    </property>
+                    <property name="PW_Bitmaps" stdset="0">
+                      <stringlist>
+                      </stringlist>
+                    </property>
+                    <property name="PW_Layout" stdset="0">
+                      <string>Horizontal</string>
+                    </property>
+                    <property name="PW_NumberOfColumns" stdset="0">
+                      <number>3</number>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockInteger" name="blockInteger_degree">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>degree</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>次数</string>
+                    </property>
+                    <property name="PW_MinimumValue" stdset="0">
+                      <number>0</number>
+                    </property>
+                    <property name="PW_MaximumValue" stdset="0">
+                      <number>100</number>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <number>7</number>
+                    </property>
+                    <property name="PW_Formula" stdset="0">
+                      <number>0</number>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockInteger" name="blockInteger_segments">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>segments</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>段</string>
+                    </property>
+                    <property name="PW_MinimumValue" stdset="0">
+                      <number>0</number>
+                    </property>
+                    <property name="PW_MaximumValue" stdset="0">
+                      <number>100</number>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <number>1</number>
+                    </property>
+                    <property name="PW_Formula" stdset="0">
+                      <number>0</number>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockInteger" name="blockInteger_minDegree">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>integer1</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>最低次数</string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <number>5</number>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockInteger" name="blockInteger_maxDegree">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>integer2</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>最高次数</string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <number>7</number>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockInteger" name="blockInteger_maxSegments">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>integer0</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>最大段数</string>
+                    </property>
+                    <property name="PW_Value" stdset="0">
+                      <number>1</number>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockLinearExpression" name="blockLinear_distanceTolerance">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>linear_dim0</string>
+                    </property>
+                    <property name="PW_Label" stdset="0">
+                      <string>距离公差</string>
+                    </property>
+                    <property name="PW_Left" stdset="0">
+                      <string>Dialog</string>
+                    </property>
+                    <property name="PW_Right" stdset="0">
+                      <string>Dialog</string>
+                    </property>
+                    <property name="PW_Formula" stdset="0">
+                      <double>0.001</double>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockGroup</class>
+      <extends>BlockBase</extends>
+      <header>Widgets/ContainerBlock/BlockGroup.h</header>
+      <container>1</container>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockFaceCollector</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockFaceCollector.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockSpecifyPlane</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSpecifyPlane.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockToggle</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockToggle.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockEnumeration</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockEnumeration.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockInteger</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockInteger.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockExpression</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockExpression.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLinearExpression</class>
+      <extends>BlockExpression</extends>
+      <header>Widgets/Block/BlockLinearExpression.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

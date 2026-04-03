@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockSeparator" name="separator_main">
+            <property name="PW_BlockID" stdset="0">
+              <string>separator0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockObjectColorPicker" name="colorPicker_objectColor">
+            <property name="PW_BlockID" stdset="0">
+              <string>colorPicker0</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string>o</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockRGBColorPicker" name="rgbColorPicker_color">
+            <property name="PW_BlockID" stdset="0">
+              <string>rGBColorPicker0</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string>c</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockDrawingArea" name="drawingArea_preview">
+            <property name="PW_BlockID" stdset="0">
+              <string>drawingArea0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockLayer" name="blockLayer_layer">
+            <property name="PW_BlockID" stdset="0">
+              <string>layer0</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string> </string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockSeparator</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockSeparator.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockObjectColorPicker</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockObjectColorPicker.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockRGBColorPicker</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockRGBColorPicker.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockDrawingArea</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockDrawingArea.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLayer</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLayer.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

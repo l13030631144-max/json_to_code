@@ -1,0 +1,10 @@
+^D:\PYTHON_PROJECT\QT_PJ\JSON _TO_CODE_BY_SKILLS\WORKSPACE\8选择对象-选择小平面\BUILD\CMAKEFILES\0C44489B83C9CCECE19BCF8E4B89723E\GENERATE.STAMP.RULE
+setlocal
+E:\App\VS\vs2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe "-SD:/python_project/Qt_pj/json _to_code_by_skills/workspace/8选择对象-选择小平面" "-BD:/python_project/Qt_pj/json _to_code_by_skills/workspace/8选择对象-选择小平面/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/python_project/Qt_pj/json _to_code_by_skills/workspace/8选择对象-选择小平面/build/TestDialog.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,271 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1774593971433_13260",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 500,
+        "_h": 400,
+        "_x": 137,
+        "_y": 132
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockLineFont_1774593975385_94986",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockLineWidth_1774593976684_21743",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockLineColorFontWidth_1774593983614_892",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockTextColorFontWidth_1774593984793_64087",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockLineFont_1774593975385_94986",
+          "type": "BlockLineFont",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "lineFont0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "线型",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_AvailableOptions": [
+              "(0x1)无更改",
+              "(0x2)原始",
+              "(0x4)不可见",
+              "(0x8)实线",
+              "(0x10)虚线",
+              "(0x40)中心线",
+              "(0x80)点线",
+              "(0x100)长划线",
+              "(0x200)点划线",
+              "(0x400)双点划线",
+              "(0x800)单点划线",
+              "(0x1000)三点划线",
+              "(0x2000)双短划线"
+            ],
+            "PW_ShowOptionLabels": true,
+            "PW_Value": "无更改",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_AvailableOptions",
+            "PW_ShowOptionLabels",
+            "PW_Value",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockLineWidth_1774593976684_21743",
+          "type": "BlockLineWidth",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "lineWidth0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "Line Width",
+            "PW_LabelVisibility": true,
+            "PW_Show": true,
+            "PW_RetainValue": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_AllowDefaultWidth": true,
+            "PW_AllowNoChangeWidth": true,
+            "PW_ShowDefaultAsOriginal": false,
+            "PW_LineWidthValue": "0.70 mm",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_LabelVisibility",
+            "PW_Show",
+            "PW_RetainValue",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_AllowDefaultWidth",
+            "PW_AllowNoChangeWidth",
+            "PW_ShowDefaultAsOriginal",
+            "PW_LineWidthValue",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockLineColorFontWidth_1774593983614_892",
+          "type": "BlockLineColorFontWidth",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "lineColorFontWidth0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_ColorValue": "1",
+            "PW_HideSubBlocks": "None",
+            "PW_Layout": "Vertical",
+            "PW_LabelString": "",
+            "PW_WidthLabel": "宽度",
+            "PW_ShowLabelString": false,
+            "PW_ShowDefault": true,
+            "PW_ShowDefaultAsOriginal": false,
+            "PW_ShowNoChange": true,
+            "PW_UseWideLines": true,
+            "PW_AvailableOptions": [
+              "(0x1)无更改",
+              "(0x2)原始",
+              "(0x4)不可见",
+              "(0x8)实线",
+              "(0x10)虚线",
+              "(0x40)中心线",
+              "(0x80)点线",
+              "(0x100)长划线",
+              "(0x200)点划线",
+              "(0x400)双点划线",
+              "(0x800)单点划线",
+              "(0x1000)三点划线",
+              "(0x2000)双短划线"
+            ],
+            "PW_Value": "无更改",
+            "PW_LineWidthValue": "0.70 mm",
+            "PW_FontLabel": "样式",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_ColorValue",
+            "PW_HideSubBlocks",
+            "PW_Layout",
+            "PW_LabelString",
+            "PW_WidthLabel",
+            "PW_ShowLabelString",
+            "PW_ShowDefault",
+            "PW_ShowDefaultAsOriginal",
+            "PW_ShowNoChange",
+            "PW_UseWideLines",
+            "PW_AvailableOptions",
+            "PW_Value",
+            "PW_LineWidthValue",
+            "PW_FontLabel",
+            "PW_TooltipID"
+          ]
+        },
+        {
+          "id": "BlockTextColorFontWidth_1774593984793_64087",
+          "type": "BlockTextColorFontWidth",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "textColorFontWidth0",
+            "PW_Enable": true,
+            "PW_Group": false,
+            "PW_Label": "",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_AvailableFontTypes": "NX Font",
+            "PW_ColorValue": "1",
+            "PW_FontValue": "alien",
+            "PW_IsNXFont": true,
+            "PW_Layout": "Horizontal",
+            "PW_WidthValue": "Thin Width",
+            "PW_StandardFontStyle": "Regular",
+            "PW_TooltipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_AvailableFontTypes",
+            "PW_ColorValue",
+            "PW_FontValue",
+            "PW_IsNXFont",
+            "PW_Layout",
+            "PW_WidthValue",
+            "PW_StandardFontStyle",
+            "PW_TooltipID"
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1774593991628
+}

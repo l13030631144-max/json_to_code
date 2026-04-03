@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\python_project\Qt_pj\json _to_code_by_skills\workspace\5分割线-图层\build\CMakeFiles\da96413bb27d6389025ba02fb9e78726\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{07F041B0-1733-3F2B-ACA8-BD6FAEC2CC3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

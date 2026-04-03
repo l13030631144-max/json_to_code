@@ -1,0 +1,3 @@
+D:/python_project/Qt_pj/json _to_code_by_skills/workspace22/桥接/build/CMakeFiles/BridgeSurfaceDialog.dir
+D:/python_project/Qt_pj/json _to_code_by_skills/workspace22/桥接/build/CMakeFiles/ALL_BUILD.dir
+D:/python_project/Qt_pj/json _to_code_by_skills/workspace22/桥接/build/CMakeFiles/ZERO_CHECK.dir

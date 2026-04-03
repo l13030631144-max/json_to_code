@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockEnumeration" name="enum_selector">
+            <property name="PW_BlockID" stdset="0">
+              <string>enumeration0</string>
+            </property>
+            <property name="PW_Value" stdset="0">
+              <stringlist>
+                <string>1</string>
+                <string>2</string>
+                <string>3</string>
+                <string>4</string>
+              </stringlist>
+            </property>
+            <property name="PW_Data" stdset="0">
+              <stringlist>
+                <string>1</string>
+                <string>2</string>
+                <string>3</string>
+                <string>4</string>
+              </stringlist>
+            </property>
+            <property name="PW_EnumSensitivity" stdset="0">
+              <stringlist>
+                <string>1</string>
+                <string>1</string>
+                <string>1</string>
+                <string>1</string>
+              </stringlist>
+            </property>
+            <property name="PW_EnumVisibility" stdset="0">
+              <stringlist>
+                <string>1</string>
+                <string>1</string>
+                <string>1</string>
+                <string>1</string>
+              </stringlist>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockString" name="blockString_text">
+            <property name="PW_BlockID" stdset="0">
+              <string>string0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockMultilineString" name="multilineString_content">
+            <property name="PW_BlockID" stdset="0">
+              <string>multiline_string0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockButton" name="blockButton_action">
+            <property name="PW_BlockID" stdset="0">
+              <string>button0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockListBox" name="listBox_items">
+            <property name="PW_BlockID" stdset="0">
+              <string>list_box0</string>
+            </property>
+            <property name="PW_Label" stdset="0">
+              <string> </string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockEnumeration</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockEnumeration.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockString</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockString.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockMultilineString</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockMultilineString.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockButton</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockButton.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockListBox</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockListBox.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

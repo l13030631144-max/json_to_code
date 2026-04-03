@@ -1,3 +1,0 @@
-D:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/4表/build/CMakeFiles/FeatureDialog.dir
-D:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/4表/build/CMakeFiles/ALL_BUILD.dir
-D:/python_project/Qt_pj/CAD-FRONTEND-AGENT-ALGO-CLAUDE-CODE/workspace/4表/build/CMakeFiles/ZERO_CHECK.dir

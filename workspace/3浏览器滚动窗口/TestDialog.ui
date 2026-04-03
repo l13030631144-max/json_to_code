@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>640</width>
+        <height>530</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockExplorer" name="explorer_main">
+            <property name="PW_BlockID" stdset="0">
+              <string>explorer0</string>
+            </property>
+            <property name="PW_CurrentNode" stdset="0">
+              <number>1</number>
+            </property>
+            <widget class="QWidget" name="explorerNode_first">
+              <property name="PW_BlockID" stdset="0">
+                <string>explorerNode0</string>
+              </property>
+              <attribute name="title">
+                <string>Node</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="explorerNodeLayout_0">
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_nodeOneInfo">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>label0</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_nodeOneToggle">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>toggle0</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+            <widget class="QWidget" name="explorerNode_second">
+              <property name="PW_BlockID" stdset="0">
+                <string>explorerNode1</string>
+              </property>
+              <attribute name="title">
+                <string>Node</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="explorerNodeLayout_1">
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_nodeTwoToggle">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>toggle1</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockScrollWindow" name="scrollWindow_main">
+            <property name="PW_BlockID" stdset="0">
+              <string>scrolledWindow0</string>
+            </property>
+            <widget class="QWidget" name="scrollContents">
+              <layout class="QVBoxLayout" name="scrollVBoxLayout">
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_scrollFirst">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>label1</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_scrollSecond">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>label2</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_scrollThird">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>label3</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockToggle" name="blockToggle_scrollToggle">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>toggle2</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockExplorer</class>
+      <extends>QWidget</extends>
+      <header>Widgets/ContainerBlock/BlockExplorer.h</header>
+      <container>1</container>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockScrollWindow</class>
+      <extends>QWidget</extends>
+      <header>Widgets/ContainerBlock/BlockScrollWindow.h</header>
+      <container>1</container>
+      <addpagemethod>AddContent</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockLabel</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLabel.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockToggle</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockToggle.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>TestDialog</class>
+  <widget class="BlockDialog" name="TestDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>400</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockLineFont" name="lineFont_style">
+            <property name="PW_BlockID" stdset="0">
+              <string>lineFont0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockLineWidth" name="lineWidth_width">
+            <property name="PW_BlockID" stdset="0">
+              <string>lineWidth0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockLineColorFontWidth" name="lineColorFontWidth_line">
+            <property name="PW_BlockID" stdset="0">
+              <string>lineColorFontWidth0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="BlockTextColorFontWidth" name="textColorFontWidth_text">
+            <property name="PW_BlockID" stdset="0">
+              <string>textColorFontWidth0</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockLineFont</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLineFont.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLineWidth</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLineWidth.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockLineColorFontWidth</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLineColorFontWidth.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockTextColorFontWidth</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockTextColorFontWidth.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>

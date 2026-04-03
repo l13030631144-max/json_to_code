@@ -1,0 +1,595 @@
+{
+  "tree": [
+    {
+      "id": "BlockDialog_1774591223106_31402",
+      "type": "BlockDialog",
+      "altProperties": {},
+      "props": {
+        "className": "TestDialog",
+        "PW_BlockID": "Dialog0",
+        "PW_Cue": "Cue",
+        "PW_Enable": true,
+        "PW_Group": false,
+        "PW_Label": "无标题",
+        "PW_Dialog_Sizing": "Follow Policy",
+        "PW_Navigation_Style": "OK Apply Cancel",
+        "PW_UseMore": true,
+        "PW_IsMore": true,
+        "_w": 640,
+        "_h": 530,
+        "_x": 240,
+        "_y": 120
+      },
+      "hiddenProps": [
+        "className",
+        "PW_BlockID",
+        "PW_Cue",
+        "PW_Enable",
+        "PW_Group",
+        "PW_Label",
+        "PW_Dialog_Sizing",
+        "PW_Navigation_Style",
+        "PW_UseMore",
+        "PW_IsMore"
+      ],
+      "customLayout": [
+        [
+          {
+            "nodeId": "BlockExplorer_1774591226531_10952",
+            "operation": "add"
+          }
+        ],
+        [
+          {
+            "nodeId": "BlockScrollWindow_1774591248941_63462",
+            "operation": "add"
+          }
+        ]
+      ],
+      "children": [
+        {
+          "id": "BlockExplorer_1774591226531_10952",
+          "type": "BlockExplorer",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "explorer0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Group": false,
+            "PW_Label": "Explorer",
+            "PW_Show": true,
+            "PW_Localize": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_CurrentNode": 1,
+            "PW_TreeWidth": 175
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Localize",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_TreeWidth"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockExplorerNode_1774591226531_52415",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockExplorerNode_1774591231839_41889",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockExplorerNode_1774591226531_52415",
+              "type": "BlockExplorerNode",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "explorerNode0",
+                "PW_Enable": true,
+                "PW_Expanded": true,
+                "PW_Label": "Node",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": ""
+              },
+              "hiddenProps": [
+                "PW_BlockID",
+                "PW_Enable",
+                "PW_Expanded",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText"
+              ],
+              "customLayout": [
+                [
+                  {
+                    "nodeId": "BlockLabel_1774591235629_55583",
+                    "operation": "add"
+                  }
+                ],
+                [
+                  {
+                    "nodeId": "BlockToggle_1774591237670_47281",
+                    "operation": "add"
+                  }
+                ]
+              ],
+              "children": [
+                {
+                  "id": "BlockLabel_1774591235629_55583",
+                  "type": "BlockLabel",
+                  "altProperties": {},
+                  "props": {
+                    "PW_BlockID": "label0",
+                    "PW_Enable": true,
+                    "PW_Group": false,
+                    "PW_Label": "无标题",
+                    "PW_Show": true,
+                    "PW_Localize": true,
+                    "PW_Bottom": "Default",
+                    "PW_Left": "Default",
+                    "PW_Right": "Default",
+                    "PW_Top": "Default",
+                    "PW_BalloonTooltipImage": "",
+                    "PW_BalloonTooltipLayout": "Horizontal",
+                    "PW_BalloonTooltipText": "",
+                    "PW_Bitmap": "",
+                    "PW_DisplayBitmapLabel": false,
+                    "PW_HighQualityBitmap": true,
+                    "PW_Tooltip": "",
+                    "PW_WordWrap": false,
+                    "PW_TooltipID": ""
+                  },
+                  "hiddenProps": [
+                    "PW_BlockID",
+                    "PW_Enable",
+                    "PW_Group",
+                    "PW_Label",
+                    "PW_Show",
+                    "PW_Localize",
+                    "PW_Bottom",
+                    "PW_Left",
+                    "PW_Right",
+                    "PW_Top",
+                    "PW_BalloonTooltipImage",
+                    "PW_BalloonTooltipLayout",
+                    "PW_BalloonTooltipText",
+                    "PW_Bitmap",
+                    "PW_DisplayBitmapLabel",
+                    "PW_HighQualityBitmap",
+                    "PW_Tooltip",
+                    "PW_WordWrap",
+                    "PW_TooltipID"
+                  ]
+                },
+                {
+                  "id": "BlockToggle_1774591237670_47281",
+                  "type": "BlockToggle",
+                  "altProperties": {},
+                  "props": {
+                    "PW_BlockID": "toggle0",
+                    "PW_Enable": true,
+                    "PW_Group": false,
+                    "PW_Label": "No Title",
+                    "PW_Show": true,
+                    "PW_Localize": true,
+                    "PW_RetainValue": true,
+                    "PW_Bottom": "Default",
+                    "PW_Left": "Default",
+                    "PW_Right": "Default",
+                    "PW_Top": "Default",
+                    "PW_BalloonTooltipLayout": "Horizontal",
+                    "PW_BalloonTooltipOffImage": "",
+                    "PW_BalloonTooltipOffText": "",
+                    "PW_BalloonTooltipOnImage": "",
+                    "PW_BalloonTooltipOnText": "",
+                    "PW_Bitmap": "",
+                    "PW_BitmapOnly": false,
+                    "PW_Value": false,
+                    "PW_TooltipID": ""
+                  },
+                  "hiddenProps": [
+                    "PW_BlockID",
+                    "PW_Enable",
+                    "PW_Group",
+                    "PW_Label",
+                    "PW_Show",
+                    "PW_Localize",
+                    "PW_RetainValue",
+                    "PW_Bottom",
+                    "PW_Left",
+                    "PW_Right",
+                    "PW_Top",
+                    "PW_BalloonTooltipLayout",
+                    "PW_BalloonTooltipOffImage",
+                    "PW_BalloonTooltipOffText",
+                    "PW_BalloonTooltipOnImage",
+                    "PW_BalloonTooltipOnText",
+                    "PW_Bitmap",
+                    "PW_BitmapOnly",
+                    "PW_Value",
+                    "PW_TooltipID"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "BlockExplorerNode_1774591231839_41889",
+              "type": "BlockExplorerNode",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "explorerNode1",
+                "PW_Enable": true,
+                "PW_Expanded": true,
+                "PW_Label": "Node",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Expanded",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText"
+              ],
+              "customLayout": [
+                [
+                  {
+                    "nodeId": "BlockToggle_1774591243262_41888",
+                    "operation": "add"
+                  }
+                ]
+              ],
+              "children": [
+                {
+                  "id": "BlockToggle_1774591243262_41888",
+                  "type": "BlockToggle",
+                  "altProperties": {},
+                  "props": {
+                    "PW_BlockID": "toggle1",
+                    "PW_Enable": true,
+                    "PW_Group": false,
+                    "PW_Label": "No Title",
+                    "PW_Show": true,
+                    "PW_Localize": true,
+                    "PW_RetainValue": true,
+                    "PW_Bottom": "Default",
+                    "PW_Left": "Default",
+                    "PW_Right": "Default",
+                    "PW_Top": "Default",
+                    "PW_BalloonTooltipLayout": "Horizontal",
+                    "PW_BalloonTooltipOffImage": "",
+                    "PW_BalloonTooltipOffText": "",
+                    "PW_BalloonTooltipOnImage": "",
+                    "PW_BalloonTooltipOnText": "",
+                    "PW_Bitmap": "",
+                    "PW_BitmapOnly": false,
+                    "PW_Value": false,
+                    "PW_TooltipID": ""
+                  },
+                  "hiddenProps": [
+                    "PW_Enable",
+                    "PW_Group",
+                    "PW_Label",
+                    "PW_Show",
+                    "PW_Localize",
+                    "PW_RetainValue",
+                    "PW_Bottom",
+                    "PW_Left",
+                    "PW_Right",
+                    "PW_Top",
+                    "PW_BalloonTooltipLayout",
+                    "PW_BalloonTooltipOffImage",
+                    "PW_BalloonTooltipOffText",
+                    "PW_BalloonTooltipOnImage",
+                    "PW_BalloonTooltipOnText",
+                    "PW_Bitmap",
+                    "PW_BitmapOnly",
+                    "PW_Value",
+                    "PW_TooltipID"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BlockScrollWindow_1774591248941_63462",
+          "type": "BlockScrollWindow",
+          "altProperties": {},
+          "props": {
+            "PW_BlockID": "scrolledWindow0",
+            "PW_Enable": true,
+            "PW_Expanded": true,
+            "PW_Group": false,
+            "PW_Label": "No Title",
+            "PW_Show": true,
+            "PW_Bottom": "Default",
+            "PW_Left": "Default",
+            "PW_Right": "Default",
+            "PW_Top": "Default",
+            "PW_Height": 3,
+            "PW_ResizeHeightWithDialog": true,
+            "PW_Width": 0,
+            "PW_ToolTipID": ""
+          },
+          "hiddenProps": [
+            "PW_BlockID",
+            "PW_Enable",
+            "PW_Expanded",
+            "PW_Group",
+            "PW_Label",
+            "PW_Show",
+            "PW_Bottom",
+            "PW_Left",
+            "PW_Right",
+            "PW_Top",
+            "PW_Height",
+            "PW_ResizeHeightWithDialog",
+            "PW_Width",
+            "PW_ToolTipID"
+          ],
+          "customLayout": [
+            [
+              {
+                "nodeId": "BlockLabel_1774591254227_43903",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLabel_1774591255374_35879",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockLabel_1774591256418_65339",
+                "operation": "add"
+              }
+            ],
+            [
+              {
+                "nodeId": "BlockToggle_1774591257581_55148",
+                "operation": "add"
+              }
+            ]
+          ],
+          "children": [
+            {
+              "id": "BlockLabel_1774591254227_43903",
+              "type": "BlockLabel",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "label1",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "无标题",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_DisplayBitmapLabel": false,
+                "PW_HighQualityBitmap": true,
+                "PW_Tooltip": "",
+                "PW_WordWrap": false,
+                "PW_TooltipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_DisplayBitmapLabel",
+                "PW_HighQualityBitmap",
+                "PW_Tooltip",
+                "PW_WordWrap",
+                "PW_TooltipID"
+              ]
+            },
+            {
+              "id": "BlockLabel_1774591255374_35879",
+              "type": "BlockLabel",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "label2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "无标题",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_DisplayBitmapLabel": false,
+                "PW_HighQualityBitmap": true,
+                "PW_Tooltip": "",
+                "PW_WordWrap": false,
+                "PW_TooltipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_DisplayBitmapLabel",
+                "PW_HighQualityBitmap",
+                "PW_Tooltip",
+                "PW_WordWrap",
+                "PW_TooltipID"
+              ]
+            },
+            {
+              "id": "BlockLabel_1774591256418_65339",
+              "type": "BlockLabel",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "label3",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "无标题",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipImage": "",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipText": "",
+                "PW_Bitmap": "",
+                "PW_DisplayBitmapLabel": false,
+                "PW_HighQualityBitmap": true,
+                "PW_Tooltip": "",
+                "PW_WordWrap": false,
+                "PW_TooltipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipImage",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipText",
+                "PW_Bitmap",
+                "PW_DisplayBitmapLabel",
+                "PW_HighQualityBitmap",
+                "PW_Tooltip",
+                "PW_WordWrap",
+                "PW_TooltipID"
+              ]
+            },
+            {
+              "id": "BlockToggle_1774591257581_55148",
+              "type": "BlockToggle",
+              "altProperties": {},
+              "props": {
+                "PW_BlockID": "toggle2",
+                "PW_Enable": true,
+                "PW_Group": false,
+                "PW_Label": "No Title",
+                "PW_Show": true,
+                "PW_Localize": true,
+                "PW_RetainValue": true,
+                "PW_Bottom": "Default",
+                "PW_Left": "Default",
+                "PW_Right": "Default",
+                "PW_Top": "Default",
+                "PW_BalloonTooltipLayout": "Horizontal",
+                "PW_BalloonTooltipOffImage": "",
+                "PW_BalloonTooltipOffText": "",
+                "PW_BalloonTooltipOnImage": "",
+                "PW_BalloonTooltipOnText": "",
+                "PW_Bitmap": "",
+                "PW_BitmapOnly": false,
+                "PW_Value": false,
+                "PW_TooltipID": ""
+              },
+              "hiddenProps": [
+                "PW_Enable",
+                "PW_Group",
+                "PW_Label",
+                "PW_Show",
+                "PW_Localize",
+                "PW_RetainValue",
+                "PW_Bottom",
+                "PW_Left",
+                "PW_Right",
+                "PW_Top",
+                "PW_BalloonTooltipLayout",
+                "PW_BalloonTooltipOffImage",
+                "PW_BalloonTooltipOffText",
+                "PW_BalloonTooltipOnImage",
+                "PW_BalloonTooltipOnText",
+                "PW_Bitmap",
+                "PW_BitmapOnly",
+                "PW_Value",
+                "PW_TooltipID"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "previewMode": false,
+  "timestamp": 1774591260105
+}

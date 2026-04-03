@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>FeatureDialog</class>
+  <widget class="BlockFeatureDialog" name="FeatureDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>580</width>
+        <height>480</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="page">
+      <property name="geometry">
+        <rect>
+          <x>19</x>
+          <y>39</y>
+          <width>711</width>
+          <height>401</height>
+        </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+          <widget class="BlockWizard" name="wizard_main">
+            <property name="PW_BlockID" stdset="0">
+              <string>wizard0</string>
+            </property>
+            <property name="PW_CurrentStep" stdset="0">
+              <number>1</number>
+            </property>
+            <widget class="QWidget" name="wizardStep_first">
+              <property name="PW_BlockID" stdset="0">
+                <string>wizardStep0</string>
+              </property>
+              <attribute name="title">
+                <string>Step</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="wizardStepLayout_0">
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_stepOneTitle">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>label0</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="BlockButton" name="blockButton_action">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>button0</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+            <widget class="QWidget" name="wizardStep_second">
+              <property name="PW_BlockID" stdset="0">
+                <string>wizardStep1</string>
+              </property>
+              <attribute name="title">
+                <string>Step</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="wizardStepLayout_1">
+                <item>
+                  <widget class="BlockLabel" name="blockLabel_stepTwoTitle">
+                    <property name="PW_BlockID" stdset="0">
+                      <string>label1</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <spacer name="verticalSpacer">
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+              <size>
+                <width>20</width>
+                <height>40</height>
+              </size>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockFeatureDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockFeatureDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockWizard</class>
+      <extends>QWidget</extends>
+      <header>Widgets/ContainerBlock/BlockWizard.h</header>
+      <container>1</container>
+      <addpagemethod>addPage</addpagemethod>
+    </customwidget>
+    <customwidget>
+      <class>BlockLabel</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockLabel.h</header>
+    </customwidget>
+    <customwidget>
+      <class>BlockButton</class>
+      <extends>QWidget</extends>
+      <header>Widgets/Block/BlockButton.h</header>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>
